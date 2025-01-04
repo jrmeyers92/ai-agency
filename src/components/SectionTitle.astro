@@ -1,0 +1,28 @@
+---
+interface Props {
+  title: string;
+  align?: "left" | "center" | "right";
+  className?: string;
+}
+
+const { title, align = "left", className = "" } = Astro.props;
+
+const alignmentClasses = {
+  left: "text-left",
+  center: "text-center mx-auto",
+  right: "text-right ml-auto",
+};
+
+const underlineClasses = {
+  left: "",
+  center: "mx-auto",
+  right: "ml-auto",
+};
+---
+
+<div class={`space-y-2 ${className}`}>
+  <h2 class={`text-5xl font-bold text-[#999] ${alignmentClasses[align]}`}>
+    {title}
+  </h2>
+  <div class={`h-1 w-20 bg-blue-500 ${underlineClasses[align]}`}></div>
+</div>

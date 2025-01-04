@@ -1,0 +1,203 @@
+---
+import { Icon } from "astro-icon/components";
+
+const navItems = [
+  { label: "About", href: "#about" },
+  { label: "Services", href: "#services" },
+  { label: "Contact", href: "#contact" },
+];
+---
+
+<div
+  class="fixed w-full top-0 z-50 bg-white border-b border-gray-200"
+  id="navbar"
+>
+  <nav
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 lg:h-20"
+    aria-label="Main navigation"
+  >
+    <div class="flex justify-between items-center h-full">
+      <!-- Logo -->
+      <a href="/" class="group relative z-10" aria-label="Home">
+        <div class="flex items-baseline gap-1">
+          <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+            Your Agency
+          </span>
+          <span class="text-sm font-medium text-gray-600">AI</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden lg:flex items-center gap-8">
+        <ul class="flex items-center gap-8">
+          {
+            navItems.map((item) => (
+              <li>
+                <a
+                  href={item.href}
+                  class="relative py-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors duration-200"
+                >
+                  {item.label}
+                  <span class="absolute inset-x-0 bottom-0 h-0.5 bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+        
+        <a
+          href="#contact"
+          class="inline-flex items-center gap-2 px-5 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-sm hover:shadow-md"
+        >
+          Start Project
+          <Icon name="arrow-right" class="w-4 h-4" />
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button
+        type="button"
+        class="lg:hidden relative z-50 p-2 rounded-lg hover:bg-gray-100"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        id="menu-toggle"
+      >
+        <div class="w-6 h-5 flex flex-col justify-between">
+          <span class="w-full h-0.5 bg-gray-600 transform transition-all duration-300 origin-left group-aria-expanded:rotate-45"></span>
+          <span class="w-full h-0.5 bg-gray-600 transform transition-all duration-300 group-aria-expanded:opacity-0"></span>
+          <span class="w-full h-0.5 bg-gray-600 transform transition-all duration-300 origin-left group-aria-expanded:-rotate-45"></span>
+        </div>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="lg:hidden fixed inset-0 z-40 invisible opacity-0 transition-all duration-300"
+    aria-hidden="true"
+  >
+    <!-- Backdrop -->
+    <div class="absolute inset-0 bg-black/50 backdrop-blur-sm opacity-0 transition-opacity duration-300"></div>
+    
+    <!-- Menu Panel -->
+    <div class="absolute inset-y-0 right-0 w-full max-w-sm bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out">
+      <div class="h-16"></div>
+      
+      <nav class="relative px-4 py-6 space-y-8 bg-white">
+        <ul class="space-y-3">
+          {
+            navItems.map((item) => (
+              <li>
+                <a
+                  href={item.href}
+                  class="block py-3 text-base font-medium text-gray-600 hover:text-gray-900 transition-colors duration-200"
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+
+        <div class="pt-4 border-t border-gray-200">
+          <a
+            href="#contact"
+            class="flex items-center justify-center gap-2 w-full py-3 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-200"
+          >
+            Start Project
+            <Icon name="arrow-right" class="w-4 h-4" />
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const backdrop = mobileMenu?.querySelector('div');
+  const menuPanel = mobileMenu?.querySelector('div:last-child');
+  let lastScroll = 0;
+
+  // Scroll handling
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.scrollY;
+    
+    if (currentScroll <= 0) {
+      navbar?.classList.remove('shadow-lg');
+    } else if (currentScroll > lastScroll) {
+      navbar?.classList.add('shadow-lg');
+    }
+    
+    lastScroll = currentScroll;
+  });
+
+  // Mobile menu toggle
+  function toggleMenu(show: boolean) {
+    if (!mobileMenu || !backdrop || !menuPanel || !menuToggle) return;
+
+    menuToggle.setAttribute('aria-expanded', show.toString());
+    mobileMenu.setAttribute('aria-hidden', (!show).toString());
+    document.body.style.overflow = show ? 'hidden' : '';
+
+    if (show) {
+      mobileMenu.classList.remove('invisible');
+      setTimeout(() => {
+        mobileMenu.classList.remove('opacity-0');
+        backdrop.classList.add('opacity-100');
+        menuPanel.classList.remove('translate-x-full');
+      }, 10);
+    } else {
+      mobileMenu.classList.add('opacity-0');
+      backdrop.classList.remove('opacity-100');
+      menuPanel.classList.add('translate-x-full');
+      setTimeout(() => {
+        mobileMenu.classList.add('invisible');
+      }, 300);
+    }
+  }
+
+  // Event listeners
+  menuToggle?.addEventListener('click', () => {
+    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    toggleMenu(!isExpanded);
+  });
+
+  backdrop?.addEventListener('click', () => toggleMenu(false));
+
+  const menuLinks = mobileMenu?.querySelectorAll('a');
+  menuLinks?.forEach(link => {
+    link.addEventListener('click', () => toggleMenu(false));
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && menuToggle?.getAttribute('aria-expanded') === 'true') {
+      toggleMenu(false);
+    }
+  });
+</script>
+
+<style>
+  /* Focus styles */
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+  }
+
+  /* Menu button animation */
+  #menu-toggle[aria-expanded="true"] .w-6 div span:first-child {
+    transform: rotate(45deg) translate(1px, -1px);
+  }
+
+  #menu-toggle[aria-expanded="true"] .w-6 div span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-toggle[aria-expanded="true"] .w-6 div span:last-child {
+    transform: rotate(-45deg) translate(1px, 1px);
+  }
+</style>
