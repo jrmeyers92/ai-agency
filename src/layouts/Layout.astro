@@ -1,22 +1,134 @@
+---
+import { ViewTransitions } from "astro:transitions";
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+}
+
+const {
+  title = "AI Implementation & Web Development Services | St. Louis, MO",
+  description = "Expert AI implementation and web development services in St. Louis. Specializing in custom AI solutions, RAG applications, and enterprise-grade web development. Transform your business with cutting-edge artificial intelligence.",
+  image = "/social-image.jpg", // Add your default social image
+} = Astro.props;
+
+// Safe canonical URL creation
+const canonicalURL = new URL(
+  Astro.url.pathname,
+  import.meta.env.SITE ?? 'https://yourdomain.com'
+);
+
+// Structured data for local business
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Your Business Name",
+  "description": description,
+  "@id": canonicalURL.toString(),
+  "url": canonicalURL.toString(),
+  "telephone": "+1-xxx-xxx-xxxx", // Add your phone
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Your Street Address", // Add your address
+    "addressLocality": "St. Louis",
+    "addressRegion": "MO",
+    "postalCode": "xxxxx", // Add your zip
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.6270, // St. Louis coordinates
+    "longitude": -90.1994
+  },
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.6270,
+      "longitude": -90.1994
+    },
+    "geoRadius": "50000"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/your-company", // Add your social links
+    "https://github.com/your-company",
+    "https://twitter.com/your-company"
+  ],
+  "openingHours": "Mo,Tu,We,Th,Fr 09:00-17:00",
+  "priceRange": "$$"
+};
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <!-- Essential Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO Meta Tags -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Your Name" />
+    <link rel="canonical" href={canonicalURL} />
+    
+    <!-- Keywords -->
+    <meta name="keywords" content="AI implementation, artificial intelligence, web development, St. Louis, Missouri, RAG applications, custom AI solutions, enterprise software, machine learning, chatbots, AI consulting" />
+    
+    <!-- Indexing/Robots -->
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+    
+    <!-- Astro View Transitions -->
+    <ViewTransitions />
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+<style is:global>
+  :root {
+    --font-fallback: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  html {
+    font-family: var(--font-fallback);
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
 </style>
