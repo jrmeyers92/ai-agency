@@ -105,6 +105,16 @@ const structuredData = {
     
     <!-- Local Business Schema -->
     <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DQ04W7HCE8"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-DQ04W7HCE8');
+	</script>
     
     <!-- Astro View Transitions -->
     <ViewTransitions />
