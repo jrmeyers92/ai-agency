@@ -16,7 +16,7 @@ const {
 // Safe canonical URL creation
 const canonicalURL = new URL(
   Astro.url.pathname,
-  import.meta.env.SITE ?? 'https://yourdomain.com'
+  import.meta.env.SITE ?? 'https://gatewaydigitalstudio.com'
 );
 
 // Structured data for local business
@@ -71,7 +71,7 @@ const structuredData = {
     <!-- SEO Meta Tags -->
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="author" content="Your Name" />
+    <meta name="author" content="Jake Meyers" />
     <link rel="canonical" href={canonicalURL} />
     
     <!-- Keywords -->
