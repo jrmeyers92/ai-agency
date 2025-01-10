@@ -1,6 +1,7 @@
 ---
 import { ViewTransitions } from "astro:transitions";
 import GoogleAnalytics from '../components/GoogleAnalytics.astro';
+import Nav from "../components/Nav.astro";
 
 
 interface Props {
@@ -114,6 +115,7 @@ const structuredData = {
     <ViewTransitions />
   </head>
   <body>
+	<Nav />
     <slot />
   </body>
 </html>
