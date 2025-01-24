@@ -3,126 +3,209 @@
 ---
 
 <style>
-    @keyframes gradientFlow {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
+  @keyframes gradientFlow {
+    0% {
+      background-position: 0% 50%;
     }
-  
-    .gradient-text {
-      background: linear-gradient(135deg, #3b82f6, #8b5cf6, #3b82f6);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      background-size: 200% 200%;
-      animation: gradientFlow 6s ease infinite;
+    50% {
+      background-position: 100% 50%;
     }
-  
-    .grid-pattern {
-      background-image: radial-gradient(#1e293b 1px, transparent 1px);
-      background-size: 24px 24px;
+    100% {
+      background-position: 0% 50%;
     }
-  
-    @keyframes slideUpFade {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  
-    .animate-slide-up {
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6, #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% 200%;
+    animation: gradientFlow 6s ease infinite;
+  }
+
+  .grid-pattern {
+    background-image: radial-gradient(#1e293b 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  @keyframes slideUpFade {
+    0% {
       opacity: 0;
-      animation: slideUpFade 0.8s ease-out forwards;
+      transform: translateY(20px);
     }
-  
-    .animate-slide-up-delay-1 {
-      opacity: 0;
-      animation: slideUpFade 0.8s ease-out 0.2s forwards;
+    100% {
+      opacity: 1;
+      transform: translateY(0);
     }
-  
-    .animate-slide-up-delay-2 {
-      opacity: 0;
-      animation: slideUpFade 0.8s ease-out 0.4s forwards;
-    }
-  </style>
-  
-  <div class="relative w-full min-h-screen bg-gray-50 dark:bg-gray-900 overflow-hidden">
-    <!-- Background Pattern -->
-    <div class="absolute inset-0 grid-pattern opacity-[0.15]"></div>
-  
-    <!-- Main Content -->
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 flex flex-col lg:flex-row items-center justify-between gap-12">
-      <!-- Left Column - Text Content -->
-      <div class="flex-1 text-center lg:text-left">
-        <h1 class="animate-slide-up text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 text-white">
-          Transforming Business with
-          <span class="gradient-text">Artificial Intelligence</span>
-        </h1>
-        
-        <p class="animate-slide-up-delay-1 text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0">
-          We build cutting-edge AI solutions that drive innovation, automate workflows, and unlock new possibilities for businesses worldwide.
-        </p>
-        
-        <div class="animate-slide-up-delay-2 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-          <a 
-            href="#contact" 
-            class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors duration-200 shadow-lg hover:shadow-xl"
+  }
+
+  .animate-slide-up {
+    opacity: 0;
+    animation: slideUpFade 0.8s ease-out forwards;
+  }
+
+  .animate-slide-up-delay-1 {
+    opacity: 0;
+    animation: slideUpFade 0.8s ease-out 0.2s forwards;
+  }
+
+  .animate-slide-up-delay-2 {
+    opacity: 0;
+    animation: slideUpFade 0.8s ease-out 0.4s forwards;
+  }
+</style>
+
+<div
+  class="relative w-full min-h-screen bg-gray-50 dark:bg-gray-900 overflow-hidden"
+>
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 grid-pattern opacity-[0.15]"></div>
+
+  <!-- Main Content -->
+  <div
+    class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 flex flex-col lg:flex-row items-center justify-between gap-12"
+  >
+    <!-- Left Column - Text Content -->
+    <div class="flex-1 text-center lg:text-left">
+      <h1
+        class="animate-slide-up text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 text-white"
+      >
+        Transforming Business with
+        <span class="gradient-text">Artificial Intelligence</span>
+      </h1>
+
+      <p
+        class="animate-slide-up-delay-1 text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0"
+      >
+        We build cutting-edge AI solutions that drive innovation, automate
+        workflows, and unlock new possibilities for businesses worldwide.
+      </p>
+
+      <div
+        class="animate-slide-up-delay-2 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+      >
+        <a
+          href="#contact"
+          class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors duration-200 shadow-lg hover:shadow-xl"
+        >
+          Get in Touch
+          <svg
+            class="ml-2 w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
           >
-            Start Your AI Journey
-            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </a>
-          
-          <a 
-            href="#services" 
-            class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
-          >
-            Explore Services
-          </a>
-        </div>
-      </div>
-  
-      <!-- Right Column - Decorative Elements -->
-      <div class="flex-1 relative w-full max-w-xl">
-        <!-- Main circular gradient -->
-        <div class="absolute inset-0 flex items-center justify-center">
-          <div class="w-[500px] h-[500px] bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-full blur-3xl"></div>
-        </div>
-  
-        <!-- Animated grid patterns -->
-        <div class="relative w-full aspect-square">
-          {/* SVG Pattern */}
-          <svg class="w-full h-full" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g class="opacity-70">
-              <circle cx="200" cy="200" r="150" stroke="currentColor" stroke-width="2" class="text-blue-500/40" />
-              <circle cx="200" cy="200" r="100" stroke="currentColor" stroke-width="2" class="text-purple-500/40" />
-              <circle cx="200" cy="200" r="50" stroke="currentColor" stroke-width="2" class="text-blue-500/40" />
-              
-              <line x1="50" y1="200" x2="350" y2="200" stroke="currentColor" stroke-width="2" class="text-gray-500/20" />
-              <line x1="200" y1="50" x2="200" y2="350" stroke="currentColor" stroke-width="2" class="text-gray-500/20" />
-              
-              {/* Decorative Dots */}
-              <circle cx="200" cy="50" r="4" fill="currentColor" class="text-blue-500" />
-              <circle cx="200" cy="350" r="4" fill="currentColor" class="text-purple-500" />
-              <circle cx="50" cy="200" r="4" fill="currentColor" class="text-blue-500" />
-              <circle cx="350" cy="200" r="4" fill="currentColor" class="text-purple-500" />
-            </g>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
           </svg>
-        </div>
+        </a>
+
+        <a
+          href="#services"
+          class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+        >
+          Explore Services
+        </a>
       </div>
     </div>
-  
-    <!-- Bottom decoration -->
-    <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent"></div>
+
+    <!-- Right Column - Decorative Elements -->
+    <div class="flex-1 relative w-full max-w-xl">
+      <!-- Main circular gradient -->
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div
+          class="w-[500px] h-[500px] bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-full blur-3xl"
+        >
+        </div>
+      </div>
+
+      <!-- Animated grid patterns -->
+      <div class="relative w-full aspect-square">
+        {/* SVG Pattern */}
+        <svg
+          class="w-full h-full"
+          viewBox="0 0 400 400"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g class="opacity-70">
+            <circle
+              cx="200"
+              cy="200"
+              r="150"
+              stroke="currentColor"
+              stroke-width="2"
+              class="text-blue-500/40"></circle>
+            <circle
+              cx="200"
+              cy="200"
+              r="100"
+              stroke="currentColor"
+              stroke-width="2"
+              class="text-purple-500/40"></circle>
+            <circle
+              cx="200"
+              cy="200"
+              r="50"
+              stroke="currentColor"
+              stroke-width="2"
+              class="text-blue-500/40"></circle>
+
+            <line
+              x1="50"
+              y1="200"
+              x2="350"
+              y2="200"
+              stroke="currentColor"
+              stroke-width="2"
+              class="text-gray-500/20"></line>
+            <line
+              x1="200"
+              y1="50"
+              x2="200"
+              y2="350"
+              stroke="currentColor"
+              stroke-width="2"
+              class="text-gray-500/20"></line>
+
+            {/* Decorative Dots */}
+            <circle
+              cx="200"
+              cy="50"
+              r="4"
+              fill="currentColor"
+              class="text-blue-500"></circle>
+            <circle
+              cx="200"
+              cy="350"
+              r="4"
+              fill="currentColor"
+              class="text-purple-500"></circle>
+            <circle
+              cx="50"
+              cy="200"
+              r="4"
+              fill="currentColor"
+              class="text-blue-500"></circle>
+            <circle
+              cx="350"
+              cy="200"
+              r="4"
+              fill="currentColor"
+              class="text-purple-500"></circle>
+          </g>
+        </svg>
+      </div>
+    </div>
   </div>
+
+  <!-- Bottom decoration -->
+  <div
+    class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent"
+  >
+  </div>
+</div>

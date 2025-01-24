@@ -1,11 +1,13 @@
 ---
 import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import myImage from "../assets/logo.svg";
 
 const navItems = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "Contact", href: "#contact" },
-  {label: "Blog", href: "/blog"}
+  // { label: "Blog", href: "/blog" },
 ];
 ---
 
@@ -20,8 +22,11 @@ const navItems = [
     <div class="flex justify-between items-center h-full">
       <!-- Logo -->
       <a href="/" class="group relative z-10" aria-label="Home">
-        <div class="flex items-baseline gap-1">
-          <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+        <div class="flex items-center gap-2">
+          <Image src={myImage} alt="Jake Meyers - Full Stack & AI Developer" />
+          <span
+            class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent"
+          >
             Gateway Digital Studio
           </span>
         </div>
@@ -44,7 +49,7 @@ const navItems = [
             ))
           }
         </ul>
-        
+
         <a
           href="#contact"
           class="inline-flex items-center gap-2 px-5 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-sm hover:shadow-md"
@@ -63,9 +68,15 @@ const navItems = [
         id="menu-toggle"
       >
         <div class="w-6 h-5 flex flex-col justify-between">
-          <span class="w-full h-0.5 bg-gray-600 transform transition-all duration-300 origin-left group-aria-expanded:rotate-45"></span>
-          <span class="w-full h-0.5 bg-gray-600 transform transition-all duration-300 group-aria-expanded:opacity-0"></span>
-          <span class="w-full h-0.5 bg-gray-600 transform transition-all duration-300 origin-left group-aria-expanded:-rotate-45"></span>
+          <span
+            class="w-full h-0.5 bg-gray-600 transform transition-all duration-300 origin-left group-aria-expanded:rotate-45"
+          ></span>
+          <span
+            class="w-full h-0.5 bg-gray-600 transform transition-all duration-300 group-aria-expanded:opacity-0"
+          ></span>
+          <span
+            class="w-full h-0.5 bg-gray-600 transform transition-all duration-300 origin-left group-aria-expanded:-rotate-45"
+          ></span>
         </div>
       </button>
     </div>
@@ -78,12 +89,17 @@ const navItems = [
     aria-hidden="true"
   >
     <!-- Backdrop -->
-    <div class="absolute inset-0 bg-black/50 backdrop-blur-sm opacity-0 transition-opacity duration-300"></div>
-    
+    <div
+      class="absolute inset-0 bg-black/50 backdrop-blur-sm opacity-0 transition-opacity duration-300"
+    >
+    </div>
+
     <!-- Menu Panel -->
-    <div class="absolute inset-y-0 right-0 w-full max-w-sm bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out">
+    <div
+      class="absolute inset-y-0 right-0 w-full max-w-sm bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out"
+    >
       <div class="h-16"></div>
-      
+
       <nav class="relative px-4 py-6 space-y-8 bg-white">
         <ul class="space-y-3">
           {
@@ -115,23 +131,23 @@ const navItems = [
 </header>
 
 <script>
-  const navbar = document.getElementById('navbar');
-  const menuToggle = document.getElementById('menu-toggle');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const backdrop = mobileMenu?.querySelector('div');
-  const menuPanel = mobileMenu?.querySelector('div:last-child');
+  const navbar = document.getElementById("navbar");
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const backdrop = mobileMenu?.querySelector("div");
+  const menuPanel = mobileMenu?.querySelector("div:last-child");
   let lastScroll = 0;
 
   // Scroll handling
-  window.addEventListener('scroll', () => {
+  window.addEventListener("scroll", () => {
     const currentScroll = window.scrollY;
-    
+
     if (currentScroll <= 0) {
-      navbar?.classList.remove('shadow-lg');
+      navbar?.classList.remove("shadow-lg");
     } else if (currentScroll > lastScroll) {
-      navbar?.classList.add('shadow-lg');
+      navbar?.classList.add("shadow-lg");
     }
-    
+
     lastScroll = currentScroll;
   });
 
@@ -139,42 +155,45 @@ const navItems = [
   function toggleMenu(show: boolean) {
     if (!mobileMenu || !backdrop || !menuPanel || !menuToggle) return;
 
-    menuToggle.setAttribute('aria-expanded', show.toString());
-    mobileMenu.setAttribute('aria-hidden', (!show).toString());
-    document.body.style.overflow = show ? 'hidden' : '';
+    menuToggle.setAttribute("aria-expanded", show.toString());
+    mobileMenu.setAttribute("aria-hidden", (!show).toString());
+    document.body.style.overflow = show ? "hidden" : "";
 
     if (show) {
-      mobileMenu.classList.remove('invisible');
+      mobileMenu.classList.remove("invisible");
       setTimeout(() => {
-        mobileMenu.classList.remove('opacity-0');
-        backdrop.classList.add('opacity-100');
-        menuPanel.classList.remove('translate-x-full');
+        mobileMenu.classList.remove("opacity-0");
+        backdrop.classList.add("opacity-100");
+        menuPanel.classList.remove("translate-x-full");
       }, 10);
     } else {
-      mobileMenu.classList.add('opacity-0');
-      backdrop.classList.remove('opacity-100');
-      menuPanel.classList.add('translate-x-full');
+      mobileMenu.classList.add("opacity-0");
+      backdrop.classList.remove("opacity-100");
+      menuPanel.classList.add("translate-x-full");
       setTimeout(() => {
-        mobileMenu.classList.add('invisible');
+        mobileMenu.classList.add("invisible");
       }, 300);
     }
   }
 
   // Event listeners
-  menuToggle?.addEventListener('click', () => {
-    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+  menuToggle?.addEventListener("click", () => {
+    const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
     toggleMenu(!isExpanded);
   });
 
-  backdrop?.addEventListener('click', () => toggleMenu(false));
+  backdrop?.addEventListener("click", () => toggleMenu(false));
 
-  const menuLinks = mobileMenu?.querySelectorAll('a');
-  menuLinks?.forEach(link => {
-    link.addEventListener('click', () => toggleMenu(false));
+  const menuLinks = mobileMenu?.querySelectorAll("a");
+  menuLinks?.forEach((link) => {
+    link.addEventListener("click", () => toggleMenu(false));
   });
 
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && menuToggle?.getAttribute('aria-expanded') === 'true') {
+  document.addEventListener("keydown", (e) => {
+    if (
+      e.key === "Escape" &&
+      menuToggle?.getAttribute("aria-expanded") === "true"
+    ) {
       toggleMenu(false);
     }
   });
