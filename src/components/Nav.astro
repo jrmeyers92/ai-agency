@@ -22,12 +22,14 @@ const navItems = [
     <div class="flex justify-between items-center h-full">
       <!-- Logo -->
       <a href="/" class="group relative z-10" aria-label="Home">
-        <div class="flex items-center gap-2">
-          <Image src={myImage} alt="Jake Meyers - Full Stack & AI Developer" />
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Image src={myImage} alt="Jake Meyers - Full Stack & AI Developer" class="w-full h-full object-cover" />
+          </div>
           <span
-            class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent"
+            class="text-xl lg:text-2xl font-bold bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent"
           >
-            Gateway Digital Studio
+            Jake Meyers
           </span>
         </div>
       </a>
