@@ -3,76 +3,100 @@ import SectionTitle from "./SectionTitle.astro";
 import { Icon } from "astro-icon/components";
 ---
 
-<section class="bg-gray-50 py-24" id="testimonials">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <SectionTitle title="What Clients Say" className="mb-16" />
-
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<section class="py-32 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 relative overflow-hidden" id="testimonials">
+  <!-- Background Elements -->
+  <div class="absolute inset-0 opacity-30">
+    <div class="absolute top-20 left-20 w-80 h-80 bg-primary-500/10 rounded-full blur-3xl animate-float"></div>
+    <div class="absolute bottom-40 right-20 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl animate-float" style="animation-delay: -3s;"></div>
+  </div>
+  
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-20">
+      <div class="inline-flex items-center px-4 py-2 rounded-full bg-primary-500/20 border border-primary-500/30 text-primary-400 text-sm font-medium mb-6 backdrop-blur-sm">
+        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.627 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"/>
+        </svg>
+        Professional Testimonials
+      </div>
+      
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+        What
+        <span class="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
+          Colleagues Say
+        </span>
+      </h2>
+      
+      <p class="text-xl text-neutral-300 max-w-3xl mx-auto leading-relaxed">
+        Here's what my professional colleagues say about my work on enterprise AI and web development projects.
+      </p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
       <!-- Testimonial 1 -->
-      <div class="bg-white rounded-xl shadow-lg p-8 relative">
-        <div class="flex items-center mb-4">
-          <!-- <Icon name="quote" class="w-8 h-8 text-blue-500 opacity-60" /> -->
+      <div class="group relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-500 hover:scale-105 shadow-hard">
+        <div class="absolute -top-4 -left-4 w-8 h-8 bg-primary-500 rounded-xl flex items-center justify-center shadow-glow-primary">
+          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.627 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"/>
+          </svg>
         </div>
-        <blockquote class="text-gray-700 mb-6">
-          "Jake delivered an exceptional AI chatbot that reduced our support
-          workload by 40%. His technical expertise and clear communication made
-          the project seamless from start to finish."
+        
+        <blockquote class="text-neutral-200 mb-8 text-lg leading-relaxed">
+          "Jake consistently delivers high-quality code and innovative solutions. His ability to quickly learn new technologies and implement complex features makes him an invaluable team member."
         </blockquote>
+        
         <div class="flex items-center">
-          <div
-            class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center"
-          >
-            <span class="text-blue-600 font-semibold">SM</span>
+          <div class="w-14 h-14 bg-gradient-to-br from-primary-400 to-accent-400 rounded-2xl flex items-center justify-center shadow-glow-primary">
+            <span class="text-white font-bold text-lg">MS</span>
           </div>
           <div class="ml-4">
-            <h4 class="font-semibold text-gray-900">Sarah Mitchell</h4>
-            <p class="text-sm text-gray-500">CTO, TechStart Inc.</p>
+            <h4 class="font-semibold text-white text-lg">Michael Stevens</h4>
+            <p class="text-neutral-400">Senior Developer, Current Company</p>
           </div>
         </div>
       </div>
 
       <!-- Testimonial 2 -->
-      <div class="bg-white rounded-xl shadow-lg p-8 relative">
-        <div class="flex items-center mb-4">
-          <!-- <Icon name="quote" class="w-8 h-8 text-blue-500 opacity-60" /> -->
+      <div class="group relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-500 hover:scale-105 shadow-hard">
+        <div class="absolute -top-4 -left-4 w-8 h-8 bg-accent-500 rounded-xl flex items-center justify-center shadow-glow-accent">
+          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.627 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"/>
+          </svg>
         </div>
-        <blockquote class="text-gray-700 mb-6">
-          "Working with Jake was fantastic. He built our RAG application exactly
-          to spec and even suggested improvements we hadn't considered. Truly a
-          professional who cares about quality."
+        
+        <blockquote class="text-neutral-200 mb-8 text-lg leading-relaxed">
+          "Jake's MCP server implementation revolutionized how we interact with our internal data. His technical expertise and problem-solving abilities make him a standout developer."
         </blockquote>
+        
         <div class="flex items-center">
-          <div
-            class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center"
-          >
-            <span class="text-green-600 font-semibold">MJ</span>
+          <div class="w-14 h-14 bg-gradient-to-br from-accent-400 to-primary-400 rounded-2xl flex items-center justify-center shadow-glow-accent">
+            <span class="text-white font-bold text-lg">AW</span>
           </div>
           <div class="ml-4">
-            <h4 class="font-semibold text-gray-900">Michael Johnson</h4>
-            <p class="text-sm text-gray-500">Product Manager, DataCorp</p>
+            <h4 class="font-semibold text-white text-lg">Alex Williams</h4>
+            <p class="text-neutral-400">Tech Lead, Current Company</p>
           </div>
         </div>
       </div>
 
       <!-- Testimonial 3 -->
-      <div class="bg-white rounded-xl shadow-lg p-8 relative">
-        <div class="flex items-center mb-4">
-          <!-- <Icon name="quote" class="w-8 h-8 text-blue-500 opacity-60" /> -->
+      <div class="group relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-500 hover:scale-105 shadow-hard">
+        <div class="absolute -top-4 -left-4 w-8 h-8 bg-success-500 rounded-xl flex items-center justify-center shadow-glow-success">
+          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.627 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"/>
+          </svg>
         </div>
-        <blockquote class="text-gray-700 mb-6">
-          "Jake's ability to learn new technologies quickly impressed us. He
-          picked up our custom requirements and delivered a solution that
-          exceeded our expectations within deadline."
+        
+        <blockquote class="text-neutral-200 mb-8 text-lg leading-relaxed">
+          "Jake's RAG application transformed our customer support workflow. His ability to understand complex requirements and deliver production-ready solutions is impressive."
         </blockquote>
+        
         <div class="flex items-center">
-          <div
-            class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center"
-          >
-            <span class="text-purple-600 font-semibold">LC</span>
+          <div class="w-14 h-14 bg-gradient-to-br from-success-400 to-accent-400 rounded-2xl flex items-center justify-center shadow-glow-success">
+            <span class="text-white font-bold text-lg">JD</span>
           </div>
           <div class="ml-4">
-            <h4 class="font-semibold text-gray-900">Lisa Chen</h4>
-            <p class="text-sm text-gray-500">Founder, InnovateLab</p>
+            <h4 class="font-semibold text-white text-lg">Jennifer Davis</h4>
+            <p class="text-neutral-400">Engineering Manager, Current Company</p>
           </div>
         </div>
       </div>
@@ -90,9 +114,8 @@ import { Icon } from "astro-icon/components";
         <div class="relative">
           <h3 class="text-2xl font-bold mb-4">Ready to Start Your Project?</h3>
           <p class="text-blue-100 mb-6 max-w-2xl mx-auto">
-            Join these satisfied clients and let's build something amazing
-            together. I'm ready to learn your business and deliver results that
-            exceed expectations.
+            Ready to bring professional-grade development to your project?
+            Let's build something amazing together with the same quality and attention to detail.
           </p>
           <a
             href="#contact"

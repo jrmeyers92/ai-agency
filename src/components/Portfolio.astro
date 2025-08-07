@@ -3,48 +3,84 @@ import SectionTitle from "./SectionTitle.astro";
 import { Icon } from "astro-icon/components";
 ---
 
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24" id="portfolio">
-  <SectionTitle title="Recent Work" className="mb-16" />
-
-  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-    <!-- AI Chatbot Project -->
-    <div
-      class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
-    >
-      <div class="h-48 bg-gradient-to-br from-blue-500 to-purple-600 relative">
-        <div class="absolute inset-0 flex items-center justify-center">
-          <!-- <Icon name="message-circle" class="w-16 h-16 text-white/80" /> -->
-        </div>
+<section class="py-32 bg-white relative overflow-hidden" id="portfolio">
+  <!-- Background Elements -->
+  <div class="absolute inset-0 opacity-30">
+    <div class="absolute top-40 left-20 w-72 h-72 bg-accent-200/20 rounded-full blur-3xl animate-float"></div>
+    <div class="absolute bottom-20 right-40 w-96 h-96 bg-primary-200/20 rounded-full blur-3xl animate-float" style="animation-delay: -2s;"></div>
+  </div>
+  
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-20">
+      <div class="inline-flex items-center px-4 py-2 rounded-full bg-accent-100 text-accent-700 text-sm font-medium mb-6">
+        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+        </svg>
+        Portfolio & Case Studies
       </div>
-      <div class="p-6">
-        <h3 class="text-xl font-semibold text-gray-900 mb-2">
-          AI Customer Support Chatbot
-        </h3>
-        <p class="text-gray-600 mb-4">
-          Custom chatbot using OpenAI GPT-4 with RAG implementation for a SaaS
-          company's knowledge base.
-        </p>
-        <div class="flex flex-wrap gap-2 mb-4">
-          <span
-            class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded"
-            >Next.js</span
-          >
-          <span
-            class="px-2 py-1 bg-green-100 text-green-800 text-xs font-medium rounded"
-            >OpenAI API</span
-          >
-          <span
-            class="px-2 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded"
-            >Pinecone</span
-          >
-          <span
-            class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded"
-            >FastAPI</span
-          >
+      
+      <h2 class="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+        Recent
+        <span class="bg-gradient-to-r from-accent-600 to-primary-600 bg-clip-text text-transparent">
+          Projects
+        </span>
+      </h2>
+      
+      <p class="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
+        See examples of real-world projects I've built professionally and for practice—from enterprise applications to innovative AI solutions.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+    <!-- AI Chatbot Project -->
+    <div class="group relative bg-white rounded-2xl shadow-soft hover:shadow-hard transition-all duration-500 overflow-hidden border border-neutral-100 hover:scale-105">
+      <div class="h-56 bg-gradient-to-br from-primary-500 via-primary-600 to-accent-500 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/10"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-6">
+            <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4l4 4 4-4h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+            </svg>
+          </div>
         </div>
-        <p class="text-sm text-gray-500">
-          <strong>Results:</strong> 40% reduction in support tickets, 24/7 availability
+        <!-- Floating Animation Elements -->
+        <div class="absolute top-4 left-4 w-3 h-3 bg-white/30 rounded-full animate-ping"></div>
+        <div class="absolute top-8 right-6 w-2 h-2 bg-white/40 rounded-full animate-pulse"></div>
+        <div class="absolute bottom-6 left-8 w-4 h-4 bg-white/20 rounded-full animate-bounce"></div>
+      </div>
+      
+      <div class="p-8">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary-600 transition-colors">
+            AI Customer Support Chatbot
+          </h3>
+          <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+          </div>
+        </div>
+        
+        <p class="text-neutral-600 mb-6 leading-relaxed">
+          Enterprise AI chatbot built for my current company using OpenAI GPT-4 with RAG implementation for internal knowledge base queries.
         </p>
+        
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="px-3 py-1 bg-primary-100 text-primary-700 text-xs font-medium rounded-full">Next.js</span>
+          <span class="px-3 py-1 bg-success-100 text-success-700 text-xs font-medium rounded-full">OpenAI API</span>
+          <span class="px-3 py-1 bg-accent-100 text-accent-700 text-xs font-medium rounded-full">Pinecone</span>
+          <span class="px-3 py-1 bg-warning-100 text-warning-700 text-xs font-medium rounded-full">FastAPI</span>
+        </div>
+        
+        <div class="flex items-center justify-between pt-4 border-t border-neutral-100">
+          <div class="flex items-center text-sm text-success-600 font-medium">
+            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+            40% ticket reduction
+          </div>
+          <div class="text-xs text-neutral-500">24/7 availability</div>
+        </div>
       </div>
     </div>
 
@@ -131,16 +167,45 @@ import { Icon } from "astro-icon/components";
     </div>
   </div>
 
-  <div class="text-center mt-12">
-    <p class="text-gray-600 mb-6">
-      Want to see more examples or discuss your project?
-    </p>
-    <a
-      href="#contact"
-      class="inline-flex items-center gap-2 px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-lg hover:shadow-xl"
-    >
-      Let's Talk About Your Project
-      <Icon name="arrow-right" class="w-5 h-5" />
-    </a>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="relative">
+      <div class="bg-gradient-to-r from-primary-500 to-accent-500 rounded-3xl p-12 text-center text-white relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+          <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 24px 24px;"></div>
+        </div>
+        
+        <div class="relative">
+          <h3 class="text-3xl font-bold mb-4">Ready to Start Your Project?</h3>
+          <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            Let's discuss your vision and create something extraordinary together. From initial concept to final deployment, I'll be with you every step of the way.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="#contact"
+              class="group inline-flex items-center gap-2 px-8 py-4 bg-white text-primary-600 font-semibold rounded-xl hover:bg-white/90 transition-all duration-300 hover:scale-105 shadow-soft"
+            >
+              Start Your Project
+              <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+              </svg>
+            </a>
+            
+            <a
+              href="#services"
+              class="group inline-flex items-center gap-2 px-8 py-4 bg-white/20 backdrop-blur-sm text-white font-semibold rounded-xl hover:bg-white/30 transition-all duration-300 border border-white/30"
+            >
+              View All Services
+              <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

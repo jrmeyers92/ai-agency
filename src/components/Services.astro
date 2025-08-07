@@ -3,12 +3,42 @@ import Card from "./Card.astro";
 import SectionTitle from "./SectionTitle.astro";
 ---
 
-<section class="px-4 py-24 max-w-[1400px] mx-auto" id="services">
-  <SectionTitle title="AI & Web Development Services" className="mb-6" />
-  <div class="flex flex-col gap-6">
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr"
-      >
+<section class="py-32 bg-gradient-to-br from-neutral-50 to-neutral-100 relative overflow-hidden" id="services">
+  <!-- Background Elements -->
+  <div class="absolute inset-0 opacity-40">
+    <div class="absolute top-20 right-20 w-64 h-64 bg-primary-200/30 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 left-20 w-96 h-96 bg-accent-200/20 rounded-full blur-3xl"></div>
+  </div>
+  
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-20">
+      <div class="inline-flex items-center px-4 py-2 rounded-full bg-primary-100 text-primary-700 text-sm font-medium mb-6">
+        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+        </svg>
+        Services & Solutions
+      </div>
+      
+      <h2 class="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+        AI & Web Development
+        <span class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent block">
+          Services
+        </span>
+      </h2>
+      
+      <p class="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
+        From simple business websites to complex full-stack applications and cutting-edge AI solutions—I build custom software that brings your ideas to life.
+      </p>
+    </div>
+
+    <div class="space-y-16">
+      <!-- AI Services Section -->
+      <div>
+        <div class="text-center mb-12">
+          <h3 class="text-2xl font-bold text-neutral-900 mb-3">AI Solutions</h3>
+          <p class="text-neutral-600">Cutting-edge artificial intelligence applications and integrations</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <Card
         title="AI Chatbot Solutions"
         priceText="Starting from $3,000"
@@ -48,47 +78,57 @@ import SectionTitle from "./SectionTitle.astro";
           "Documentation & deployment guides",
         ]}
       />
+        </div>
       </div>
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr"
-      >    <Card
-          title="Full-Stack Web Development"
-          priceText="Starting from $3,500"
+
+      <!-- Web Development Section -->
+      <div>
+        <div class="text-center mb-12">
+          <h3 class="text-2xl font-bold text-neutral-900 mb-3">Web Development</h3>
+          <p class="text-neutral-600">Modern, scalable web applications and e-commerce solutions</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <Card
+          title="Website Development"
+          priceText="Starting from $1,500"
           items={[
-            "React/Next.js, Astro, Vue.js applications",
-            "Node.js/Express, FastAPI backends",
-            "PostgreSQL, MongoDB database design",
-            "Tailwind CSS, responsive design",
-            "Authentication (Auth0, Supabase, Clerk)",
-            "Deployment on Vercel, Netlify, Railway",
+            "Business websites & landing pages",
+            "Responsive design with Tailwind CSS",
+            "Content management systems",
+            "SEO optimization & performance",
+            "Contact forms & basic integrations",
+            "Hosting setup & domain configuration",
           ]}
         />
       
         <Card
-          title="Technical Consulting & Learning"
-          priceText="Starting from $150/hour"
+          title="Full-Stack Web Applications"
+          priceText="Starting from $4,000"
+          featured={true}
           items={[
-            "AI integration strategy & planning",
-            "Code reviews & architecture guidance",
-            "Technology stack recommendations",
-            "Learning new frameworks on-demand",
-            "Performance optimization consulting",
-            "Technical documentation & training",
+            "React/Next.js, Java/Node.js applications",
+            "PostgreSQL, MongoDB database systems",
+            "User authentication & authorization",
+            "API development & third-party integrations",
+            "AWS deployment & cloud architecture",
+            "Custom dashboards & admin panels",
           ]}
         />
       
         <Card
-          title="E-commerce & Custom Apps"
-          priceText="Custom Quote"
+          title="Custom Software & Tools"
+          priceText="Starting from $2,500"
           items={[
-            "Shopify store development & customization",
-            "Payment processing (Stripe, PayPal)",
-            "Inventory & order management systems",
-            "Custom business automation tools",
-            "API integrations & webhook systems",
-            "Progressive Web App (PWA) development"
+            "Utility applications & automation tools",
+            "Data processing & migration scripts",
+            "Custom APIs & microservices",
+            "Desktop applications (Electron/Java)",
+            "Browser extensions & plugins",
+            "Technical consulting & code reviews",
           ]}
         />
+        </div>
       </div>
+    </div>
   </div>
 </section>
