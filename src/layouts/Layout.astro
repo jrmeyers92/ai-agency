@@ -11,8 +11,8 @@ interface Props {
 }
 
 const {
-  title = "AI Implementation & Web Development Services | St. Louis, MO",
-  description = "Expert AI implementation and web development services in St. Louis. Specializing in custom AI solutions, RAG applications, and enterprise-grade web development. Transform your business with cutting-edge artificial intelligence.",
+  title = "Jake Meyers | Freelance AI Developer & Full-Stack Developer in St. Louis, MO",
+  description = "Freelance developer specializing in AI solutions, RAG applications, chatbots, MCP servers, and full-stack web development. Based in St. Louis, serving clients worldwide. Get custom AI and web solutions built by an experienced independent developer.",
   image = "/social-image.jpg", // Add your default social image
 } = Astro.props;
 
@@ -22,44 +22,118 @@ const canonicalURL = new URL(
   import.meta.env.SITE ?? 'https://gatewaydigitalstudio.com'
 );
 
-// Structured data for local business
+// Enhanced structured data for freelance developer
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Your Business Name",
+  "@type": ["Person", "ProfessionalService"],
+  "name": "Jake Meyers",
+  "jobTitle": "Freelance AI Developer & Full-Stack Developer",
   "description": description,
   "@id": canonicalURL.toString(),
   "url": canonicalURL.toString(),
-  "telephone": "+1-xxx-xxx-xxxx", // Add your phone
+  "telephone": "(417) 403-1570",
+  "email": "JakeRMeyers92@gmail.com",
+  "image": "/about.jpg",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Your Street Address", // Add your address
     "addressLocality": "St. Louis",
     "addressRegion": "MO",
-    "postalCode": "xxxxx", // Add your zip
     "addressCountry": "US"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 38.6270, // St. Louis coordinates
+    "latitude": 38.6270,
     "longitude": -90.1994
   },
-  "areaServed": {
-    "@type": "GeoCircle",
-    "geoMidpoint": {
-      "@type": "GeoCoordinates",
-      "latitude": 38.6270,
-      "longitude": -90.1994
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "St. Louis",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Missouri"
+      }
     },
-    "geoRadius": "50000"
+    {
+      "@type": "Country",
+      "name": "United States"
+    },
+    "Worldwide"
+  ],
+  "serviceType": [
+    "AI Application Development",
+    "RAG Implementation",
+    "Chatbot Development", 
+    "MCP Server Development",
+    "Full-Stack Web Development",
+    "Technical Consulting"
+  ],
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "RAG Applications",
+    "Chatbots",
+    "MCP Servers",
+    "Full-Stack Development",
+    "React",
+    "Next.js",
+    "Node.js",
+    "Python",
+    "FastAPI",
+    "TypeScript",
+    "OpenAI API",
+    "Anthropic Claude",
+    "LangChain",
+    "Vector Databases"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "AI & Web Development Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "RAG Application Development",
+          "description": "Custom Retrieval-Augmented Generation systems"
+        },
+        "price": "5000",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "5000",
+          "priceCurrency": "USD",
+          "valueAddedTaxIncluded": false
+        }
+      },
+      {
+        "@type": "Offer", 
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AI Chatbot Development",
+          "description": "Custom AI chatbots with OpenAI and Anthropic APIs"
+        },
+        "price": "3000",
+        "priceCurrency": "USD"
+      }
+    ]
   },
   "sameAs": [
-    "https://www.linkedin.com/company/your-company", // Add your social links
-    "https://github.com/your-company",
-    "https://twitter.com/your-company"
+    "https://github.com/jrmeyers92"
   ],
-  "openingHours": "Mo,Tu,We,Th,Fr 09:00-17:00",
-  "priceRange": "$$"
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Freelance"
+  },
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "AI & Machine Learning Expertise"
+    },
+    {
+      "@type": "EducationalOccupationalCredential", 
+      "name": "Full-Stack Development"
+    }
+  ]
 };
 ---
 
@@ -78,7 +152,7 @@ const structuredData = {
     <link rel="canonical" href={canonicalURL} />
     
     <!-- Keywords -->
-    <meta name="keywords" content="AI implementation, artificial intelligence, web development, St. Louis, Missouri, RAG applications, custom AI solutions, enterprise software, machine learning, chatbots, AI consulting" />
+    <meta name="keywords" content="freelance AI developer, RAG applications, MCP servers, chatbots, full-stack developer, St. Louis Missouri, AI consulting, React developer, Python developer, custom AI solutions, independent developer" />
     
     <!-- Indexing/Robots -->
     <meta name="robots" content="index, follow" />
@@ -94,10 +168,25 @@ const structuredData = {
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@jrmeyers92" />
+    <meta name="twitter:creator" content="@jrmeyers92" />
     <meta name="twitter:url" content={canonicalURL} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={image} />
+    <meta name="twitter:image" content={new URL(image, canonicalURL).toString()} />
+    <meta name="twitter:image:alt" content="Jake Meyers - Freelance AI Developer & Full-Stack Developer" />
+    
+    <!-- LinkedIn -->
+    <meta property="og:site_name" content="Jake Meyers - Freelance Developer" />
+    <meta property="article:author" content="Jake Meyers" />
+    
+    <!-- Additional Social Meta -->
+    <meta name="theme-color" content="#3B82F6" />
+    <meta name="msapplication-TileColor" content="#3B82F6" />
+    
+    <!-- Rich Snippets -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -111,6 +200,11 @@ const structuredData = {
 
 	<GoogleAnalytics id="G-DQ04W7HCE8" /> 
 
+    <!-- Performance Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    
     <!-- Astro View Transitions -->
     <ViewTransitions />
   </head>

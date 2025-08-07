@@ -4,91 +4,89 @@ import SectionTitle from "./SectionTitle.astro";
 ---
 
 <section class="px-4 py-24 max-w-[1400px] mx-auto" id="services">
-  <SectionTitle title="What We Offer" className="mb-6" />
+  <SectionTitle title="AI & Web Development Services" className="mb-6" />
   <div class="flex flex-col gap-6">
       <div
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr"
       >
       <Card
         title="AI Chatbot Solutions"
-        priceText="Starting from $4,000"
+        priceText="Starting from $3,000"
         items={[
-          "Custom chatbot with your brand voice",
-          "Integration with your website/platform",
-          "Training on your public documentation",
-          "Basic analytics and monitoring",
-          "Custom conversation flows",
-          "Admin dashboard for management",
+          "Custom chatbots using OpenAI, Anthropic APIs",
+          "Next.js/React frontend integration",
+          "Training on your documentation & data",
+          "Conversation flow design & testing",
+          "Analytics dashboard (Python/TypeScript)",
+          "Deployment on Vercel/Netlify",
         ]}
       />
       
       <Card
-        title="RAG Implementation"
-        priceText="Starting from $6,000"
+        title="RAG Applications"
+        priceText="Starting from $5,000"
         featured={true}
         items={[
-          "Custom RAG system with your internal data",
-          "Document processing and vectorization",
-          "Secure knowledge base creation",
-          "Chat interface for easy access",
-          "User authentication and roles",
-          "Usage analytics and monitoring",
+          "Custom RAG systems with LangChain/LlamaIndex",
+          "Vector databases (Pinecone, Weaviate, Supabase)",
+          "Document processing pipelines",
+          "Secure authentication & user management",
+          "Chat interfaces with context awareness",
+          "FastAPI/Node.js backend development",
         ]}
       />
       
       <Card
-        title="Advanced AI Solutions"
-        priceText="Custom Quote"
+        title="MCP Server Development"
+        priceText="Starting from $2,000"
         items={[
-          "Multi-agent systems for complex workflows",
-          "Custom AI automation solutions",
-          "Integration with existing business systems",
-          "Advanced RAG with multiple data sources",
-          "API development for your use case",
-          "Comprehensive training & documentation",
-          "Ongoing maintenance and updates"
+          "Custom Model Context Protocol servers",
+          "Integration with Claude Desktop/API",
+          "Tool function development",
+          "Resource management systems",
+          "TypeScript/Python implementation",
+          "Documentation & deployment guides",
         ]}
       />
       </div>
       <div
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr"
       >    <Card
-          title="Basic Web Solutions"
-          priceText="Starting from $2,500"
+          title="Full-Stack Web Development"
+          priceText="Starting from $3,500"
           items={[
-            "Static website development",
-            "CMS implementation (WordPress, etc.)",
-            "Mobile-responsive design",
-            "Basic SEO optimization",
-            "Contact forms and basic features",
-            "Domain and hosting setup",
+            "React/Next.js, Astro, Vue.js applications",
+            "Node.js/Express, FastAPI backends",
+            "PostgreSQL, MongoDB database design",
+            "Tailwind CSS, responsive design",
+            "Authentication (Auth0, Supabase, Clerk)",
+            "Deployment on Vercel, Netlify, Railway",
           ]}
         />
       
         <Card
-          title="E-commerce Solutions"
-          priceText="Starting from $5,000"
+          title="Technical Consulting & Learning"
+          priceText="Starting from $150/hour"
           items={[
-            "Custom Shopify store development",
-            "Product catalog setup",
-            "Payment gateway integration",
-            "Inventory management system",
-            "Order processing automation",
-            "Analytics and reporting",
+            "AI integration strategy & planning",
+            "Code reviews & architecture guidance",
+            "Technology stack recommendations",
+            "Learning new frameworks on-demand",
+            "Performance optimization consulting",
+            "Technical documentation & training",
           ]}
         />
       
         <Card
-          title="Custom Web Applications"
+          title="E-commerce & Custom Apps"
           priceText="Custom Quote"
           items={[
-            "Full-stack application development",
-            "Custom feature implementation",
-            "Database design and optimization",
-            "API development and integration",
-            "User authentication and roles",
-            "Scalable cloud infrastructure",
-            "Ongoing maintenance available"
+            "Shopify store development & customization",
+            "Payment processing (Stripe, PayPal)",
+            "Inventory & order management systems",
+            "Custom business automation tools",
+            "API integrations & webhook systems",
+            "Progressive Web App (PWA) development"
           ]}
         />
       </div>

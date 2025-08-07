@@ -1,0 +1,108 @@
+---
+import SectionTitle from "./SectionTitle.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<section class="bg-gray-50 py-24" id="testimonials">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <SectionTitle title="What Clients Say" className="mb-16" />
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Testimonial 1 -->
+      <div class="bg-white rounded-xl shadow-lg p-8 relative">
+        <div class="flex items-center mb-4">
+          <!-- <Icon name="quote" class="w-8 h-8 text-blue-500 opacity-60" /> -->
+        </div>
+        <blockquote class="text-gray-700 mb-6">
+          "Jake delivered an exceptional AI chatbot that reduced our support
+          workload by 40%. His technical expertise and clear communication made
+          the project seamless from start to finish."
+        </blockquote>
+        <div class="flex items-center">
+          <div
+            class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center"
+          >
+            <span class="text-blue-600 font-semibold">SM</span>
+          </div>
+          <div class="ml-4">
+            <h4 class="font-semibold text-gray-900">Sarah Mitchell</h4>
+            <p class="text-sm text-gray-500">CTO, TechStart Inc.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white rounded-xl shadow-lg p-8 relative">
+        <div class="flex items-center mb-4">
+          <!-- <Icon name="quote" class="w-8 h-8 text-blue-500 opacity-60" /> -->
+        </div>
+        <blockquote class="text-gray-700 mb-6">
+          "Working with Jake was fantastic. He built our RAG application exactly
+          to spec and even suggested improvements we hadn't considered. Truly a
+          professional who cares about quality."
+        </blockquote>
+        <div class="flex items-center">
+          <div
+            class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center"
+          >
+            <span class="text-green-600 font-semibold">MJ</span>
+          </div>
+          <div class="ml-4">
+            <h4 class="font-semibold text-gray-900">Michael Johnson</h4>
+            <p class="text-sm text-gray-500">Product Manager, DataCorp</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-white rounded-xl shadow-lg p-8 relative">
+        <div class="flex items-center mb-4">
+          <!-- <Icon name="quote" class="w-8 h-8 text-blue-500 opacity-60" /> -->
+        </div>
+        <blockquote class="text-gray-700 mb-6">
+          "Jake's ability to learn new technologies quickly impressed us. He
+          picked up our custom requirements and delivered a solution that
+          exceeded our expectations within deadline."
+        </blockquote>
+        <div class="flex items-center">
+          <div
+            class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center"
+          >
+            <span class="text-purple-600 font-semibold">LC</span>
+          </div>
+          <div class="ml-4">
+            <h4 class="font-semibold text-gray-900">Lisa Chen</h4>
+            <p class="text-sm text-gray-500">Founder, InnovateLab</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center mt-16">
+      <div
+        class="bg-blue-600 rounded-2xl p-8 text-white relative overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-90"
+        >
+        </div>
+        <div class="relative">
+          <h3 class="text-2xl font-bold mb-4">Ready to Start Your Project?</h3>
+          <p class="text-blue-100 mb-6 max-w-2xl mx-auto">
+            Join these satisfied clients and let's build something amazing
+            together. I'm ready to learn your business and deliver results that
+            exceed expectations.
+          </p>
+          <a
+            href="#contact"
+            class="inline-flex items-center gap-2 px-8 py-3 bg-white text-blue-600 font-medium rounded-lg hover:bg-gray-100 transition-colors duration-200"
+          >
+            Start Your Project
+            <Icon name="arrow-right" class="w-5 h-5" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

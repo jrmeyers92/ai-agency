@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://gatewaydigitalstudio.com/sitemap-index.xml
+
+# Crawl delay for better server performance
+Crawl-delay: 1
+
+# Priority pages
+Allow: /blog/
+Allow: /portfolio/
+Allow: /services/
+Allow: /contact/
