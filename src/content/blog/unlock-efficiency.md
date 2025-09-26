@@ -60,7 +60,7 @@ Implementing AI doesn’t have to be overwhelming. Here’s how [Your Agency Nam
 3. Integration: Our team will integrate AI tools into your existing systems, ensuring a seamless transition.
 4. Training: We’ll provide training and ongoing support to ensure your team can make the most of your AI investment.
 
-Why Choose **Gateway Digital Studio**?
+Why Choose **Me**?
 
 We understand the challenges SMBs face and are passionate about delivering solutions that drive real results. Our expertise in AI and web development allows us to create powerful, user-friendly systems that help you save time, cut costs, and stay ahead of the competition.
 

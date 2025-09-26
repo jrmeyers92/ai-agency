@@ -1,8 +1,7 @@
 ---
 import { ViewTransitions } from "astro:transitions";
-import GoogleAnalytics from '../components/GoogleAnalytics.astro';
+import GoogleAnalytics from "../components/GoogleAnalytics.astro";
 import Nav from "../components/Nav.astro";
-
 
 interface Props {
   title?: string;
@@ -19,56 +18,56 @@ const {
 // Safe canonical URL creation
 const canonicalURL = new URL(
   Astro.url.pathname,
-  import.meta.env.SITE ?? 'https://gatewaydigitalstudio.com'
+  import.meta.env.SITE ?? "https://jake-meyers.com",
 );
 
 // Enhanced structured data for freelance developer
 const structuredData = {
   "@context": "https://schema.org",
   "@type": ["Person", "ProfessionalService"],
-  "name": "Jake Meyers",
-  "jobTitle": "Freelance AI Developer & Full-Stack Developer",
-  "description": description,
+  name: "Jake Meyers",
+  jobTitle: "Freelance AI Developer & Full-Stack Developer",
+  description: description,
   "@id": canonicalURL.toString(),
-  "url": canonicalURL.toString(),
-  "telephone": "(417) 403-1570",
-  "email": "JakeRMeyers92@gmail.com",
-  "image": "/about.jpg",
-  "address": {
+  url: canonicalURL.toString(),
+  telephone: "(417) 403-1570",
+  email: "JakeRMeyers92@gmail.com",
+  image: "/about.jpg",
+  address: {
     "@type": "PostalAddress",
-    "addressLocality": "St. Louis",
-    "addressRegion": "MO",
-    "addressCountry": "US"
+    addressLocality: "St. Louis",
+    addressRegion: "MO",
+    addressCountry: "US",
   },
-  "geo": {
+  geo: {
     "@type": "GeoCoordinates",
-    "latitude": 38.6270,
-    "longitude": -90.1994
+    latitude: 38.627,
+    longitude: -90.1994,
   },
-  "areaServed": [
+  areaServed: [
     {
       "@type": "City",
-      "name": "St. Louis",
-      "containedInPlace": {
+      name: "St. Louis",
+      containedInPlace: {
         "@type": "State",
-        "name": "Missouri"
-      }
+        name: "Missouri",
+      },
     },
     {
       "@type": "Country",
-      "name": "United States"
+      name: "United States",
     },
-    "Worldwide"
+    "Worldwide",
   ],
-  "serviceType": [
+  serviceType: [
     "AI Application Development",
     "RAG Implementation",
-    "Chatbot Development", 
+    "Chatbot Development",
     "MCP Server Development",
     "Full-Stack Web Development",
-    "Technical Consulting"
+    "Technical Consulting",
   ],
-  "knowsAbout": [
+  knowsAbout: [
     "Artificial Intelligence",
     "RAG Applications",
     "Chatbots",
@@ -83,57 +82,55 @@ const structuredData = {
     "OpenAI API",
     "Anthropic Claude",
     "LangChain",
-    "Vector Databases"
+    "Vector Databases",
   ],
-  "hasOfferCatalog": {
+  hasOfferCatalog: {
     "@type": "OfferCatalog",
-    "name": "AI & Web Development Services",
-    "itemListElement": [
+    name: "AI & Web Development Services",
+    itemListElement: [
       {
         "@type": "Offer",
-        "itemOffered": {
+        itemOffered: {
           "@type": "Service",
-          "name": "RAG Application Development",
-          "description": "Custom Retrieval-Augmented Generation systems"
+          name: "RAG Application Development",
+          description: "Custom Retrieval-Augmented Generation systems",
         },
-        "price": "5000",
-        "priceCurrency": "USD",
-        "priceSpecification": {
+        price: "5000",
+        priceCurrency: "USD",
+        priceSpecification: {
           "@type": "PriceSpecification",
-          "price": "5000",
-          "priceCurrency": "USD",
-          "valueAddedTaxIncluded": false
-        }
+          price: "5000",
+          priceCurrency: "USD",
+          valueAddedTaxIncluded: false,
+        },
       },
       {
-        "@type": "Offer", 
-        "itemOffered": {
+        "@type": "Offer",
+        itemOffered: {
           "@type": "Service",
-          "name": "AI Chatbot Development",
-          "description": "Custom AI chatbots with OpenAI and Anthropic APIs"
+          name: "AI Chatbot Development",
+          description: "Custom AI chatbots with OpenAI and Anthropic APIs",
         },
-        "price": "3000",
-        "priceCurrency": "USD"
-      }
-    ]
+        price: "3000",
+        priceCurrency: "USD",
+      },
+    ],
   },
-  "sameAs": [
-    "https://github.com/jrmeyers92"
-  ],
-  "worksFor": {
+  sameAs: ["https://github.com/jrmeyers92"],
+  worksFor: {
     "@type": "Organization",
-    "name": "Freelance"
+    name: "Freelance",
   },
-  "hasCredential": [
+  hasCredential: [
     {
       "@type": "EducationalOccupationalCredential",
-      "name": "AI & Machine Learning Expertise"
+      name: "AI & Machine Learning Expertise",
     },
     {
-      "@type": "EducationalOccupationalCredential", 
-      "name": "Full-Stack Development"
-    }
-  ]
+      "@type": "EducationalOccupationalCredential",
+      name: "Full-Stack Development",
+    },
+  ],
 };
 ---
 
@@ -142,22 +139,28 @@ const structuredData = {
   <head>
     <!-- Essential Meta Tags -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta name="generator" content={Astro.generator} />
-    
+
     <!-- SEO Meta Tags -->
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="author" content="Jake Meyers" />
     <link rel="canonical" href={canonicalURL} />
-    
+
     <!-- Keywords -->
-    <meta name="keywords" content="freelance AI developer, RAG applications, MCP servers, chatbots, full-stack developer, St. Louis Missouri, AI consulting, React developer, Python developer, custom AI solutions, independent developer" />
-    
+    <meta
+      name="keywords"
+      content="freelance AI developer, RAG applications, MCP servers, chatbots, full-stack developer, St. Louis Missouri, AI consulting, React developer, Python developer, custom AI solutions, independent developer"
+    />
+
     <!-- Indexing/Robots -->
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL} />
@@ -165,7 +168,7 @@ const structuredData = {
     <meta property="og:description" content={description} />
     <meta property="og:image" content={image} />
     <meta property="og:locale" content="en_US" />
-    
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@jrmeyers92" />
@@ -173,61 +176,74 @@ const structuredData = {
     <meta name="twitter:url" content={canonicalURL} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={new URL(image, canonicalURL).toString()} />
-    <meta name="twitter:image:alt" content="Jake Meyers - Freelance AI Developer & Full-Stack Developer" />
-    
+    <meta
+      name="twitter:image"
+      content={new URL(image, canonicalURL).toString()}
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Jake Meyers - Freelance AI Developer & Full-Stack Developer"
+    />
+
     <!-- LinkedIn -->
     <meta property="og:site_name" content="Jake Meyers - Freelance Developer" />
     <meta property="article:author" content="Jake Meyers" />
-    
+
     <!-- Additional Social Meta -->
     <meta name="theme-color" content="#3B82F6" />
     <meta name="msapplication-TileColor" content="#3B82F6" />
-    
+
     <!-- Rich Snippets -->
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    
-    <!-- Local Business Schema -->
-    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
 
-	<GoogleAnalytics id="G-DQ04W7HCE8" /> 
+    <!-- Local Business Schema -->
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(structuredData)}
+    />
+
+    <GoogleAnalytics id="G-DQ04W7HCE8" />
 
     <!-- Performance Optimization -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://www.googletagmanager.com" />
-    
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bricolage+Grotesque:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bricolage+Grotesque:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Astro View Transitions -->
     <ViewTransitions />
   </head>
   <body>
-	<Nav />
+    <Nav />
     <slot />
   </body>
 </html>
 
 <style is:global>
   :root {
-    --font-fallback: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
-      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font-fallback: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
   }
-  
+
   html {
     font-family: var(--font-fallback);
     scroll-behavior: smooth;
   }
-  
+
   body {
     margin: 0;
     width: 100%;
