@@ -2,117 +2,496 @@
 import SectionTitle from "./SectionTitle.astro";
 ---
 
-<section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24" id="faq">
-  <SectionTitle title="Frequently Asked Questions" className="mb-16" />
-  
-  <div class="space-y-6">
-    <!-- FAQ 1 -->
-    <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-      <button class="w-full px-6 py-4 text-left focus:outline-none focus:ring-2 focus:ring-blue-500 faq-button">
-        <div class="flex items-center justify-between">
-          <h3 class="text-lg font-semibold text-gray-900">How much does it cost to build a RAG application?</h3>
-          <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200 faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
+<section
+  class="py-32 bg-gradient-to-br from-neutral-50 to-white relative overflow-hidden"
+  id="faq"
+>
+  <!-- Background Elements -->
+  <div class="absolute inset-0 opacity-40">
+    <div
+      class="absolute top-20 right-20 w-64 h-64 bg-primary-200/30 rounded-full blur-3xl"
+    >
+    </div>
+    <div
+      class="absolute bottom-20 left-20 w-96 h-96 bg-accent-200/20 rounded-full blur-3xl"
+    >
+    </div>
+  </div>
+
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <div
+        class="inline-flex items-center px-4 py-2 rounded-full bg-primary-100 text-primary-700 text-sm font-medium mb-6"
+      >
+        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+          ></path>
+        </svg>
+        Common Questions
+      </div>
+
+      <h2 class="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+        Frequently Asked
+        <span
+          class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent"
+        >
+          Questions
+        </span>
+      </h2>
+
+      <p class="text-xl text-neutral-600 max-w-2xl mx-auto">
+        Everything you need to know about working with me. Can't find your
+        answer? Feel free to reach out.
+      </p>
+    </div>
+
+    <div class="space-y-4">
+      <!-- FAQ 1 -->
+      <div
+        class="group bg-white rounded-2xl shadow-soft border border-neutral-200 overflow-hidden hover:shadow-md transition-all duration-300"
+      >
+        <button
+          class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-2xl faq-button"
+        >
+          <div class="flex items-center justify-between gap-4">
+            <h3
+              class="text-lg font-semibold text-neutral-900 group-hover:text-primary-600 transition-colors"
+            >
+              How much does a website or web application cost?
+            </h3>
+            <div
+              class="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center group-hover:bg-primary-200 transition-colors"
+            >
+              <svg
+                class="w-5 h-5 text-primary-600 transform transition-transform duration-300 faq-arrow"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+          </div>
+        </button>
+        <div class="hidden px-8 pb-6 faq-content">
+          <p class="text-neutral-600 leading-relaxed">
+            Project costs vary based on complexity and requirements. Business
+            websites typically start at $1,500, while full-stack applications
+            start around $4,000. I provide detailed, fixed-price quotes after
+            our initial consultation where we discuss your specific needs,
+            features, and timeline.
+          </p>
         </div>
-      </button>
-      <div class="hidden px-6 pb-4 faq-content">
-        <p class="text-gray-600">RAG application development typically starts at $5,000 for basic implementations. The cost varies based on data complexity, integration requirements, and custom features. I provide detailed quotes after understanding your specific needs during our discovery call.</p>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div
+        class="group bg-white rounded-2xl shadow-soft border border-neutral-200 overflow-hidden hover:shadow-md transition-all duration-300"
+      >
+        <button
+          class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-2xl faq-button"
+        >
+          <div class="flex items-center justify-between gap-4">
+            <h3
+              class="text-lg font-semibold text-neutral-900 group-hover:text-primary-600 transition-colors"
+            >
+              How long does it take to build a website or application?
+            </h3>
+            <div
+              class="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center group-hover:bg-primary-200 transition-colors"
+            >
+              <svg
+                class="w-5 h-5 text-primary-600 transform transition-transform duration-300 faq-arrow"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+          </div>
+        </button>
+        <div class="hidden px-8 pb-6 faq-content">
+          <p class="text-neutral-600 leading-relaxed">
+            Timeline depends on project scope. A standard business website
+            typically takes 2-3 weeks, while full-stack applications can take
+            6-10 weeks. I'll provide a detailed timeline during our discovery
+            phase and keep you updated throughout development with regular
+            progress updates.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div
+        class="group bg-white rounded-2xl shadow-soft border border-neutral-200 overflow-hidden hover:shadow-md transition-all duration-300"
+      >
+        <button
+          class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-2xl faq-button"
+        >
+          <div class="flex items-center justify-between gap-4">
+            <h3
+              class="text-lg font-semibold text-neutral-900 group-hover:text-primary-600 transition-colors"
+            >
+              Do you offer ongoing support and maintenance?
+            </h3>
+            <div
+              class="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center group-hover:bg-primary-200 transition-colors"
+            >
+              <svg
+                class="w-5 h-5 text-primary-600 transform transition-transform duration-300 faq-arrow"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+          </div>
+        </button>
+        <div class="hidden px-8 pb-6 faq-content">
+          <p class="text-neutral-600 leading-relaxed">
+            Yes! All projects include a 30-day bug fix warranty after launch.
+            For ongoing support, I offer monthly maintenance packages that
+            include updates, security patches, content changes, and priority
+            support. We can discuss the best support plan for your needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div
+        class="group bg-white rounded-2xl shadow-soft border border-neutral-200 overflow-hidden hover:shadow-md transition-all duration-300"
+      >
+        <button
+          class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-2xl faq-button"
+        >
+          <div class="flex items-center justify-between gap-4">
+            <h3
+              class="text-lg font-semibold text-neutral-900 group-hover:text-primary-600 transition-colors"
+            >
+              Can you integrate AI features into my website or app?
+            </h3>
+            <div
+              class="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center group-hover:bg-primary-200 transition-colors"
+            >
+              <svg
+                class="w-5 h-5 text-primary-600 transform transition-transform duration-300 faq-arrow"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+          </div>
+        </button>
+        <div class="hidden px-8 pb-6 faq-content">
+          <p class="text-neutral-600 leading-relaxed">
+            Absolutely! I can add AI capabilities like chatbots, intelligent
+            search, content generation, or custom automation to any project.
+            We'll discuss whether AI makes sense for your use case and implement
+            solutions that provide real value to your users without unnecessary
+            complexity.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div
+        class="group bg-white rounded-2xl shadow-soft border border-neutral-200 overflow-hidden hover:shadow-md transition-all duration-300"
+      >
+        <button
+          class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-2xl faq-button"
+        >
+          <div class="flex items-center justify-between gap-4">
+            <h3
+              class="text-lg font-semibold text-neutral-900 group-hover:text-primary-600 transition-colors"
+            >
+              Do you work with clients remotely?
+            </h3>
+            <div
+              class="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center group-hover:bg-primary-200 transition-colors"
+            >
+              <svg
+                class="w-5 h-5 text-primary-600 transform transition-transform duration-300 faq-arrow"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+          </div>
+        </button>
+        <div class="hidden px-8 pb-6 faq-content">
+          <p class="text-neutral-600 leading-relaxed">
+            Yes! While I'm based in St. Louis, Missouri, I work with clients
+            anywhere. I've successfully completed projects for businesses across
+            the US and internationally. We'll communicate via video calls,
+            email, and project management tools to ensure smooth collaboration
+            regardless of location.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 6 -->
+      <div
+        class="group bg-white rounded-2xl shadow-soft border border-neutral-200 overflow-hidden hover:shadow-md transition-all duration-300"
+      >
+        <button
+          class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-2xl faq-button"
+        >
+          <div class="flex items-center justify-between gap-4">
+            <h3
+              class="text-lg font-semibold text-neutral-900 group-hover:text-primary-600 transition-colors"
+            >
+              What technologies and tools do you use?
+            </h3>
+            <div
+              class="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center group-hover:bg-primary-200 transition-colors"
+            >
+              <svg
+                class="w-5 h-5 text-primary-600 transform transition-transform duration-300 faq-arrow"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+          </div>
+        </button>
+        <div class="hidden px-8 pb-6 faq-content">
+          <p class="text-neutral-600 leading-relaxed mb-4">
+            I use modern, reliable technologies that ensure your project is
+            fast, secure, and maintainable:
+          </p>
+          <ul class="text-neutral-600 leading-relaxed space-y-2 ml-6">
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span
+                ><strong>Frontend:</strong> React, Next.js, Astro, Tailwind CSS</span
+              >
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span
+                ><strong>Backend:</strong> Node.js, Python (FastAPI), Java</span
+              >
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span><strong>Databases:</strong> PostgreSQL, MongoDB</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span><strong>Deployment:</strong> Vercel, AWS, Netlify</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FAQ 7 -->
+      <div
+        class="group bg-white rounded-2xl shadow-soft border border-neutral-200 overflow-hidden hover:shadow-md transition-all duration-300"
+      >
+        <button
+          class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-2xl faq-button"
+        >
+          <div class="flex items-center justify-between gap-4">
+            <h3
+              class="text-lg font-semibold text-neutral-900 group-hover:text-primary-600 transition-colors"
+            >
+              What's your process for starting a new project?
+            </h3>
+            <div
+              class="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center group-hover:bg-primary-200 transition-colors"
+            >
+              <svg
+                class="w-5 h-5 text-primary-600 transform transition-transform duration-300 faq-arrow"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+          </div>
+        </button>
+        <div class="hidden px-8 pb-6 faq-content">
+          <p class="text-neutral-600 leading-relaxed mb-4">
+            My process is straightforward and collaborative:
+          </p>
+          <ol
+            class="text-neutral-600 leading-relaxed space-y-3 ml-6 list-decimal"
+          >
+            <li>
+              <strong>Discovery Call:</strong> We discuss your goals, requirements,
+              and timeline
+            </li>
+            <li>
+              <strong>Proposal:</strong> I provide a detailed quote with project
+              scope and milestones
+            </li>
+            <li>
+              <strong>Agreement:</strong> Once approved, we sign a contract and schedule
+              kickoff
+            </li>
+            <li>
+              <strong>Development:</strong> Regular updates and check-ins throughout
+              the build
+            </li>
+            <li>
+              <strong>Review & Launch:</strong> Testing, refinements, and deployment
+            </li>
+            <li>
+              <strong>Support:</strong> Post-launch support and training as needed
+            </li>
+          </ol>
+        </div>
       </div>
     </div>
 
-    <!-- FAQ 2 -->
-    <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-      <button class="w-full px-6 py-4 text-left focus:outline-none focus:ring-2 focus:ring-blue-500 faq-button">
-        <div class="flex items-center justify-between">
-          <h3 class="text-lg font-semibold text-gray-900">What is an MCP server and do I need one?</h3>
-          <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200 faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+    <!-- Still have questions CTA -->
+    <div class="mt-16 text-center">
+      <div
+        class="bg-gradient-to-r from-primary-50 to-accent-50 rounded-2xl p-8 border border-primary-100"
+      >
+        <h3 class="text-2xl font-bold text-neutral-900 mb-3">
+          Still have questions?
+        </h3>
+        <p class="text-neutral-600 mb-6 max-w-xl mx-auto">
+          Don't see your question answered here? I'm happy to discuss your
+          specific needs and provide personalized answers.
+        </p>
+        <a
+          href="#contact"
+          class="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 text-white font-medium rounded-xl hover:bg-primary-700 transition-colors duration-200 shadow-md hover:shadow-lg"
+        >
+          Get in Touch
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
           </svg>
-        </div>
-      </button>
-      <div class="hidden px-6 pb-4 faq-content">
-        <p class="text-gray-600">Model Context Protocol (MCP) servers connect Claude Desktop to your custom data sources and tools. They're perfect if you want Claude to access your company databases, APIs, or internal systems. Starting at $2,000, they can dramatically improve your AI workflow efficiency.</p>
-      </div>
-    </div>
-
-    <!-- FAQ 3 -->
-    <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-      <button class="w-full px-6 py-4 text-left focus:outline-none focus:ring-2 focus:ring-blue-500 faq-button">
-        <div class="flex items-center justify-between">
-          <h3 class="text-lg font-semibold text-gray-900">How long does it take to develop a custom AI chatbot?</h3>
-          <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200 faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </div>
-      </button>
-      <div class="hidden px-6 pb-4 faq-content">
-        <p class="text-gray-600">Most AI chatbots take 4-6 weeks to develop and deploy. This includes requirements gathering, data preparation, training, testing, and integration. Simple chatbots can be ready in 2-3 weeks, while complex multi-agent systems may take 8-12 weeks.</p>
-      </div>
-    </div>
-
-    <!-- FAQ 4 -->
-    <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-      <button class="w-full px-6 py-4 text-left focus:outline-none focus:ring-2 focus:ring-blue-500 faq-button">
-        <div class="flex items-center justify-between">
-          <h3 class="text-lg font-semibold text-gray-900">Do you work with clients outside of St. Louis?</h3>
-          <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200 faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </div>
-      </button>
-      <div class="hidden px-6 pb-4 faq-content">
-        <p class="text-gray-600">Absolutely! While I'm based in St. Louis, Missouri, I work with clients worldwide. I've successfully delivered projects for companies across the US, Europe, and Asia. All communication is done remotely via video calls, email, and project management tools.</p>
-      </div>
-    </div>
-
-    <!-- FAQ 5 -->
-    <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-      <button class="w-full px-6 py-4 text-left focus:outline-none focus:ring-2 focus:ring-blue-500 faq-button">
-        <div class="flex items-center justify-between">
-          <h3 class="text-lg font-semibold text-gray-900">What makes you different from other AI developers?</h3>
-          <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200 faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </div>
-      </button>
-      <div class="hidden px-6 pb-4 faq-content">
-        <p class="text-gray-600">As a freelance developer, you get direct access to me throughout your project—no account managers or middlemen. I specialize in cutting-edge AI technologies like RAG systems and MCP servers, and I'm committed to learning new technologies as your project evolves. Plus, you typically save 40-60% compared to agency costs.</p>
-      </div>
-    </div>
-
-    <!-- FAQ 6 -->
-    <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-      <button class="w-full px-6 py-4 text-left focus:outline-none focus:ring-2 focus:ring-blue-500 faq-button">
-        <div class="flex items-center justify-between">
-          <h3 class="text-lg font-semibold text-gray-900">What technologies do you use for full-stack development?</h3>
-          <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200 faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </div>
-      </button>
-      <div class="hidden px-6 pb-4 faq-content">
-        <p class="text-gray-600">I primarily use React, Next.js, and Astro for frontend development, Node.js and Python (FastAPI) for backends, PostgreSQL and MongoDB for databases, and deploy on Vercel, Netlify, and Railway. For AI projects, I work with OpenAI, Anthropic, LangChain, and various vector databases.</p>
+        </a>
       </div>
     </div>
   </div>
 </section>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const faqButtons = document.querySelectorAll('.faq-button');
-    
-    faqButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        const content = this.nextElementSibling;
-        const arrow = this.querySelector('.faq-arrow');
-        
-        if (content.classList.contains('hidden')) {
-          content.classList.remove('hidden');
-          arrow.style.transform = 'rotate(180deg)';
+  document.addEventListener("DOMContentLoaded", function () {
+    const faqButtons = document.querySelectorAll(".faq-button");
+
+    faqButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        const content = this.nextElementSibling as HTMLElement;
+        const arrow = this.querySelector(".faq-arrow") as HTMLElement;
+        const isHidden = content.classList.contains("hidden");
+
+        // Close all other FAQs
+        document.querySelectorAll(".faq-content").forEach((otherContent) => {
+          if (
+            otherContent !== content &&
+            !otherContent.classList.contains("hidden")
+          ) {
+            otherContent.classList.add("hidden");
+            const otherArrow =
+              otherContent.previousElementSibling?.querySelector(
+                ".faq-arrow",
+              ) as HTMLElement;
+            if (otherArrow) {
+              otherArrow.style.transform = "rotate(0deg)";
+            }
+          }
+        });
+
+        // Toggle current FAQ
+        if (isHidden) {
+          content.classList.remove("hidden");
+          arrow.style.transform = "rotate(180deg)";
+
+          // Smooth scroll into view
+          setTimeout(() => {
+            button.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          }, 100);
         } else {
-          content.classList.add('hidden');
-          arrow.style.transform = 'rotate(0deg)';
+          content.classList.add("hidden");
+          arrow.style.transform = "rotate(0deg)";
         }
       });
     });

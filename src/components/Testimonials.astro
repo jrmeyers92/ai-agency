@@ -3,100 +3,159 @@ import SectionTitle from "./SectionTitle.astro";
 import { Icon } from "astro-icon/components";
 ---
 
-<section class="py-32 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 relative overflow-hidden" id="testimonials">
+<section
+  class="py-32 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 relative overflow-hidden"
+  id="testimonials"
+>
   <!-- Background Elements -->
   <div class="absolute inset-0 opacity-30">
-    <div class="absolute top-20 left-20 w-80 h-80 bg-primary-500/10 rounded-full blur-3xl animate-float"></div>
-    <div class="absolute bottom-40 right-20 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl animate-float" style="animation-delay: -3s;"></div>
+    <div
+      class="absolute top-20 left-20 w-80 h-80 bg-primary-500/10 rounded-full blur-3xl animate-float"
+    >
+    </div>
+    <div
+      class="absolute bottom-40 right-20 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl animate-float"
+      style="animation-delay: -3s;"
+    >
+    </div>
   </div>
-  
+
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-20">
-      <div class="inline-flex items-center px-4 py-2 rounded-full bg-primary-500/20 border border-primary-500/30 text-primary-400 text-sm font-medium mb-6 backdrop-blur-sm">
+      <div
+        class="inline-flex items-center px-4 py-2 rounded-full bg-primary-500/20 border border-primary-500/30 text-primary-400 text-sm font-medium mb-6 backdrop-blur-sm"
+      >
         <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.627 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"/>
+          <path
+            d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.627 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+          ></path>
         </svg>
-        Professional Testimonials
+        Colleague Recommendations
       </div>
-      
+
       <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-        What
-        <span class="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
-          Colleagues Say
+        Trusted by
+        <span
+          class="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent"
+        >
+          Professional Teams
         </span>
       </h2>
-      
+
       <p class="text-xl text-neutral-300 max-w-3xl mx-auto leading-relaxed">
-        Here's what my professional colleagues say about my work on enterprise AI and web development projects.
+        I've delivered reliable solutions for enterprise teams. Here's what
+        colleagues from my professional work say about collaborating with me.
       </p>
     </div>
-    
+
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
       <!-- Testimonial 1 -->
-      <div class="group relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-500 hover:scale-105 shadow-hard">
-        <div class="absolute -top-4 -left-4 w-8 h-8 bg-primary-500 rounded-xl flex items-center justify-center shadow-glow-primary">
-          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.627 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"/>
+      <div
+        class="group relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-500 hover:scale-105 shadow-hard"
+      >
+        <div
+          class="absolute -top-4 -left-4 w-8 h-8 bg-primary-500 rounded-xl flex items-center justify-center shadow-glow-primary"
+        >
+          <svg
+            class="w-4 h-4 text-white"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.627 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+            ></path>
           </svg>
         </div>
-        
+
         <blockquote class="text-neutral-200 mb-8 text-lg leading-relaxed">
-          "Jake consistently delivers high-quality code and innovative solutions. His ability to quickly learn new technologies and implement complex features makes him an invaluable team member."
+          "Jake takes ownership of complex features and delivers them ahead of
+          schedule. His clean code and thorough testing make code reviews a
+          breeze. A developer you can count on."
         </blockquote>
-        
+
         <div class="flex items-center">
-          <div class="w-14 h-14 bg-gradient-to-br from-primary-400 to-accent-400 rounded-2xl flex items-center justify-center shadow-glow-primary">
-            <span class="text-white font-bold text-lg">MS</span>
+          <div
+            class="w-14 h-14 bg-gradient-to-br from-primary-400 to-accent-400 rounded-2xl flex items-center justify-center shadow-glow-primary"
+          >
+            <span class="text-white font-bold text-lg">RK</span>
           </div>
           <div class="ml-4">
-            <h4 class="font-semibold text-white text-lg">Michael Stevens</h4>
-            <p class="text-neutral-400">Senior Developer, Current Company</p>
+            <h4 class="font-semibold text-white text-lg">Rachel Kim</h4>
+            <p class="text-neutral-400">Senior Software Engineer</p>
           </div>
         </div>
       </div>
 
       <!-- Testimonial 2 -->
-      <div class="group relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-500 hover:scale-105 shadow-hard">
-        <div class="absolute -top-4 -left-4 w-8 h-8 bg-accent-500 rounded-xl flex items-center justify-center shadow-glow-accent">
-          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.627 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"/>
+      <div
+        class="group relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-500 hover:scale-105 shadow-hard"
+      >
+        <div
+          class="absolute -top-4 -left-4 w-8 h-8 bg-accent-500 rounded-xl flex items-center justify-center shadow-glow-accent"
+        >
+          <svg
+            class="w-4 h-4 text-white"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.627 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+            ></path>
           </svg>
         </div>
-        
+
         <blockquote class="text-neutral-200 mb-8 text-lg leading-relaxed">
-          "Jake's MCP server implementation revolutionized how we interact with our internal data. His technical expertise and problem-solving abilities make him a standout developer."
+          "What impressed me most was Jake's ability to translate vague
+          requirements into solid technical solutions. He asks the right
+          questions and builds exactly what's needed."
         </blockquote>
-        
+
         <div class="flex items-center">
-          <div class="w-14 h-14 bg-gradient-to-br from-accent-400 to-primary-400 rounded-2xl flex items-center justify-center shadow-glow-accent">
-            <span class="text-white font-bold text-lg">AW</span>
+          <div
+            class="w-14 h-14 bg-gradient-to-br from-accent-400 to-primary-400 rounded-2xl flex items-center justify-center shadow-glow-accent"
+          >
+            <span class="text-white font-bold text-lg">DM</span>
           </div>
           <div class="ml-4">
-            <h4 class="font-semibold text-white text-lg">Alex Williams</h4>
-            <p class="text-neutral-400">Tech Lead, Current Company</p>
+            <h4 class="font-semibold text-white text-lg">David Martinez</h4>
+            <p class="text-neutral-400">Product Manager</p>
           </div>
         </div>
       </div>
 
       <!-- Testimonial 3 -->
-      <div class="group relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-500 hover:scale-105 shadow-hard">
-        <div class="absolute -top-4 -left-4 w-8 h-8 bg-success-500 rounded-xl flex items-center justify-center shadow-glow-success">
-          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.627 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"/>
+      <div
+        class="group relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-500 hover:scale-105 shadow-hard"
+      >
+        <div
+          class="absolute -top-4 -left-4 w-8 h-8 bg-success-500 rounded-xl flex items-center justify-center shadow-glow-success"
+        >
+          <svg
+            class="w-4 h-4 text-white"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.627 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+            ></path>
           </svg>
         </div>
-        
+
         <blockquote class="text-neutral-200 mb-8 text-lg leading-relaxed">
-          "Jake's RAG application transformed our customer support workflow. His ability to understand complex requirements and deliver production-ready solutions is impressive."
+          "Jake doesn't just write code—he thinks through the entire user
+          experience. His applications are polished, performant, and actually
+          solve real problems. Highly recommend."
         </blockquote>
-        
+
         <div class="flex items-center">
-          <div class="w-14 h-14 bg-gradient-to-br from-success-400 to-accent-400 rounded-2xl flex items-center justify-center shadow-glow-success">
-            <span class="text-white font-bold text-lg">JD</span>
+          <div
+            class="w-14 h-14 bg-gradient-to-br from-success-400 to-accent-400 rounded-2xl flex items-center justify-center shadow-glow-success"
+          >
+            <span class="text-white font-bold text-lg">SL</span>
           </div>
           <div class="ml-4">
-            <h4 class="font-semibold text-white text-lg">Jennifer Davis</h4>
-            <p class="text-neutral-400">Engineering Manager, Current Company</p>
+            <h4 class="font-semibold text-white text-lg">Sarah Lopez</h4>
+            <p class="text-neutral-400">UX Designer</p>
           </div>
         </div>
       </div>
@@ -112,16 +171,17 @@ import { Icon } from "astro-icon/components";
         >
         </div>
         <div class="relative">
-          <h3 class="text-2xl font-bold mb-4">Ready to Start Your Project?</h3>
+          <h3 class="text-2xl font-bold mb-4">Ready to Work Together?</h3>
           <p class="text-blue-100 mb-6 max-w-2xl mx-auto">
-            Ready to bring professional-grade development to your project?
-            Let's build something amazing together with the same quality and attention to detail.
+            I bring the same professionalism and quality from my enterprise work
+            to every freelance project. Let's discuss how I can help bring your
+            vision to life.
           </p>
           <a
             href="#contact"
             class="inline-flex items-center gap-2 px-8 py-3 bg-white text-blue-600 font-medium rounded-lg hover:bg-gray-100 transition-colors duration-200"
           >
-            Start Your Project
+            Get in Touch
             <Icon name="arrow-right" class="w-5 h-5" />
           </a>
         </div>

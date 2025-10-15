@@ -6,204 +6,416 @@ import { Icon } from "astro-icon/components";
 <section class="py-32 bg-white relative overflow-hidden" id="portfolio">
   <!-- Background Elements -->
   <div class="absolute inset-0 opacity-30">
-    <div class="absolute top-40 left-20 w-72 h-72 bg-accent-200/20 rounded-full blur-3xl animate-float"></div>
-    <div class="absolute bottom-20 right-40 w-96 h-96 bg-primary-200/20 rounded-full blur-3xl animate-float" style="animation-delay: -2s;"></div>
+    <div
+      class="absolute top-40 left-20 w-72 h-72 bg-accent-200/20 rounded-full blur-3xl animate-float"
+    >
+    </div>
+    <div
+      class="absolute bottom-20 right-40 w-96 h-96 bg-primary-200/20 rounded-full blur-3xl animate-float"
+      style="animation-delay: -2s;"
+    >
+    </div>
   </div>
-  
+
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-20">
-      <div class="inline-flex items-center px-4 py-2 rounded-full bg-accent-100 text-accent-700 text-sm font-medium mb-6">
+      <div
+        class="inline-flex items-center px-4 py-2 rounded-full bg-accent-100 text-accent-700 text-sm font-medium mb-6"
+      >
         <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+          <path
+            d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"
+          ></path>
         </svg>
-        Portfolio & Case Studies
+        Featured Work
       </div>
-      
+
       <h2 class="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-        Recent
-        <span class="bg-gradient-to-r from-accent-600 to-primary-600 bg-clip-text text-transparent">
-          Projects
+        Projects I've
+        <span
+          class="bg-gradient-to-r from-accent-600 to-primary-600 bg-clip-text text-transparent"
+        >
+          Built
         </span>
       </h2>
-      
+
       <p class="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
-        See examples of real-world projects I've built professionally and for practice—from enterprise applications to innovative AI solutions.
+        A selection of professional projects that demonstrate my capabilities
+        across web development, from full-stack applications to specialized
+        solutions.
       </p>
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-    <!-- AI Chatbot Project -->
-    <div class="group relative bg-white rounded-2xl shadow-soft hover:shadow-hard transition-all duration-500 overflow-hidden border border-neutral-100 hover:scale-105">
-      <div class="h-56 bg-gradient-to-br from-primary-500 via-primary-600 to-accent-500 relative overflow-hidden">
-        <div class="absolute inset-0 bg-black/10"></div>
-        <div class="absolute inset-0 flex items-center justify-center">
-          <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-6">
-            <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4l4 4 4-4h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
-            </svg>
+      <!-- Customer Portal Project -->
+      <div
+        class="group relative bg-white rounded-2xl shadow-soft hover:shadow-hard transition-all duration-500 overflow-hidden border border-neutral-100 hover:scale-105"
+      >
+        <div
+          class="h-56 bg-gradient-to-br from-blue-500 via-blue-600 to-indigo-500 relative overflow-hidden"
+        >
+          <div class="absolute inset-0 bg-black/10"></div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-6">
+              <svg
+                class="w-16 h-16 text-white"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <!-- Floating Animation Elements -->
+          <div
+            class="absolute top-4 left-4 w-3 h-3 bg-white/30 rounded-full animate-ping"
+          >
+          </div>
+          <div
+            class="absolute top-8 right-6 w-2 h-2 bg-white/40 rounded-full animate-pulse"
+          >
+          </div>
+          <div
+            class="absolute bottom-6 left-8 w-4 h-4 bg-white/20 rounded-full animate-bounce"
+          >
           </div>
         </div>
-        <!-- Floating Animation Elements -->
-        <div class="absolute top-4 left-4 w-3 h-3 bg-white/30 rounded-full animate-ping"></div>
-        <div class="absolute top-8 right-6 w-2 h-2 bg-white/40 rounded-full animate-pulse"></div>
-        <div class="absolute bottom-6 left-8 w-4 h-4 bg-white/20 rounded-full animate-bounce"></div>
-      </div>
-      
-      <div class="p-8">
-        <div class="flex items-center justify-between mb-4">
-          <h3 class="text-xl font-bold text-neutral-900 group-hover:text-primary-600 transition-colors">
-            AI Customer Support Chatbot
-          </h3>
-          <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-            </svg>
-          </div>
-        </div>
-        
-        <p class="text-neutral-600 mb-6 leading-relaxed">
-          Enterprise AI chatbot built for my current company using OpenAI GPT-4 with RAG implementation for internal knowledge base queries.
-        </p>
-        
-        <div class="flex flex-wrap gap-2 mb-6">
-          <span class="px-3 py-1 bg-primary-100 text-primary-700 text-xs font-medium rounded-full">Next.js</span>
-          <span class="px-3 py-1 bg-success-100 text-success-700 text-xs font-medium rounded-full">OpenAI API</span>
-          <span class="px-3 py-1 bg-accent-100 text-accent-700 text-xs font-medium rounded-full">Pinecone</span>
-          <span class="px-3 py-1 bg-warning-100 text-warning-700 text-xs font-medium rounded-full">FastAPI</span>
-        </div>
-        
-        <div class="flex items-center justify-between pt-4 border-t border-neutral-100">
-          <div class="flex items-center text-sm text-success-600 font-medium">
-            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-            </svg>
-            40% ticket reduction
-          </div>
-          <div class="text-xs text-neutral-500">24/7 availability</div>
-        </div>
-      </div>
-    </div>
 
-    <!-- MCP Server Project -->
-    <div
-      class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
-    >
-      <div class="h-48 bg-gradient-to-br from-green-500 to-teal-600 relative">
-        <div class="absolute inset-0 flex items-center justify-center">
-          <!-- <Icon name="server" class="w-16 h-16 text-white/80" /> -->
-        </div>
-      </div>
-      <div class="p-6">
-        <h3 class="text-xl font-semibold text-gray-900 mb-2">
-          Custom MCP Server
-        </h3>
-        <p class="text-gray-600 mb-4">
-          Model Context Protocol server for Claude Desktop integration with
-          company's internal APIs and databases.
-        </p>
-        <div class="flex flex-wrap gap-2 mb-4">
-          <span
-            class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded"
-            >TypeScript</span
-          >
-          <span
-            class="px-2 py-1 bg-gray-100 text-gray-800 text-xs font-medium rounded"
-            >MCP SDK</span
-          >
-          <span
-            class="px-2 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded"
-            >Claude API</span
-          >
-          <span
-            class="px-2 py-1 bg-red-100 text-red-800 text-xs font-medium rounded"
-            >PostgreSQL</span
-          >
-        </div>
-        <p class="text-sm text-gray-500">
-          <strong>Results:</strong> Streamlined AI workflows, improved data access
-        </p>
-      </div>
-    </div>
+        <div class="p-8">
+          <div class="flex items-center justify-between mb-4">
+            <h3
+              class="text-xl font-bold text-neutral-900 group-hover:text-primary-600 transition-colors"
+            >
+              Customer Portal Dashboard
+            </h3>
+            <div
+              class="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <svg
+                class="w-5 h-5 text-primary-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                ></path>
+              </svg>
+            </div>
+          </div>
 
-    <!-- E-commerce Project -->
-    <div
-      class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
-    >
-      <div class="h-48 bg-gradient-to-br from-orange-500 to-red-600 relative">
-        <div class="absolute inset-0 flex items-center justify-center">
-          <!-- <Icon name="shopping-cart" class="w-16 h-16 text-white/80" /> -->
+          <p class="text-neutral-600 mb-6 leading-relaxed">
+            Full-stack customer portal with real-time data visualization,
+            account management, and integrated billing system built for
+            enterprise use.
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span
+              class="px-3 py-1 bg-primary-100 text-primary-700 text-xs font-medium rounded-full"
+              >React</span
+            >
+            <span
+              class="px-3 py-1 bg-success-100 text-success-700 text-xs font-medium rounded-full"
+              >Node.js</span
+            >
+            <span
+              class="px-3 py-1 bg-accent-100 text-accent-700 text-xs font-medium rounded-full"
+              >PostgreSQL</span
+            >
+            <span
+              class="px-3 py-1 bg-warning-100 text-warning-700 text-xs font-medium rounded-full"
+              >AWS</span
+            >
+          </div>
+
+          <div
+            class="flex items-center justify-between pt-4 border-t border-neutral-100"
+          >
+            <div class="flex items-center text-sm text-success-600 font-medium">
+              <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                ></path>
+              </svg>
+              1,000+ active users
+            </div>
+            <div class="text-xs text-neutral-500">Enterprise</div>
+          </div>
         </div>
       </div>
-      <div class="p-6">
-        <h3 class="text-xl font-semibold text-gray-900 mb-2">
-          Custom E-commerce Platform
-        </h3>
-        <p class="text-gray-600 mb-4">
-          Full-stack e-commerce solution with inventory management, payment
-          processing, and analytics dashboard.
-        </p>
-        <div class="flex flex-wrap gap-2 mb-4">
-          <span
-            class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded"
-            >React</span
+
+      <!-- Internal Tools Project -->
+      <div
+        class="group relative bg-white rounded-2xl shadow-soft hover:shadow-hard transition-all duration-500 overflow-hidden border border-neutral-100 hover:scale-105"
+      >
+        <div
+          class="h-56 bg-gradient-to-br from-green-500 via-emerald-600 to-teal-500 relative overflow-hidden"
+        >
+          <div class="absolute inset-0 bg-black/10"></div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-6">
+              <svg
+                class="w-16 h-16 text-white"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="absolute top-4 right-4 w-3 h-3 bg-white/30 rounded-full animate-ping"
           >
-          <span
-            class="px-2 py-1 bg-green-100 text-green-800 text-xs font-medium rounded"
-            >Node.js</span
+          </div>
+          <div
+            class="absolute bottom-8 left-6 w-2 h-2 bg-white/40 rounded-full animate-pulse"
           >
-          <span
-            class="px-2 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded"
-            >Stripe</span
+          </div>
+          <div
+            class="absolute top-12 left-12 w-4 h-4 bg-white/20 rounded-full animate-bounce"
           >
-          <span
-            class="px-2 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded"
-            >MongoDB</span
-          >
+          </div>
         </div>
-        <p class="text-sm text-gray-500">
-          <strong>Results:</strong> $50k+ monthly revenue, 99.9% uptime
-        </p>
+
+        <div class="p-8">
+          <div class="flex items-center justify-between mb-4">
+            <h3
+              class="text-xl font-bold text-neutral-900 group-hover:text-primary-600 transition-colors"
+            >
+              Automation & Analytics Suite
+            </h3>
+            <div
+              class="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <svg
+                class="w-5 h-5 text-primary-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                ></path>
+              </svg>
+            </div>
+          </div>
+
+          <p class="text-neutral-600 mb-6 leading-relaxed">
+            Internal toolset for data processing automation, reporting
+            dashboards, and workflow optimization. Reduced manual data entry by
+            80%.
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span
+              class="px-3 py-1 bg-primary-100 text-primary-700 text-xs font-medium rounded-full"
+              >Python</span
+            >
+            <span
+              class="px-3 py-1 bg-success-100 text-success-700 text-xs font-medium rounded-full"
+              >FastAPI</span
+            >
+            <span
+              class="px-3 py-1 bg-accent-100 text-accent-700 text-xs font-medium rounded-full"
+              >React</span
+            >
+            <span
+              class="px-3 py-1 bg-warning-100 text-warning-700 text-xs font-medium rounded-full"
+              >MongoDB</span
+            >
+          </div>
+
+          <div
+            class="flex items-center justify-between pt-4 border-t border-neutral-100"
+          >
+            <div class="flex items-center text-sm text-success-600 font-medium">
+              <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                ></path>
+              </svg>
+              80% time saved
+            </div>
+            <div class="text-xs text-neutral-500">Business Tools</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- API Integration Project -->
+      <div
+        class="group relative bg-white rounded-2xl shadow-soft hover:shadow-hard transition-all duration-500 overflow-hidden border border-neutral-100 hover:scale-105"
+      >
+        <div
+          class="h-56 bg-gradient-to-br from-purple-500 via-purple-600 to-pink-500 relative overflow-hidden"
+        >
+          <div class="absolute inset-0 bg-black/10"></div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-6">
+              <svg
+                class="w-16 h-16 text-white"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 3H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="absolute top-6 left-6 w-3 h-3 bg-white/30 rounded-full animate-ping"
+          >
+          </div>
+          <div
+            class="absolute bottom-4 right-8 w-2 h-2 bg-white/40 rounded-full animate-pulse"
+          >
+          </div>
+          <div
+            class="absolute top-16 right-12 w-4 h-4 bg-white/20 rounded-full animate-bounce"
+          >
+          </div>
+        </div>
+
+        <div class="p-8">
+          <div class="flex items-center justify-between mb-4">
+            <h3
+              class="text-xl font-bold text-neutral-900 group-hover:text-primary-600 transition-colors"
+            >
+              Multi-Platform Integration
+            </h3>
+            <div
+              class="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <svg
+                class="w-5 h-5 text-primary-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                ></path>
+              </svg>
+            </div>
+          </div>
+
+          <p class="text-neutral-600 mb-6 leading-relaxed">
+            Custom API middleware connecting multiple third-party services with
+            automated data synchronization and error handling for seamless
+            operations.
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span
+              class="px-3 py-1 bg-primary-100 text-primary-700 text-xs font-medium rounded-full"
+              >Node.js</span
+            >
+            <span
+              class="px-3 py-1 bg-success-100 text-success-700 text-xs font-medium rounded-full"
+              >Express</span
+            >
+            <span
+              class="px-3 py-1 bg-accent-100 text-accent-700 text-xs font-medium rounded-full"
+              >REST APIs</span
+            >
+            <span
+              class="px-3 py-1 bg-warning-100 text-warning-700 text-xs font-medium rounded-full"
+              >Redis</span
+            >
+          </div>
+
+          <div
+            class="flex items-center justify-between pt-4 border-t border-neutral-100"
+          >
+            <div class="flex items-center text-sm text-success-600 font-medium">
+              <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                ></path>
+              </svg>
+              99.9% uptime
+            </div>
+            <div class="text-xs text-neutral-500">Integration</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-    </div>
-
-    <!-- CTA Section -->
-    <div class="relative">
-      <div class="bg-gradient-to-r from-primary-500 to-accent-500 rounded-3xl p-12 text-center text-white relative overflow-hidden">
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 opacity-10">
-          <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 24px 24px;"></div>
+  <!-- CTA Section -->
+  <div class="relative">
+    <div
+      class="bg-gradient-to-r from-primary-500 to-accent-500 rounded-3xl p-12 text-center text-white relative overflow-hidden"
+    >
+      <!-- Background Pattern -->
+      <div class="absolute inset-0 opacity-10">
+        <div
+          class="absolute inset-0"
+          style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 24px 24px;"
+        >
         </div>
-        
-        <div class="relative">
-          <h3 class="text-3xl font-bold mb-4">Ready to Start Your Project?</h3>
-          <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Let's discuss your vision and create something extraordinary together. From initial concept to final deployment, I'll be with you every step of the way.
-          </p>
-          
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#contact"
-              class="group inline-flex items-center gap-2 px-8 py-4 bg-white text-primary-600 font-semibold rounded-xl hover:bg-white/90 transition-all duration-300 hover:scale-105 shadow-soft"
+      </div>
+
+      <div class="relative">
+        <h3 class="text-3xl font-bold mb-4">Let's Build Something Great</h3>
+        <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+          Ready to bring your project to life? I bring professional-grade
+          development experience to every project, ensuring quality and
+          reliability from start to finish.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="#contact"
+            class="group inline-flex items-center gap-2 px-8 py-4 bg-white text-primary-600 font-semibold rounded-xl hover:bg-white/90 transition-all duration-300 hover:scale-105 shadow-soft"
+          >
+            Get in Touch
+            <svg
+              class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
             >
-              Start Your Project
-              <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
-              </svg>
-            </a>
-            
-            <a
-              href="#services"
-              class="group inline-flex items-center gap-2 px-8 py-4 bg-white/20 backdrop-blur-sm text-white font-semibold rounded-xl hover:bg-white/30 transition-all duration-300 border border-white/30"
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+
+          <a
+            href="#services"
+            class="group inline-flex items-center gap-2 px-8 py-4 bg-white/20 backdrop-blur-sm text-white font-semibold rounded-xl hover:bg-white/30 transition-all duration-300 border border-white/30"
+          >
+            View Services
+            <svg
+              class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
             >
-              View All Services
-              <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-              </svg>
-            </a>
-          </div>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
         </div>
       </div>
     </div>

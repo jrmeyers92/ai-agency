@@ -3,130 +3,201 @@ import Card from "./Card.astro";
 import SectionTitle from "./SectionTitle.astro";
 ---
 
-<section class="py-32 bg-gradient-to-br from-neutral-50 to-neutral-100 relative overflow-hidden" id="services">
+<section
+  class="py-32 bg-gradient-to-br from-neutral-50 to-neutral-100 relative overflow-hidden"
+  id="services"
+>
   <!-- Background Elements -->
   <div class="absolute inset-0 opacity-40">
-    <div class="absolute top-20 right-20 w-64 h-64 bg-primary-200/30 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-20 left-20 w-96 h-96 bg-accent-200/20 rounded-full blur-3xl"></div>
+    <div
+      class="absolute top-20 right-20 w-64 h-64 bg-primary-200/30 rounded-full blur-3xl"
+    >
+    </div>
+    <div
+      class="absolute bottom-20 left-20 w-96 h-96 bg-accent-200/20 rounded-full blur-3xl"
+    >
+    </div>
   </div>
-  
+
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-20">
-      <div class="inline-flex items-center px-4 py-2 rounded-full bg-primary-100 text-primary-700 text-sm font-medium mb-6">
+      <div
+        class="inline-flex items-center px-4 py-2 rounded-full bg-primary-100 text-primary-700 text-sm font-medium mb-6"
+      >
         <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+          <path
+            d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"
+          ></path>
         </svg>
         Services & Solutions
       </div>
-      
+
       <h2 class="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-        AI & Web Development
-        <span class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent block">
-          Services
+        Web Development
+        <span
+          class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent block"
+        >
+          & Custom Solutions
         </span>
       </h2>
-      
+
       <p class="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
-        From simple business websites to complex full-stack applications and cutting-edge AI solutions—I build custom software that brings your ideas to life.
+        I build modern websites and web applications that solve real business
+        problems. Need AI integration? I've got you covered there too.
       </p>
     </div>
 
     <div class="space-y-16">
-      <!-- AI Services Section -->
+      <!-- Web Development Section (Now Primary) -->
       <div>
         <div class="text-center mb-12">
-          <h3 class="text-2xl font-bold text-neutral-900 mb-3">AI Solutions</h3>
-          <p class="text-neutral-600">Cutting-edge artificial intelligence applications and integrations</p>
+          <h3 class="text-2xl font-bold text-neutral-900 mb-3">
+            Core Web Development
+          </h3>
+          <p class="text-neutral-600">
+            Professional websites and applications built with modern
+            technologies
+          </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <Card
-        title="AI Chatbot Solutions"
-        priceText="Starting from $3,000"
-        items={[
-          "Custom chatbots using OpenAI, Anthropic APIs",
-          "Next.js/React frontend integration",
-          "Training on your documentation & data",
-          "Conversation flow design & testing",
-          "Analytics dashboard (Python/TypeScript)",
-          "Deployment on Vercel/Netlify",
-        ]}
-      />
-      
-      <Card
-        title="RAG Applications"
-        priceText="Starting from $5,000"
-        featured={true}
-        items={[
-          "Custom RAG systems with LangChain/LlamaIndex",
-          "Vector databases (Pinecone, Weaviate, Supabase)",
-          "Document processing pipelines",
-          "Secure authentication & user management",
-          "Chat interfaces with context awareness",
-          "FastAPI/Node.js backend development",
-        ]}
-      />
-      
-      <Card
-        title="MCP Server Development"
-        priceText="Starting from $2,000"
-        items={[
-          "Custom Model Context Protocol servers",
-          "Integration with Claude Desktop/API",
-          "Tool function development",
-          "Resource management systems",
-          "TypeScript/Python implementation",
-          "Documentation & deployment guides",
-        ]}
-      />
+          <Card
+            title="Business Websites"
+            priceText="Starting from $1,500"
+            items={[
+              "Custom design with Tailwind CSS",
+              "Mobile-responsive layouts",
+              "Contact forms & CMS integration",
+              "SEO optimization",
+              "Performance & speed optimization",
+              "Domain & hosting setup",
+            ]}
+          />
+
+          <Card
+            title="Full-Stack Applications"
+            priceText="Starting from $4,000"
+            featured={true}
+            items={[
+              "React/Next.js, Java/Node.js development",
+              "Database design (PostgreSQL, MongoDB)",
+              "User authentication & security",
+              "Payment processing integration",
+              "Admin dashboards & analytics",
+              "AWS/cloud deployment",
+            ]}
+          />
+
+          <Card
+            title="E-Commerce Solutions"
+            priceText="Starting from $3,500"
+            items={[
+              "Online stores with Shopify/custom builds",
+              "Product catalog management",
+              "Secure checkout & payment gateways",
+              "Inventory & order management",
+              "Customer accounts & wishlists",
+              "Shipping & tax automation",
+            ]}
+          />
         </div>
       </div>
 
-      <!-- Web Development Section -->
+      <!-- AI Services Section (Now Secondary) -->
       <div>
         <div class="text-center mb-12">
-          <h3 class="text-2xl font-bold text-neutral-900 mb-3">Web Development</h3>
-          <p class="text-neutral-600">Modern, scalable web applications and e-commerce solutions</p>
+          <h3 class="text-2xl font-bold text-neutral-900 mb-3">
+            AI-Enhanced Solutions
+          </h3>
+          <p class="text-neutral-600">
+            Add intelligent features to your applications when you need them
+          </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <Card
-          title="Website Development"
-          priceText="Starting from $1,500"
-          items={[
-            "Business websites & landing pages",
-            "Responsive design with Tailwind CSS",
-            "Content management systems",
-            "SEO optimization & performance",
-            "Contact forms & basic integrations",
-            "Hosting setup & domain configuration",
-          ]}
-        />
-      
-        <Card
-          title="Full-Stack Web Applications"
-          priceText="Starting from $4,000"
-          featured={true}
-          items={[
-            "React/Next.js, Java/Node.js applications",
-            "PostgreSQL, MongoDB database systems",
-            "User authentication & authorization",
-            "API development & third-party integrations",
-            "AWS deployment & cloud architecture",
-            "Custom dashboards & admin panels",
-          ]}
-        />
-      
-        <Card
-          title="Custom Software & Tools"
-          priceText="Starting from $2,500"
-          items={[
-            "Utility applications & automation tools",
-            "Data processing & migration scripts",
-            "Custom APIs & microservices",
-            "Desktop applications (Electron/Java)",
-            "Browser extensions & plugins",
-            "Technical consulting & code reviews",
-          ]}
-        />
+          <Card
+            title="AI Chatbots"
+            priceText="Starting from $3,000"
+            items={[
+              "Customer support automation",
+              "Training on your business data",
+              "Integration with existing websites",
+              "OpenAI, Anthropic, or open-source models",
+              "Analytics & conversation insights",
+              "Handoff to human agents",
+            ]}
+          />
+
+          <Card
+            title="Intelligent Search & RAG"
+            priceText="Starting from $5,000"
+            items={[
+              "Semantic search for documentation",
+              "Question-answering systems",
+              "Document processing pipelines",
+              "Vector database integration",
+              "Context-aware chat interfaces",
+              "Custom AI workflows",
+            ]}
+          />
+
+          <Card
+            title="Custom AI Tools"
+            priceText="Starting from $2,500"
+            items={[
+              "Content generation tools",
+              "Data analysis automation",
+              "Image/document processing",
+              "API integrations with AI services",
+              "Model Context Protocol servers",
+              "AI consulting & strategy",
+            ]}
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Value Proposition Footer -->
+    <div class="mt-20 text-center">
+      <div
+        class="inline-flex items-center gap-8 flex-wrap justify-center text-neutral-600"
+      >
+        <div class="flex items-center gap-2">
+          <svg
+            class="w-5 h-5 text-primary-600"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="font-medium">Fixed-Price Quotes</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg
+            class="w-5 h-5 text-primary-600"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="font-medium">Modern Tech Stack</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg
+            class="w-5 h-5 text-primary-600"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="font-medium">Ongoing Support</span>
         </div>
       </div>
     </div>
