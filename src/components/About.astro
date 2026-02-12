@@ -4,99 +4,305 @@ import myImage from "../assets/about.jpg";
 import SectionTitle from "./SectionTitle.astro";
 ---
 
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24" id="about">
-    <div class="grid lg:grid-cols-12 gap-16 items-start">
-      <!-- Image Container - Takes 5 columns -->
+<section class="relative bg-white py-24 lg:py-32 overflow-hidden" id="about">
+  <!-- Subtle background accent -->
+  <div
+    class="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-amber-50 to-orange-50 rounded-full blur-3xl opacity-30 -z-10"
+  >
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+      <!-- Image Container - 5 columns, sticky on desktop -->
       <div class="lg:col-span-5 lg:sticky lg:top-24">
-        <div class="relative mx-auto lg:mx-0">
-          <div class="aspect-[4/5]">
+        <div class="relative">
+          <!-- Image with subtle border treatment -->
+          <div class="relative overflow-hidden rounded-2xl">
             <Image
               src={myImage}
-              alt="Jake Meyers - Full Stack & AI Developer"
-              class="rounded-2xl shadow-xl w-full h-full object-cover object-top"
+              alt="Jake Meyers - Full Stack Developer"
+              class="w-full h-full object-cover object-top shadow-2xl"
             />
+            <!-- Gradient overlay on image border -->
+            <div
+              class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-neutral-900/10"
+            >
+            </div>
           </div>
+
+          <!-- Decorative element -->
           <div
-            class="absolute -z-10 -inset-4 bg-gradient-to-r from-blue-100 to-blue-50 rounded-2xl opacity-70 blur-2xl"
+            class="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl -z-10 opacity-20"
           >
           </div>
         </div>
-      </div>
-  
-      <!-- Text Container - Takes 7 columns -->
-      <div class="lg:col-span-7 space-y-8">
-        <SectionTitle title="About" />
-        <div class="prose prose-lg max-w-none text-gray-700">
-          <p>
-            Hi, I'm Jake Meyers, a seasoned full-stack developer and AI specialist based in St. Louis, Missouri. With years of professional development experience, I'm now offering freelance services to help businesses worldwide build modern web applications, integrate AI solutions, and create custom software that drives results.
+
+        <!-- Quick contact card -->
+        <div
+          class="mt-8 bg-neutral-50 border border-neutral-200 rounded-xl p-6"
+        >
+          <p class="text-sm font-semibold text-neutral-900 mb-3">
+            Currently available for:
           </p>
-  
-          <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-4">My Expertise</h3>
-          <ul class="space-y-3">
-            <li class="flex items-start">
-              <span class="flex-shrink-0 flex items-center justify-center w-6 h-6 mt-1 mr-3 bg-blue-100 rounded-full">
-                <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-              </span>
-              <span>
-                <strong class="text-gray-900">Full-Stack Development:</strong> React, Next.js, Node.js, Java, TypeScript, PostgreSQL, MongoDB, and AWS cloud services.
-              </span>
+          <ul class="space-y-2 text-sm text-neutral-700">
+            <li class="flex items-center gap-2">
+              <div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>
+              New project builds
             </li>
-            <li class="flex items-start">
-              <span class="flex-shrink-0 flex items-center justify-center w-6 h-6 mt-1 mr-3 bg-blue-100 rounded-full">
-                <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-              </span>
-              <span>
-                <strong class="text-gray-900">Web Applications:</strong> From simple landing pages and business websites to complex web applications, utility tools, and custom dashboards.
-              </span>
+            <li class="flex items-center gap-2">
+              <div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>
+              Monthly retainer clients
             </li>
-            <li class="flex items-start">
-              <span class="flex-shrink-0 flex items-center justify-center w-6 h-6 mt-1 mr-3 bg-blue-100 rounded-full">
-                <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-              </span>
-              <span>
-                <strong class="text-gray-900">AI Solutions:</strong> RAG applications, chatbots, MCP servers, and intelligent automation systems with professional enterprise experience.
-              </span>
+            <li class="flex items-center gap-2">
+              <div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>
+              Site maintenance & upgrades
             </li>
           </ul>
-  
-          <p class="mt-8">
-            With professional experience building enterprise-level applications in my day job, I bring that same level of quality and attention to detail to every freelance project. Whether you need a simple business website, a complex web application, a custom utility tool, or cutting-edge AI integration, I have the skills and experience to deliver.
+        </div>
+      </div>
+
+      <!-- Content Container - 7 columns -->
+      <div class="lg:col-span-7 space-y-8">
+        <div>
+          <p
+            class="text-sm font-semibold text-amber-600 uppercase tracking-wider mb-3"
+          >
+            About
           </p>
-  
-          <p class="mt-4">
-            Based in St. Louis, Missouri, but working with clients worldwide, I offer the direct communication and personalized service that only comes from working with an experienced independent developer. No account managers, no bureaucracy—just skilled development and honest communication.
-          </p>
-  
-          <p class="mt-4">
-            I'm passionate about staying current with technology trends and can quickly master new frameworks and tools as needed for your project. From Java backend systems to React frontends, from simple websites to AI-powered applications—if it involves code, I can build it.
-          </p>
-  
-          <div class="mt-12">
-            
-              <a href="#contact"
-              class="inline-flex items-center gap-2 px-8 py-4 text-base font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-lg hover:shadow-xl"
+          <h2
+            class="text-4xl lg:text-5xl font-bold text-neutral-900 leading-tight"
+          >
+            Senior engineer by day.
+            <span class="block text-neutral-600 mt-1"
+              >Your developer by night.</span
             >
-              Let's Work Together
+          </h2>
+        </div>
+
+        <div class="prose prose-lg max-w-none">
+          <p class="text-xl text-neutral-600 leading-relaxed">
+            I'm Jake Meyers, a full-stack developer with 5 years of professional
+            experience building enterprise applications. Now I'm bringing that
+            same expertise to small businesses and startups who need
+            senior-level work without the agency markup.
+          </p>
+
+          <!-- Why work with me section -->
+          <div
+            class="mt-12 bg-gradient-to-br from-neutral-50 to-amber-50/30 border border-neutral-200 rounded-2xl p-8"
+          >
+            <h3 class="text-2xl font-bold text-neutral-900 mb-6">
+              Why work with me?
+            </h3>
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div>
+                <div class="flex items-start gap-3 mb-3">
+                  <div
+                    class="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-amber-500 to-orange-600 rounded-lg flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-5 h-5 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-neutral-900 mb-1">
+                      Transparent pricing
+                    </h4>
+                    <p class="text-sm text-neutral-600">
+                      No hidden fees or scope creep. You'll know exactly what
+                      you're paying for upfront.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex items-start gap-3 mb-3">
+                  <div
+                    class="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-5 h-5 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-neutral-900 mb-1">
+                      Fast turnaround
+                    </h4>
+                    <p class="text-sm text-neutral-600">
+                      No waiting weeks for meetings. I move quickly and keep you
+                      updated every step.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex items-start gap-3 mb-3">
+                  <div
+                    class="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-5 h-5 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-neutral-900 mb-1">
+                      Enterprise quality
+                    </h4>
+                    <p class="text-sm text-neutral-600">
+                      Clean code, proper architecture, and best practices from
+                      day-job experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex items-start gap-3 mb-3">
+                  <div
+                    class="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-5 h-5 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-neutral-900 mb-1">
+                      Direct communication
+                    </h4>
+                    <p class="text-sm text-neutral-600">
+                      Work directly with me—no project managers or phone tag.
+                      Just clear, honest updates.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tech stack -->
+          <div class="mt-12">
+            <h3 class="text-2xl font-bold text-neutral-900 mb-6">
+              What I work with
+            </h3>
+            <div class="space-y-6">
+              <div>
+                <h4
+                  class="font-semibold text-neutral-900 mb-3 flex items-center gap-2"
+                >
+                  <span
+                    class="w-1 h-4 bg-gradient-to-b from-amber-500 to-orange-600 rounded-full"
+                  ></span>
+                  Frontend Development
+                </h4>
+                <p class="text-neutral-600 leading-relaxed">
+                  React, Next.js, Astro, TypeScript, Tailwind CSS. I build
+                  responsive, performant interfaces that look great on every
+                  device.
+                </p>
+              </div>
+
+              <div>
+                <h4
+                  class="font-semibold text-neutral-900 mb-3 flex items-center gap-2"
+                >
+                  <span
+                    class="w-1 h-4 bg-gradient-to-b from-blue-500 to-indigo-600 rounded-full"
+                  ></span>
+                  Backend & APIs
+                </h4>
+                <p class="text-neutral-600 leading-relaxed">
+                  Node.js, Java, PostgreSQL, MongoDB, AWS. Scalable backends
+                  that handle everything from simple forms to complex business
+                  logic.
+                </p>
+              </div>
+
+              <div>
+                <h4
+                  class="font-semibold text-neutral-900 mb-3 flex items-center gap-2"
+                >
+                  <span
+                    class="w-1 h-4 bg-gradient-to-b from-purple-500 to-pink-600 rounded-full"
+                  ></span>
+                  AI & Automation
+                </h4>
+                <p class="text-neutral-600 leading-relaxed">
+                  OpenAI, Anthropic Claude, RAG systems, MCP servers. Add
+                  intelligent features like chatbots, document Q&A, and workflow
+                  automation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Final CTA -->
+          <div class="mt-12 pt-8 border-t border-neutral-200">
+            <p class="text-lg text-neutral-700 mb-6">
+              Based in St. Louis but working with clients everywhere. Let's talk
+              about what you're building.
+            </p>
+            <a
+              href="#contact"
+              class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-600 to-orange-600 text-white font-semibold rounded-xl hover:shadow-xl hover:shadow-orange-600/20 transition-all duration-300 hover:-translate-y-0.5"
+            >
+              Get in touch
               <svg
-                xmlns="http://www.w3.org/2000/svg"
                 class="w-5 h-5"
-                viewBox="0 0 20 20"
-                fill="currentColor"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
                 <path
-                  fill-rule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"></path>
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
               </svg>
             </a>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>

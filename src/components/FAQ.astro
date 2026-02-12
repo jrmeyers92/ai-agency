@@ -1,34 +1,52 @@
 ---
-// FAQ.astro - Clean, professional FAQ section
+// FAQ.astro - Redesigned with smooth animations and better UX
 ---
 
-<section class="py-24 lg:py-32 bg-neutral-50" id="faq">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<section class="relative py-24 lg:py-32 bg-neutral-50 overflow-hidden" id="faq">
+  <!-- Decorative background -->
+  <div
+    class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-gradient-to-br from-blue-100/40 to-indigo-100/30 rounded-full blur-3xl opacity-50"
+  >
+  </div>
+
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Section header -->
     <div class="mb-16">
-      <p class="text-sm font-medium text-neutral-500 uppercase tracking-wider mb-4">FAQ</p>
-      <h2 class="font-display text-4xl sm:text-5xl font-bold text-neutral-900 mb-6">
+      <p
+        class="text-sm font-semibold text-amber-600 uppercase tracking-wider mb-3"
+      >
+        FAQ
+      </p>
+      <h2
+        class="text-4xl sm:text-5xl font-bold text-neutral-900 leading-tight mb-6"
+      >
         Common questions
       </h2>
       <p class="text-xl text-neutral-600 leading-relaxed">
-        Everything you need to know about working with me. Can't find your answer? Feel free to reach out.
+        Everything you need to know about working with me. Don't see your
+        question? Let's talk.
       </p>
     </div>
 
     <!-- FAQ Items -->
-    <div class="space-y-3">
+    <div class="space-y-4">
       <!-- FAQ 1 -->
-      <div class="bg-white rounded-lg border border-neutral-200 overflow-hidden">
+      <div
+        class="bg-white rounded-xl border border-neutral-200 overflow-hidden transition-all duration-300 hover:shadow-lg faq-item"
+      >
         <button
-          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-inset faq-button"
+          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-inset faq-button"
+          aria-expanded="false"
         >
           <div class="flex items-center justify-between gap-4">
-            <h3 class="text-lg font-semibold text-neutral-900">
+            <h3 class="text-lg font-semibold text-neutral-900 pr-4">
               How much does a website or web application cost?
             </h3>
-            <div class="flex-shrink-0">
+            <div
+              class="flex-shrink-0 w-8 h-8 bg-neutral-100 rounded-lg flex items-center justify-center transition-all duration-300"
+            >
               <svg
-                class="w-5 h-5 text-neutral-600 transform transition-transform duration-200 faq-arrow"
+                class="w-5 h-5 text-neutral-600 transition-transform duration-300 faq-arrow"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -42,29 +60,40 @@
             </div>
           </div>
         </button>
-        <div class="hidden px-6 pb-5 faq-content">
-          <p class="text-neutral-600 leading-relaxed">
-            Project costs vary based on complexity and requirements. Business
-            websites typically start at $1,500, while full-stack applications
-            start around $4,000. I provide detailed, fixed-price quotes after
-            our initial consultation where we discuss your specific needs,
-            features, and timeline.
-          </p>
+        <div
+          class="faq-content overflow-hidden transition-all duration-300 ease-in-out"
+          style="max-height: 0;"
+        >
+          <div class="px-6 pb-5">
+            <p class="text-neutral-600 leading-relaxed">
+              Project costs vary based on complexity and requirements. Business
+              websites typically start at $1,500, while full-stack applications
+              start around $4,000. I provide detailed, fixed-price quotes after
+              our initial consultation where we discuss your specific needs,
+              features, and timeline. No hidden fees—you'll know exactly what
+              you're paying upfront.
+            </p>
+          </div>
         </div>
       </div>
 
       <!-- FAQ 2 -->
-      <div class="bg-white rounded-lg border border-neutral-200 overflow-hidden">
+      <div
+        class="bg-white rounded-xl border border-neutral-200 overflow-hidden transition-all duration-300 hover:shadow-lg faq-item"
+      >
         <button
-          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-inset faq-button"
+          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-inset faq-button"
+          aria-expanded="false"
         >
           <div class="flex items-center justify-between gap-4">
-            <h3 class="text-lg font-semibold text-neutral-900">
+            <h3 class="text-lg font-semibold text-neutral-900 pr-4">
               How long does it take to build a website or application?
             </h3>
-            <div class="flex-shrink-0">
+            <div
+              class="flex-shrink-0 w-8 h-8 bg-neutral-100 rounded-lg flex items-center justify-center transition-all duration-300"
+            >
               <svg
-                class="w-5 h-5 text-neutral-600 transform transition-transform duration-200 faq-arrow"
+                class="w-5 h-5 text-neutral-600 transition-transform duration-300 faq-arrow"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -78,29 +107,40 @@
             </div>
           </div>
         </button>
-        <div class="hidden px-6 pb-5 faq-content">
-          <p class="text-neutral-600 leading-relaxed">
-            Timeline depends on project scope. A standard business website
-            typically takes 2-3 weeks, while full-stack applications can take
-            6-10 weeks. I'll provide a detailed timeline during our discovery
-            phase and keep you updated throughout development with regular
-            progress updates.
-          </p>
+        <div
+          class="faq-content overflow-hidden transition-all duration-300 ease-in-out"
+          style="max-height: 0;"
+        >
+          <div class="px-6 pb-5">
+            <p class="text-neutral-600 leading-relaxed">
+              Timeline depends on project scope. A standard business website
+              typically takes 2-3 weeks, while full-stack applications can take
+              6-10 weeks. I'll provide a detailed timeline during our discovery
+              phase and keep you updated throughout development with regular
+              progress updates. I work efficiently without cutting corners on
+              quality.
+            </p>
+          </div>
         </div>
       </div>
 
       <!-- FAQ 3 -->
-      <div class="bg-white rounded-lg border border-neutral-200 overflow-hidden">
+      <div
+        class="bg-white rounded-xl border border-neutral-200 overflow-hidden transition-all duration-300 hover:shadow-lg faq-item"
+      >
         <button
-          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-inset faq-button"
+          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-inset faq-button"
+          aria-expanded="false"
         >
           <div class="flex items-center justify-between gap-4">
-            <h3 class="text-lg font-semibold text-neutral-900">
-              Do you offer ongoing support and maintenance?
+            <h3 class="text-lg font-semibold text-neutral-900 pr-4">
+              Do you offer monthly retainers for ongoing work?
             </h3>
-            <div class="flex-shrink-0">
+            <div
+              class="flex-shrink-0 w-8 h-8 bg-neutral-100 rounded-lg flex items-center justify-center transition-all duration-300"
+            >
               <svg
-                class="w-5 h-5 text-neutral-600 transform transition-transform duration-200 faq-arrow"
+                class="w-5 h-5 text-neutral-600 transition-transform duration-300 faq-arrow"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -114,28 +154,40 @@
             </div>
           </div>
         </button>
-        <div class="hidden px-6 pb-5 faq-content">
-          <p class="text-neutral-600 leading-relaxed">
-            Yes! All projects include a 30-day bug fix warranty after launch.
-            For ongoing support, I offer monthly maintenance packages that
-            include updates, security patches, content changes, and priority
-            support. We can discuss the best support plan for your needs.
-          </p>
+        <div
+          class="faq-content overflow-hidden transition-all duration-300 ease-in-out"
+          style="max-height: 0;"
+        >
+          <div class="px-6 pb-5">
+            <p class="text-neutral-600 leading-relaxed">
+              Yes! Monthly retainers are perfect for businesses that need
+              ongoing support, feature updates, or maintenance. You get
+              dedicated hours each month for updates, bug fixes, new features,
+              or quick changes—without the overhead of hiring a full-time
+              developer. No long-term contracts required; cancel anytime with 30
+              days notice.
+            </p>
+          </div>
         </div>
       </div>
 
       <!-- FAQ 4 -->
-      <div class="bg-white rounded-lg border border-neutral-200 overflow-hidden">
+      <div
+        class="bg-white rounded-xl border border-neutral-200 overflow-hidden transition-all duration-300 hover:shadow-lg faq-item"
+      >
         <button
-          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-inset faq-button"
+          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-inset faq-button"
+          aria-expanded="false"
         >
           <div class="flex items-center justify-between gap-4">
-            <h3 class="text-lg font-semibold text-neutral-900">
+            <h3 class="text-lg font-semibold text-neutral-900 pr-4">
               Can you integrate AI features into my website or app?
             </h3>
-            <div class="flex-shrink-0">
+            <div
+              class="flex-shrink-0 w-8 h-8 bg-neutral-100 rounded-lg flex items-center justify-center transition-all duration-300"
+            >
               <svg
-                class="w-5 h-5 text-neutral-600 transform transition-transform duration-200 faq-arrow"
+                class="w-5 h-5 text-neutral-600 transition-transform duration-300 faq-arrow"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -149,29 +201,40 @@
             </div>
           </div>
         </button>
-        <div class="hidden px-6 pb-5 faq-content">
-          <p class="text-neutral-600 leading-relaxed">
-            Absolutely! I can add AI capabilities like chatbots, intelligent
-            search, content generation, or custom automation to any project.
-            We'll discuss whether AI makes sense for your use case and implement
-            solutions that provide real value to your users without unnecessary
-            complexity.
-          </p>
+        <div
+          class="faq-content overflow-hidden transition-all duration-300 ease-in-out"
+          style="max-height: 0;"
+        >
+          <div class="px-6 pb-5">
+            <p class="text-neutral-600 leading-relaxed">
+              Absolutely! I specialize in AI integration including chatbots,
+              intelligent search, content generation, and custom automation.
+              I'll help you determine whether AI makes sense for your use case
+              and implement solutions that provide real value—not just AI for
+              the sake of having it. I work with OpenAI, Anthropic Claude, and
+              open-source models depending on your needs and budget.
+            </p>
+          </div>
         </div>
       </div>
 
       <!-- FAQ 5 -->
-      <div class="bg-white rounded-lg border border-neutral-200 overflow-hidden">
+      <div
+        class="bg-white rounded-xl border border-neutral-200 overflow-hidden transition-all duration-300 hover:shadow-lg faq-item"
+      >
         <button
-          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-inset faq-button"
+          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-inset faq-button"
+          aria-expanded="false"
         >
           <div class="flex items-center justify-between gap-4">
-            <h3 class="text-lg font-semibold text-neutral-900">
+            <h3 class="text-lg font-semibold text-neutral-900 pr-4">
               Do you work with clients remotely?
             </h3>
-            <div class="flex-shrink-0">
+            <div
+              class="flex-shrink-0 w-8 h-8 bg-neutral-100 rounded-lg flex items-center justify-center transition-all duration-300"
+            >
               <svg
-                class="w-5 h-5 text-neutral-600 transform transition-transform duration-200 faq-arrow"
+                class="w-5 h-5 text-neutral-600 transition-transform duration-300 faq-arrow"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -185,29 +248,40 @@
             </div>
           </div>
         </button>
-        <div class="hidden px-6 pb-5 faq-content">
-          <p class="text-neutral-600 leading-relaxed">
-            Yes! While I'm based in St. Louis, Missouri, I work with clients
-            anywhere. I've successfully completed projects for businesses across
-            the US and internationally. We'll communicate via video calls,
-            email, and project management tools to ensure smooth collaboration
-            regardless of location.
-          </p>
+        <div
+          class="faq-content overflow-hidden transition-all duration-300 ease-in-out"
+          style="max-height: 0;"
+        >
+          <div class="px-6 pb-5">
+            <p class="text-neutral-600 leading-relaxed">
+              Yes! While I'm based in St. Louis, Missouri, I work with clients
+              anywhere. I've successfully completed projects for businesses
+              across the US and internationally. We'll communicate via video
+              calls, email, Slack, or whatever works best for you. Distance
+              doesn't affect quality—I provide the same level of service
+              regardless of location.
+            </p>
+          </div>
         </div>
       </div>
 
       <!-- FAQ 6 -->
-      <div class="bg-white rounded-lg border border-neutral-200 overflow-hidden">
+      <div
+        class="bg-white rounded-xl border border-neutral-200 overflow-hidden transition-all duration-300 hover:shadow-lg faq-item"
+      >
         <button
-          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-inset faq-button"
+          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-inset faq-button"
+          aria-expanded="false"
         >
           <div class="flex items-center justify-between gap-4">
-            <h3 class="text-lg font-semibold text-neutral-900">
+            <h3 class="text-lg font-semibold text-neutral-900 pr-4">
               What technologies and tools do you use?
             </h3>
-            <div class="flex-shrink-0">
+            <div
+              class="flex-shrink-0 w-8 h-8 bg-neutral-100 rounded-lg flex items-center justify-center transition-all duration-300"
+            >
               <svg
-                class="w-5 h-5 text-neutral-600 transform transition-transform duration-200 faq-arrow"
+                class="w-5 h-5 text-neutral-600 transition-transform duration-300 faq-arrow"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -221,32 +295,54 @@
             </div>
           </div>
         </button>
-        <div class="hidden px-6 pb-5 faq-content">
-          <p class="text-neutral-600 leading-relaxed mb-3">
-            I use modern, reliable technologies that ensure your project is
-            fast, secure, and maintainable:
-          </p>
-          <ul class="text-neutral-600 leading-relaxed space-y-2">
-            <li><strong>Frontend:</strong> React, Next.js, Astro, Tailwind CSS</li>
-            <li><strong>Backend:</strong> Node.js, Python (FastAPI), Java</li>
-            <li><strong>Databases:</strong> PostgreSQL, MongoDB</li>
-            <li><strong>Deployment:</strong> Vercel, AWS, Netlify</li>
-          </ul>
+        <div
+          class="faq-content overflow-hidden transition-all duration-300 ease-in-out"
+          style="max-height: 0;"
+        >
+          <div class="px-6 pb-5">
+            <p class="text-neutral-600 leading-relaxed mb-4">
+              I use modern, battle-tested technologies that ensure your project
+              is fast, secure, and maintainable:
+            </p>
+            <div class="grid sm:grid-cols-2 gap-3 text-neutral-600">
+              <div>
+                <span class="font-semibold text-neutral-900">Frontend:</span> React,
+                Next.js, Astro, TypeScript, Tailwind CSS
+              </div>
+              <div>
+                <span class="font-semibold text-neutral-900">Backend:</span> Node.js,
+                Python, Java
+              </div>
+              <div>
+                <span class="font-semibold text-neutral-900">Databases:</span> PostgreSQL,
+                MongoDB
+              </div>
+              <div>
+                <span class="font-semibold text-neutral-900">Cloud:</span> AWS, Vercel,
+                Netlify
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- FAQ 7 -->
-      <div class="bg-white rounded-lg border border-neutral-200 overflow-hidden">
+      <div
+        class="bg-white rounded-xl border border-neutral-200 overflow-hidden transition-all duration-300 hover:shadow-lg faq-item"
+      >
         <button
-          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-inset faq-button"
+          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-inset faq-button"
+          aria-expanded="false"
         >
           <div class="flex items-center justify-between gap-4">
-            <h3 class="text-lg font-semibold text-neutral-900">
+            <h3 class="text-lg font-semibold text-neutral-900 pr-4">
               What's your process for starting a new project?
             </h3>
-            <div class="flex-shrink-0">
+            <div
+              class="flex-shrink-0 w-8 h-8 bg-neutral-100 rounded-lg flex items-center justify-center transition-all duration-300"
+            >
               <svg
-                class="w-5 h-5 text-neutral-600 transform transition-transform duration-200 faq-arrow"
+                class="w-5 h-5 text-neutral-600 transition-transform duration-300 faq-arrow"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -260,53 +356,148 @@
             </div>
           </div>
         </button>
-        <div class="hidden px-6 pb-5 faq-content">
-          <p class="text-neutral-600 leading-relaxed mb-3">
-            My process is straightforward and collaborative:
-          </p>
-          <ol class="text-neutral-600 leading-relaxed space-y-2 list-decimal pl-5">
-            <li>
-              <strong>Discovery Call:</strong> We discuss your goals, requirements,
-              and timeline
-            </li>
-            <li>
-              <strong>Proposal:</strong> I provide a detailed quote with project
-              scope and milestones
-            </li>
-            <li>
-              <strong>Agreement:</strong> Once approved, we sign a contract and schedule
-              kickoff
-            </li>
-            <li>
-              <strong>Development:</strong> Regular updates and check-ins throughout
-              the build
-            </li>
-            <li>
-              <strong>Review & Launch:</strong> Testing, refinements, and deployment
-            </li>
-            <li>
-              <strong>Support:</strong> Post-launch support and training as needed
-            </li>
-          </ol>
+        <div
+          class="faq-content overflow-hidden transition-all duration-300 ease-in-out"
+          style="max-height: 0;"
+        >
+          <div class="px-6 pb-5">
+            <p class="text-neutral-600 leading-relaxed mb-4">
+              My process is straightforward and collaborative:
+            </p>
+            <div class="space-y-3">
+              <div class="flex items-start gap-3">
+                <div
+                  class="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center text-white text-xs font-bold"
+                >
+                  1
+                </div>
+                <p class="text-neutral-600">
+                  <span class="font-semibold text-neutral-900"
+                    >Discovery Call:</span
+                  > We discuss your goals, requirements, and timeline
+                </p>
+              </div>
+              <div class="flex items-start gap-3">
+                <div
+                  class="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center text-white text-xs font-bold"
+                >
+                  2
+                </div>
+                <p class="text-neutral-600">
+                  <span class="font-semibold text-neutral-900">Proposal:</span> I
+                  provide a detailed quote with scope and milestones
+                </p>
+              </div>
+              <div class="flex items-start gap-3">
+                <div
+                  class="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center text-white text-xs font-bold"
+                >
+                  3
+                </div>
+                <p class="text-neutral-600">
+                  <span class="font-semibold text-neutral-900"
+                    >Development:</span
+                  > Regular updates and check-ins throughout the build
+                </p>
+              </div>
+              <div class="flex items-start gap-3">
+                <div
+                  class="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center text-white text-xs font-bold"
+                >
+                  4
+                </div>
+                <p class="text-neutral-600">
+                  <span class="font-semibold text-neutral-900">Launch:</span> Testing,
+                  refinements, deployment, and training
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 8 -->
+      <div
+        class="bg-white rounded-xl border border-neutral-200 overflow-hidden transition-all duration-300 hover:shadow-lg faq-item"
+      >
+        <button
+          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-inset faq-button"
+          aria-expanded="false"
+        >
+          <div class="flex items-center justify-between gap-4">
+            <h3 class="text-lg font-semibold text-neutral-900 pr-4">
+              Will I own the code and have access to everything?
+            </h3>
+            <div
+              class="flex-shrink-0 w-8 h-8 bg-neutral-100 rounded-lg flex items-center justify-center transition-all duration-300"
+            >
+              <svg
+                class="w-5 h-5 text-neutral-600 transition-transform duration-300 faq-arrow"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+          </div>
+        </button>
+        <div
+          class="faq-content overflow-hidden transition-all duration-300 ease-in-out"
+          style="max-height: 0;"
+        >
+          <div class="px-6 pb-5">
+            <p class="text-neutral-600 leading-relaxed">
+              Absolutely. Once the project is complete and paid for, you own
+              100% of the code and all assets. I'll provide full access to
+              repositories, documentation, and any accounts or services used.
+              You're never locked in—you can take the code to another developer
+              anytime, though I hope you'll want to keep working together!
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Still have questions CTA -->
-    <div class="mt-16 bg-white rounded-lg p-8 border border-neutral-200">
-      <h3 class="text-2xl font-bold text-neutral-900 mb-3">
-        Still have questions?
-      </h3>
-      <p class="text-neutral-600 mb-6">
-        Don't see your question answered here? I'm happy to discuss your
-        specific needs and provide personalized answers.
-      </p>
-      <a
-        href="#contact"
-        class="inline-flex items-center justify-center px-8 py-4 bg-neutral-900 text-white font-medium rounded-lg hover:bg-neutral-800 transition-colors duration-200"
+    <div
+      class="mt-16 bg-gradient-to-br from-neutral-900 to-neutral-800 rounded-2xl p-8 md:p-10"
+    >
+      <div
+        class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
       >
-        Get in touch
-      </a>
+        <div class="flex-1">
+          <h3 class="text-2xl md:text-3xl font-bold text-white mb-3">
+            Still have questions?
+          </h3>
+          <p class="text-neutral-300 text-lg">
+            Don't see your question here? Let's hop on a quick call and I'll
+            answer everything you need to know.
+          </p>
+        </div>
+        <a
+          href="#contact"
+          class="flex-shrink-0 inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-600 to-orange-600 text-white font-semibold rounded-xl hover:shadow-xl hover:shadow-orange-600/20 transition-all duration-300 hover:-translate-y-0.5"
+        >
+          Get in touch
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -319,32 +510,38 @@
       button.addEventListener("click", function () {
         const content = this.nextElementSibling as HTMLElement;
         const arrow = this.querySelector(".faq-arrow") as HTMLElement;
-        const isHidden = content.classList.contains("hidden");
+        const iconBg = arrow.parentElement as HTMLElement;
+        const isExpanded = this.getAttribute("aria-expanded") === "true";
 
         // Close all other FAQs
-        document.querySelectorAll(".faq-content").forEach((otherContent) => {
-          if (
-            otherContent !== content &&
-            !otherContent.classList.contains("hidden")
-          ) {
-            otherContent.classList.add("hidden");
-            const otherArrow =
-              otherContent.previousElementSibling?.querySelector(
-                ".faq-arrow",
-              ) as HTMLElement;
-            if (otherArrow) {
-              otherArrow.style.transform = "rotate(0deg)";
-            }
+        document.querySelectorAll(".faq-button").forEach((otherButton) => {
+          if (otherButton !== button) {
+            const otherContent = otherButton.nextElementSibling as HTMLElement;
+            const otherArrow = otherButton.querySelector(
+              ".faq-arrow",
+            ) as HTMLElement;
+            const otherIconBg = otherArrow.parentElement as HTMLElement;
+
+            otherContent.style.maxHeight = "0";
+            otherArrow.style.transform = "rotate(0deg)";
+            otherIconBg.style.backgroundColor = "";
+            otherButton.setAttribute("aria-expanded", "false");
           }
         });
 
         // Toggle current FAQ
-        if (isHidden) {
-          content.classList.remove("hidden");
+        if (!isExpanded) {
+          // Open
+          content.style.maxHeight = content.scrollHeight + "px";
           arrow.style.transform = "rotate(180deg)";
+          iconBg.style.backgroundColor = "rgb(251 146 60)"; // orange-400
+          this.setAttribute("aria-expanded", "true");
         } else {
-          content.classList.add("hidden");
+          // Close
+          content.style.maxHeight = "0";
           arrow.style.transform = "rotate(0deg)";
+          iconBg.style.backgroundColor = "";
+          this.setAttribute("aria-expanded", "false");
         }
       });
     });

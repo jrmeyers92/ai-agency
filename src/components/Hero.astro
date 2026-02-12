@@ -1,70 +1,278 @@
 ---
-// Hero.astro - Clean, professional, unique design
+// Hero.astro - Redesigned for freelance positioning
+// Emphasizes: affordability vs agencies, senior expertise, retainer services
 ---
 
-<section class="relative bg-white pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
-  <!-- Subtle grid background -->
-  <div
-    class="absolute inset-0 opacity-[0.03]"
-    style="background-image: linear-gradient(#94a3b8 1px, transparent 1px), linear-gradient(90deg, #94a3b8 1px, transparent 1px); background-size: 32px 32px;"
-  ></div>
+<section
+  class="relative bg-[#fafaf9] min-h-[90vh] flex items-center overflow-hidden"
+>
+  <!-- Organic background pattern -->
+  <div class="absolute inset-0 opacity-[0.4]">
+    <div
+      class="absolute top-20 left-10 w-[600px] h-[600px] bg-gradient-to-br from-amber-100/60 to-orange-100/40 rounded-full blur-3xl"
+    >
+    </div>
+    <div
+      class="absolute bottom-10 right-20 w-[500px] h-[500px] bg-gradient-to-br from-blue-100/50 to-indigo-100/30 rounded-full blur-3xl"
+    >
+    </div>
+  </div>
 
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="max-w-4xl">
-      <!-- Main headline -->
-      <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-neutral-900 leading-[1.1] tracking-tight mb-8">
-        I build web applications
-        <span class="block mt-2 text-neutral-600">that solve problems.</span>
-      </h1>
-
-      <!-- Subheadline -->
-      <p class="text-xl sm:text-2xl text-neutral-600 leading-relaxed max-w-2xl mb-12">
-        Full-stack developer based in St. Louis. I work with businesses to create custom web solutions—from simple sites to complex applications with AI integration.
-      </p>
-
-      <!-- CTA -->
-      <div class="flex flex-col sm:flex-row gap-4 mb-20">
-        <a
-          href="#contact"
-          class="inline-flex items-center justify-center px-8 py-4 bg-neutral-900 text-white font-medium rounded-lg hover:bg-neutral-800 transition-colors duration-200"
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
+    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <!-- Left column: Main content -->
+      <div class="lg:col-span-7">
+        <!-- Trust badge -->
+        <div
+          class="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm border border-neutral-200 rounded-full mb-6 shadow-sm"
         >
-          Start a project
-        </a>
-        <a
-          href="#portfolio"
-          class="inline-flex items-center justify-center px-8 py-4 border-2 border-neutral-300 text-neutral-900 font-medium rounded-lg hover:border-neutral-400 transition-colors duration-200"
+          <div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+          <span class="text-sm font-medium text-neutral-700"
+            >Available for new projects</span
+          >
+        </div>
+
+        <!-- Main headline -->
+        <h1
+          class="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-neutral-900 leading-[1.05] tracking-tight mb-6"
         >
-          View my work
-        </a>
+          Agency-quality work.
+          <span
+            class="block mt-2 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent"
+          >
+            Without the agency price.
+          </span>
+        </h1>
+
+        <!-- Value proposition -->
+        <p
+          class="text-xl sm:text-2xl text-neutral-600 leading-relaxed mb-8 max-w-2xl"
+        >
+          I'm a senior full-stack engineer who builds custom web solutions for
+          businesses that don't need a $20k agency—but deserve better than a
+          template.
+        </p>
+
+        <!-- Key differentiator -->
+        <div
+          class="bg-white/60 backdrop-blur-sm border border-neutral-200 rounded-2xl p-6 mb-10 max-w-xl"
+        >
+          <p class="text-neutral-700 leading-relaxed">
+            <span class="font-semibold text-neutral-900"
+              >5 years of enterprise experience</span
+            > by day, working directly with you at night. You get senior-level code
+            at freelance rates, plus the flexibility of monthly retainers for ongoing
+            maintenance and updates.
+          </p>
+        </div>
+
+        <!-- CTA buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 mb-12">
+          <a
+            href="#contact"
+            class="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-amber-600 to-orange-600 text-white font-semibold rounded-xl hover:shadow-xl hover:shadow-orange-600/20 transition-all duration-300 hover:-translate-y-0.5"
+          >
+            <span>Let's talk about your project</span>
+            <svg
+              class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </a>
+          <a
+            href="#work"
+            class="inline-flex items-center justify-center px-8 py-4 bg-white/80 backdrop-blur-sm border-2 border-neutral-300 text-neutral-900 font-semibold rounded-xl hover:border-neutral-400 hover:bg-white transition-all duration-200"
+          >
+            See what I've built
+          </a>
+        </div>
+
+        <!-- Social proof / stats -->
+        <div class="flex flex-wrap gap-x-8 gap-y-4 text-sm">
+          <div class="flex items-center gap-2 text-neutral-600">
+            <svg
+              class="w-5 h-5 text-emerald-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>5+ years experience</span>
+          </div>
+          <div class="flex items-center gap-2 text-neutral-600">
+            <svg
+              class="w-5 h-5 text-emerald-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>St. Louis based</span>
+          </div>
+          <div class="flex items-center gap-2 text-neutral-600">
+            <svg
+              class="w-5 h-5 text-emerald-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>Flexible retainers available</span>
+          </div>
+        </div>
       </div>
 
-      <!-- Capabilities grid -->
-      <div class="border-t border-neutral-200 pt-12">
-        <p class="text-sm font-medium text-neutral-500 uppercase tracking-wider mb-8">What I do</p>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div>
-            <h3 class="font-semibold text-neutral-900 mb-2">Web Development</h3>
-            <p class="text-neutral-600 text-sm leading-relaxed">
-              Full-stack applications with React, Next.js, Node.js, and modern databases
-            </p>
+      <!-- Right column: Service cards -->
+      <div class="lg:col-span-5 space-y-4">
+        <!-- Service card 1 -->
+        <div
+          class="group bg-white/80 backdrop-blur-sm border border-neutral-200 rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-bold text-lg text-neutral-900 mb-2">
+                Full-Stack Development
+              </h3>
+              <p class="text-neutral-600 text-sm leading-relaxed">
+                React, Next.js, Node.js, TypeScript, PostgreSQL. Modern stacks
+                that scale with your business.
+              </p>
+            </div>
           </div>
-          <div>
-            <h3 class="font-semibold text-neutral-900 mb-2">AI Integration</h3>
-            <p class="text-neutral-600 text-sm leading-relaxed">
-              RAG systems, chatbots, and intelligent automation with OpenAI and Anthropic
-            </p>
+        </div>
+
+        <!-- Service card 2 -->
+        <div
+          class="group bg-white/80 backdrop-blur-sm border border-neutral-200 rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center shadow-lg"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                ></path>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-bold text-lg text-neutral-900 mb-2">
+                AI Integration
+              </h3>
+              <p class="text-neutral-600 text-sm leading-relaxed">
+                ChatGPT, Claude, RAG systems. Add intelligent features without
+                the ML PhD.
+              </p>
+            </div>
           </div>
-          <div>
-            <h3 class="font-semibold text-neutral-900 mb-2">Custom Solutions</h3>
-            <p class="text-neutral-600 text-sm leading-relaxed">
-              Business tools, dashboards, APIs, and integrations tailored to your needs
-            </p>
+        </div>
+
+        <!-- Service card 3 -->
+        <div
+          class="group bg-white/80 backdrop-blur-sm border border-neutral-200 rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                ></path>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-bold text-lg text-neutral-900 mb-2">
+                Monthly Retainers
+              </h3>
+              <p class="text-neutral-600 text-sm leading-relaxed">
+                Ongoing maintenance, feature updates, and on-demand help. No
+                long-term contracts required.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Subtle accent element -->
-  <div class="absolute bottom-0 right-0 w-96 h-96 bg-neutral-100 rounded-full -z-10 translate-x-1/2 translate-y-1/2"></div>
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+    <svg
+      class="w-6 h-6 text-neutral-400"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
+  </div>
 </section>
+
+<style>
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+</style>

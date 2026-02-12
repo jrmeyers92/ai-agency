@@ -1,192 +1,735 @@
 ---
-// Services.astro - Clean, professional services section
+// Services.astro - Redesigned to emphasize retainers and value
 ---
 
-<section class="py-24 lg:py-32 bg-neutral-50" id="services">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section
+  class="relative py-24 lg:py-32 bg-gradient-to-b from-white to-neutral-50"
+  id="services"
+>
+  <!-- Decorative background -->
+  <div
+    class="absolute top-20 left-0 w-[400px] h-[400px] bg-gradient-to-br from-blue-100/40 to-indigo-100/30 rounded-full blur-3xl opacity-50"
+  >
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Section header -->
-    <div class="max-w-3xl mb-20">
-      <p class="text-sm font-medium text-neutral-500 uppercase tracking-wider mb-4">Services</p>
-      <h2 class="font-display text-4xl sm:text-5xl font-bold text-neutral-900 mb-6">
+    <div class="max-w-3xl mb-16">
+      <p
+        class="text-sm font-semibold text-amber-600 uppercase tracking-wider mb-3"
+      >
+        Services
+      </p>
+      <h2
+        class="text-4xl sm:text-5xl font-bold text-neutral-900 leading-tight mb-6"
+      >
         What I can build for you
       </h2>
       <p class="text-xl text-neutral-600 leading-relaxed">
-        From simple landing pages to complex full-stack applications with AI integration. Fixed-price quotes, modern tech stack, and ongoing support.
+        One-time projects or ongoing retainers. You get senior-level development
+        without the agency overhead.
       </p>
     </div>
 
-    <!-- Web Development Services -->
-    <div class="mb-16">
-      <h3 class="text-sm font-semibold text-neutral-900 uppercase tracking-wider mb-8">Web Development</h3>
-      <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
-        <div class="border-l-2 border-neutral-300 pl-6">
-          <h4 class="font-semibold text-lg text-neutral-900 mb-2">Business Websites</h4>
-          <p class="text-neutral-600 text-sm mb-4">From $1,500</p>
-          <ul class="space-y-2 text-sm text-neutral-600">
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Custom design with Tailwind CSS</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Mobile-responsive layouts</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Contact forms & CMS</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>SEO optimization</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Domain & hosting setup</span>
-            </li>
-          </ul>
+    <!-- Retainer highlight banner -->
+    <div
+      class="bg-gradient-to-r from-amber-500 to-orange-600 rounded-2xl p-8 md:p-10 mb-16 shadow-xl"
+    >
+      <div
+        class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
+      >
+        <div class="flex-1">
+          <div class="flex items-center gap-2 mb-3">
+            <svg
+              class="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <h3 class="text-2xl font-bold text-white">Monthly Retainers</h3>
+          </div>
+          <p class="text-white/90 text-lg leading-relaxed max-w-2xl">
+            Get dedicated hours each month for maintenance, updates, new
+            features, and quick fixes. No long-term contracts—cancel anytime.
+            Perfect for businesses that need ongoing support.
+          </p>
         </div>
-
-        <div class="border-l-2 border-neutral-900 pl-6">
-          <h4 class="font-semibold text-lg text-neutral-900 mb-2">Full-Stack Applications</h4>
-          <p class="text-neutral-600 text-sm mb-4">From $4,000</p>
-          <ul class="space-y-2 text-sm text-neutral-600">
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>React/Next.js, Node.js/Java development</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Database design (PostgreSQL, MongoDB)</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>User authentication & security</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Payment processing integration</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Admin dashboards & analytics</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="border-l-2 border-neutral-300 pl-6">
-          <h4 class="font-semibold text-lg text-neutral-900 mb-2">E-Commerce</h4>
-          <p class="text-neutral-600 text-sm mb-4">From $3,500</p>
-          <ul class="space-y-2 text-sm text-neutral-600">
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Shopify or custom builds</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Product catalog management</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Secure checkout & payments</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Inventory & order management</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Shipping & tax automation</span>
-            </li>
-          </ul>
-        </div>
+        <a
+          href="#contact"
+          class="flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 bg-white text-amber-600 font-semibold rounded-lg hover:bg-neutral-50 transition-colors shadow-lg"
+        >
+          Learn more
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
       </div>
     </div>
 
-    <!-- AI Services -->
-    <div>
-      <h3 class="text-sm font-semibold text-neutral-900 uppercase tracking-wider mb-8">AI Integration</h3>
-      <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
-        <div class="border-l-2 border-neutral-300 pl-6">
-          <h4 class="font-semibold text-lg text-neutral-900 mb-2">AI Chatbots</h4>
-          <p class="text-neutral-600 text-sm mb-4">From $3,000</p>
+    <!-- Project Services -->
+    <div class="mb-20">
+      <div class="flex items-center justify-between mb-10">
+        <h3 class="text-2xl font-bold text-neutral-900">Project Services</h3>
+        <span class="text-sm text-neutral-500"
+          >Fixed-price quotes available</span
+        >
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Business Websites -->
+        <div
+          class="group bg-white border border-neutral-200 rounded-xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+        >
+          <div class="flex items-start justify-between mb-4">
+            <div
+              class="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center shadow-md"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                ></path>
+              </svg>
+            </div>
+            <span class="text-sm font-semibold text-neutral-500"
+              >From $1,500</span
+            >
+          </div>
+          <h4 class="text-xl font-bold text-neutral-900 mb-2">
+            Business Websites
+          </h4>
+          <p class="text-neutral-600 text-sm mb-4">
+            Professional sites that convert visitors into customers.
+          </p>
           <ul class="space-y-2 text-sm text-neutral-600">
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Customer support automation</span>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Custom Tailwind design</span>
             </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Training on your business data</span>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Mobile-responsive</span>
             </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>OpenAI, Anthropic, or open-source</span>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>SEO optimized</span>
             </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Analytics & insights</span>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Contact forms & CMS</span>
             </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Handoff to human agents</span>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Hosting setup included</span>
             </li>
           </ul>
         </div>
 
-        <div class="border-l-2 border-neutral-300 pl-6">
-          <h4 class="font-semibold text-lg text-neutral-900 mb-2">RAG & Search</h4>
-          <p class="text-neutral-600 text-sm mb-4">From $5,000</p>
+        <!-- Full-Stack Apps -->
+        <div
+          class="group bg-gradient-to-br from-neutral-900 to-neutral-800 border border-neutral-700 rounded-xl p-6 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden"
+        >
+          <!-- Popular badge -->
+          <div
+            class="absolute top-4 right-4 px-3 py-1 bg-amber-500 text-white text-xs font-bold rounded-full"
+          >
+            POPULAR
+          </div>
+
+          <div class="flex items-start justify-between mb-4">
+            <div
+              class="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-600 rounded-lg flex items-center justify-center shadow-md"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+              </svg>
+            </div>
+            <span class="text-sm font-semibold text-neutral-400"
+              >From $4,000</span
+            >
+          </div>
+          <h4 class="text-xl font-bold text-white mb-2">
+            Full-Stack Applications
+          </h4>
+          <p class="text-neutral-300 text-sm mb-4">
+            Complete web apps with frontend, backend, and database.
+          </p>
+          <ul class="space-y-2 text-sm text-neutral-300">
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>React/Next.js + Node.js</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Database architecture</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>User authentication</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Payment processing</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Admin dashboards</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- E-Commerce -->
+        <div
+          class="group bg-white border border-neutral-200 rounded-xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+        >
+          <div class="flex items-start justify-between mb-4">
+            <div
+              class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center shadow-md"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                ></path>
+              </svg>
+            </div>
+            <span class="text-sm font-semibold text-neutral-500"
+              >From $3,500</span
+            >
+          </div>
+          <h4 class="text-xl font-bold text-neutral-900 mb-2">
+            E-Commerce Stores
+          </h4>
+          <p class="text-neutral-600 text-sm mb-4">
+            Shopify or custom-built stores that sell.
+          </p>
           <ul class="space-y-2 text-sm text-neutral-600">
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Semantic search for docs</span>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Product catalog setup</span>
             </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Question-answering systems</span>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Secure checkout flow</span>
             </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Document processing pipelines</span>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Inventory management</span>
             </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Vector database integration</span>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Shipping automation</span>
             </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Analytics & reporting</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- AI Chatbots -->
+        <div
+          class="group bg-white border border-neutral-200 rounded-xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+        >
+          <div class="flex items-start justify-between mb-4">
+            <div
+              class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg flex items-center justify-center shadow-md"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                ></path>
+              </svg>
+            </div>
+            <span class="text-sm font-semibold text-neutral-500"
+              >From $3,000</span
+            >
+          </div>
+          <h4 class="text-xl font-bold text-neutral-900 mb-2">AI Chatbots</h4>
+          <p class="text-neutral-600 text-sm mb-4">
+            Intelligent assistants trained on your data.
+          </p>
+          <ul class="space-y-2 text-sm text-neutral-600">
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Customer support automation</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Custom training data</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>OpenAI or Claude API</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Analytics dashboard</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Human handoff flow</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- RAG Systems -->
+        <div
+          class="group bg-white border border-neutral-200 rounded-xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+        >
+          <div class="flex items-start justify-between mb-4">
+            <div
+              class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center shadow-md"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                ></path>
+              </svg>
+            </div>
+            <span class="text-sm font-semibold text-neutral-500"
+              >From $5,000</span
+            >
+          </div>
+          <h4 class="text-xl font-bold text-neutral-900 mb-2">
+            RAG & Document Search
+          </h4>
+          <p class="text-neutral-600 text-sm mb-4">
+            Query your documents with AI-powered search.
+          </p>
+          <ul class="space-y-2 text-sm text-neutral-600">
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Semantic search engine</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Document Q&A system</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Vector database setup</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Processing pipelines</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
               <span>Custom AI workflows</span>
             </li>
           </ul>
         </div>
 
-        <div class="border-l-2 border-neutral-300 pl-6">
-          <h4 class="font-semibold text-lg text-neutral-900 mb-2">Custom AI Tools</h4>
-          <p class="text-neutral-600 text-sm mb-4">From $2,500</p>
+        <!-- Custom Tools -->
+        <div
+          class="group bg-white border border-neutral-200 rounded-xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+        >
+          <div class="flex items-start justify-between mb-4">
+            <div
+              class="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center shadow-md"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                ></path>
+              </svg>
+            </div>
+            <span class="text-sm font-semibold text-neutral-500"
+              >From $2,500</span
+            >
+          </div>
+          <h4 class="text-xl font-bold text-neutral-900 mb-2">
+            Custom Utilities & Tools
+          </h4>
+          <p class="text-neutral-600 text-sm mb-4">
+            Bespoke tools for your unique business needs.
+          </p>
           <ul class="space-y-2 text-sm text-neutral-600">
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Content generation tools</span>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Data automation scripts</span>
             </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Data analysis automation</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
-              <span>Image/document processing</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
               <span>API integrations</span>
             </li>
-            <li class="flex items-start">
-              <span class="text-neutral-400 mr-2">—</span>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Content generation tools</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
               <span>MCP servers</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Image/doc processing</span>
             </li>
           </ul>
         </div>
       </div>
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="bg-neutral-900 rounded-2xl p-8 md:p-10 text-center">
+      <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">
+        Not sure what you need?
+      </h3>
+      <p class="text-neutral-300 text-lg mb-6 max-w-2xl mx-auto">
+        Let's chat about your project. I'll help you figure out the right
+        solution and give you an honest quote.
+      </p>
+      <a
+        href="#contact"
+        class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-600 to-orange-600 text-white font-semibold rounded-xl hover:shadow-xl hover:shadow-orange-600/20 transition-all duration-300 hover:-translate-y-0.5"
+      >
+        Schedule a free consultation
+        <svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </a>
     </div>
   </div>
 </section>
