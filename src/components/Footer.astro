@@ -1,45 +1,20 @@
 ---
-// Footer.astro
+// Footer.astro - Clean, professional footer
 ---
 
-<footer
-  class="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white overflow-hidden"
->
-  <!-- Background Elements -->
-  <div class="absolute inset-0 opacity-20">
-    <div
-      class="absolute top-20 left-20 w-64 h-64 bg-primary-500/10 rounded-full blur-3xl"
-    >
-    </div>
-    <div
-      class="absolute bottom-20 right-20 w-80 h-80 bg-accent-500/10 rounded-full blur-3xl"
-    >
-    </div>
-  </div>
-
-  <!-- Subtle Grid Pattern -->
-  <div
-    class="absolute inset-0 opacity-[0.02]"
-    style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 24px 24px;"
-  >
-  </div>
-
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<footer class="bg-neutral-900 text-white border-t border-neutral-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Main Footer Content -->
     <div class="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
       <!-- Brand Column -->
-      <div class="lg:col-span-1">
-        <div class="mb-6">
-          <h3
-            class="text-2xl font-bold bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent"
-          >
-            Jake Meyers
-          </h3>
-          <p class="text-neutral-400 mt-2">Web Developer</p>
+      <div>
+        <div class="mb-4">
+          <h3 class="text-xl font-bold text-white">Jake Meyers</h3>
+          <p class="text-neutral-400 text-sm mt-1">Web Developer</p>
         </div>
         <p class="text-neutral-400 text-sm leading-relaxed mb-6">
           Building modern web applications with a focus on quality, performance,
-          and user experience. Based in St. Louis, serving clients worldwide.
+          and user experience.
         </p>
         <!-- Social Links -->
         <div class="flex gap-3">
@@ -47,11 +22,11 @@
             href="https://github.com/jrmeyers92"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Visit my GitHub profile"
-            class="w-10 h-10 rounded-lg bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/10 flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+            aria-label="GitHub"
+            class="w-9 h-9 rounded bg-neutral-800 hover:bg-neutral-700 flex items-center justify-center transition-colors"
           >
             <svg
-              class="w-5 h-5 text-neutral-400 group-hover:text-white transition-colors"
+              class="w-5 h-5 text-neutral-400"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -64,11 +39,11 @@
             href="https://linkedin.com/in/jake-meyers-477b7a52"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Connect with me on LinkedIn"
-            class="w-10 h-10 rounded-lg bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/10 flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+            aria-label="LinkedIn"
+            class="w-9 h-9 rounded bg-neutral-800 hover:bg-neutral-700 flex items-center justify-center transition-colors"
           >
             <svg
-              class="w-5 h-5 text-neutral-400 group-hover:text-white transition-colors"
+              class="w-5 h-5 text-neutral-400"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -79,11 +54,11 @@
           </a>
           <a
             href="mailto:JakeRMeyers92@gmail.com"
-            aria-label="Send me an email"
-            class="w-10 h-10 rounded-lg bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/10 flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+            aria-label="Email"
+            class="w-9 h-9 rounded bg-neutral-800 hover:bg-neutral-700 flex items-center justify-center transition-colors"
           >
             <svg
-              class="w-5 h-5 text-neutral-400 group-hover:text-white transition-colors"
+              class="w-5 h-5 text-neutral-400"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -101,109 +76,37 @@
 
       <!-- Quick Links -->
       <div>
-        <h4
-          class="text-white font-semibold mb-4 text-sm uppercase tracking-wider"
-        >
-          Quick Links
-        </h4>
-        <ul class="space-y-3">
+        <h4 class="text-white font-semibold mb-4 text-sm">Quick Links</h4>
+        <ul class="space-y-2.5">
           <li>
             <a
               href="#services"
-              class="text-neutral-400 hover:text-white transition-colors duration-200 text-sm flex items-center group"
+              class="text-neutral-400 hover:text-white transition-colors text-sm"
             >
-              <svg
-                class="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"></path>
-              </svg>
               Services
             </a>
           </li>
           <li>
             <a
               href="#portfolio"
-              class="text-neutral-400 hover:text-white transition-colors duration-200 text-sm flex items-center group"
+              class="text-neutral-400 hover:text-white transition-colors text-sm"
             >
-              <svg
-                class="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"></path>
-              </svg>
               Portfolio
             </a>
           </li>
           <li>
             <a
               href="#testimonials"
-              class="text-neutral-400 hover:text-white transition-colors duration-200 text-sm flex items-center group"
+              class="text-neutral-400 hover:text-white transition-colors text-sm"
             >
-              <svg
-                class="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"></path>
-              </svg>
               Testimonials
             </a>
           </li>
           <li>
             <a
-              href="#faq"
-              class="text-neutral-400 hover:text-white transition-colors duration-200 text-sm flex items-center group"
-            >
-              <svg
-                class="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"></path>
-              </svg>
-              FAQ
-            </a>
-          </li>
-          <li>
-            <a
               href="#contact"
-              class="text-neutral-400 hover:text-white transition-colors duration-200 text-sm flex items-center group"
+              class="text-neutral-400 hover:text-white transition-colors text-sm"
             >
-              <svg
-                class="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"></path>
-              </svg>
               Contact
             </a>
           </li>
@@ -212,214 +115,51 @@
 
       <!-- Services -->
       <div>
-        <h4
-          class="text-white font-semibold mb-4 text-sm uppercase tracking-wider"
-        >
-          Services
-        </h4>
-        <ul class="space-y-3">
+        <h4 class="text-white font-semibold mb-4 text-sm">Services</h4>
+        <ul class="space-y-2.5">
           <li>
-            <a
-              href="#services"
-              class="text-neutral-400 hover:text-white transition-colors duration-200 text-sm flex items-center group"
-            >
-              <svg
-                class="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"></path>
-              </svg>
-              Website Development
-            </a>
+            <span class="text-neutral-400 text-sm">Website Development</span>
           </li>
           <li>
-            <a
-              href="#services"
-              class="text-neutral-400 hover:text-white transition-colors duration-200 text-sm flex items-center group"
-            >
-              <svg
-                class="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"></path>
-              </svg>
-              Web Applications
-            </a>
+            <span class="text-neutral-400 text-sm">Web Applications</span>
           </li>
           <li>
-            <a
-              href="#services"
-              class="text-neutral-400 hover:text-white transition-colors duration-200 text-sm flex items-center group"
-            >
-              <svg
-                class="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"></path>
-              </svg>
-              E-Commerce Solutions
-            </a>
+            <span class="text-neutral-400 text-sm">E-Commerce</span>
           </li>
           <li>
-            <a
-              href="#services"
-              class="text-neutral-400 hover:text-white transition-colors duration-200 text-sm flex items-center group"
-            >
-              <svg
-                class="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"></path>
-              </svg>
-              AI Integration
-            </a>
-          </li>
-          <li>
-            <a
-              href="#services"
-              class="text-neutral-400 hover:text-white transition-colors duration-200 text-sm flex items-center group"
-            >
-              <svg
-                class="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"></path>
-              </svg>
-              Custom Solutions
-            </a>
+            <span class="text-neutral-400 text-sm">AI Integration</span>
           </li>
         </ul>
       </div>
 
       <!-- Contact Info -->
       <div>
-        <h4
-          class="text-white font-semibold mb-4 text-sm uppercase tracking-wider"
-        >
-          Get in Touch
-        </h4>
+        <h4 class="text-white font-semibold mb-4 text-sm">Contact</h4>
         <ul class="space-y-3">
-          <li class="flex items-start gap-3 text-sm">
-            <svg
-              class="w-5 h-5 text-primary-400 flex-shrink-0 mt-0.5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-              ></path>
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-            </svg>
-            <div>
-              <p class="text-neutral-400">St. Louis, Missouri</p>
-              <p class="text-neutral-500 text-xs">Available Remotely</p>
-            </div>
+          <li class="text-sm">
+            <p class="text-neutral-400">St. Louis, Missouri</p>
+            <p class="text-neutral-500 text-xs mt-0.5">Available Remotely</p>
           </li>
-          <li class="flex items-start gap-3 text-sm">
-            <svg
-              class="w-5 h-5 text-primary-400 flex-shrink-0 mt-0.5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          <li class="text-sm">
+            <a
+              href="mailto:JakeRMeyers92@gmail.com"
+              class="text-neutral-400 hover:text-white transition-colors"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-              ></path>
-            </svg>
-            <div>
-              <a
-                href="mailto:JakeRMeyers92@gmail.com"
-                class="text-neutral-400 hover:text-white transition-colors"
-              >
-                JakeRMeyers92@gmail.com
-              </a>
-              <p class="text-neutral-500 text-xs">Usually reply within 24hrs</p>
-            </div>
+              JakeRMeyers92@gmail.com
+            </a>
+            <p class="text-neutral-500 text-xs mt-0.5">Usually reply within 24hrs</p>
           </li>
-          <li class="flex items-start gap-3 text-sm">
-            <svg
-              class="w-5 h-5 text-primary-400 flex-shrink-0 mt-0.5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-            <div>
-              <p class="text-neutral-400">Mon - Fri</p>
-              <p class="text-neutral-500 text-xs">9AM - 6PM CST</p>
-            </div>
+          <li class="text-sm">
+            <p class="text-neutral-400">Mon - Fri, 9AM - 6PM CST</p>
           </li>
         </ul>
       </div>
     </div>
 
     <!-- Bottom Bar -->
-    <div class="border-t border-white/10 py-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="text-neutral-400 text-sm text-center md:text-left">
-          © {new Date().getFullYear()} Jake Meyers. All rights reserved.
-        </div>
-
-        <!-- <div class="flex items-center gap-6">
-          <a
-            href="/privacy"
-            class="text-neutral-400 hover:text-white transition-colors text-sm"
-          >
-            Privacy Policy
-          </a>
-          <a
-            href="/terms"
-            class="text-neutral-400 hover:text-white transition-colors text-sm"
-          >
-            Terms of Service
-          </a>
-        </div> -->
+    <div class="border-t border-neutral-800 py-6">
+      <div class="text-center text-neutral-400 text-sm">
+        © {new Date().getFullYear()} Jake Meyers. All rights reserved.
       </div>
     </div>
   </div>

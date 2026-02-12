@@ -1,70 +1,34 @@
 ---
-import SectionTitle from "./SectionTitle.astro";
+// FAQ.astro - Clean, professional FAQ section
 ---
 
-<section
-  class="py-32 bg-gradient-to-br from-neutral-50 to-white relative overflow-hidden"
-  id="faq"
->
-  <!-- Background Elements -->
-  <div class="absolute inset-0 opacity-40">
-    <div
-      class="absolute top-20 right-20 w-64 h-64 bg-primary-200/30 rounded-full blur-3xl"
-    >
-    </div>
-    <div
-      class="absolute bottom-20 left-20 w-96 h-96 bg-accent-200/20 rounded-full blur-3xl"
-    >
-    </div>
-  </div>
-
-  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-16">
-      <div
-        class="inline-flex items-center px-4 py-2 rounded-full bg-primary-100 text-primary-700 text-sm font-medium mb-6"
-      >
-        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-          <path
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
-          ></path>
-        </svg>
-        Common Questions
-      </div>
-
-      <h2 class="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-        Frequently Asked
-        <span
-          class="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent"
-        >
-          Questions
-        </span>
+<section class="py-24 lg:py-32 bg-neutral-50" id="faq">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section header -->
+    <div class="mb-16">
+      <p class="text-sm font-medium text-neutral-500 uppercase tracking-wider mb-4">FAQ</p>
+      <h2 class="font-display text-4xl sm:text-5xl font-bold text-neutral-900 mb-6">
+        Common questions
       </h2>
-
-      <p class="text-xl text-neutral-600 max-w-2xl mx-auto">
-        Everything you need to know about working with me. Can't find your
-        answer? Feel free to reach out.
+      <p class="text-xl text-neutral-600 leading-relaxed">
+        Everything you need to know about working with me. Can't find your answer? Feel free to reach out.
       </p>
     </div>
 
-    <div class="space-y-4">
+    <!-- FAQ Items -->
+    <div class="space-y-3">
       <!-- FAQ 1 -->
-      <div
-        class="group bg-white rounded-2xl shadow-soft border border-neutral-200 overflow-hidden hover:shadow-md transition-all duration-300"
-      >
+      <div class="bg-white rounded-lg border border-neutral-200 overflow-hidden">
         <button
-          class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-2xl faq-button"
+          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-inset faq-button"
         >
           <div class="flex items-center justify-between gap-4">
-            <h3
-              class="text-lg font-semibold text-neutral-900 group-hover:text-primary-600 transition-colors"
-            >
+            <h3 class="text-lg font-semibold text-neutral-900">
               How much does a website or web application cost?
             </h3>
-            <div
-              class="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center group-hover:bg-primary-200 transition-colors"
-            >
+            <div class="flex-shrink-0">
               <svg
-                class="w-5 h-5 text-primary-600 transform transition-transform duration-300 faq-arrow"
+                class="w-5 h-5 text-neutral-600 transform transition-transform duration-200 faq-arrow"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -78,7 +42,7 @@ import SectionTitle from "./SectionTitle.astro";
             </div>
           </div>
         </button>
-        <div class="hidden px-8 pb-6 faq-content">
+        <div class="hidden px-6 pb-5 faq-content">
           <p class="text-neutral-600 leading-relaxed">
             Project costs vary based on complexity and requirements. Business
             websites typically start at $1,500, while full-stack applications
@@ -90,23 +54,17 @@ import SectionTitle from "./SectionTitle.astro";
       </div>
 
       <!-- FAQ 2 -->
-      <div
-        class="group bg-white rounded-2xl shadow-soft border border-neutral-200 overflow-hidden hover:shadow-md transition-all duration-300"
-      >
+      <div class="bg-white rounded-lg border border-neutral-200 overflow-hidden">
         <button
-          class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-2xl faq-button"
+          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-inset faq-button"
         >
           <div class="flex items-center justify-between gap-4">
-            <h3
-              class="text-lg font-semibold text-neutral-900 group-hover:text-primary-600 transition-colors"
-            >
+            <h3 class="text-lg font-semibold text-neutral-900">
               How long does it take to build a website or application?
             </h3>
-            <div
-              class="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center group-hover:bg-primary-200 transition-colors"
-            >
+            <div class="flex-shrink-0">
               <svg
-                class="w-5 h-5 text-primary-600 transform transition-transform duration-300 faq-arrow"
+                class="w-5 h-5 text-neutral-600 transform transition-transform duration-200 faq-arrow"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -120,7 +78,7 @@ import SectionTitle from "./SectionTitle.astro";
             </div>
           </div>
         </button>
-        <div class="hidden px-8 pb-6 faq-content">
+        <div class="hidden px-6 pb-5 faq-content">
           <p class="text-neutral-600 leading-relaxed">
             Timeline depends on project scope. A standard business website
             typically takes 2-3 weeks, while full-stack applications can take
@@ -132,23 +90,17 @@ import SectionTitle from "./SectionTitle.astro";
       </div>
 
       <!-- FAQ 3 -->
-      <div
-        class="group bg-white rounded-2xl shadow-soft border border-neutral-200 overflow-hidden hover:shadow-md transition-all duration-300"
-      >
+      <div class="bg-white rounded-lg border border-neutral-200 overflow-hidden">
         <button
-          class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-2xl faq-button"
+          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-inset faq-button"
         >
           <div class="flex items-center justify-between gap-4">
-            <h3
-              class="text-lg font-semibold text-neutral-900 group-hover:text-primary-600 transition-colors"
-            >
+            <h3 class="text-lg font-semibold text-neutral-900">
               Do you offer ongoing support and maintenance?
             </h3>
-            <div
-              class="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center group-hover:bg-primary-200 transition-colors"
-            >
+            <div class="flex-shrink-0">
               <svg
-                class="w-5 h-5 text-primary-600 transform transition-transform duration-300 faq-arrow"
+                class="w-5 h-5 text-neutral-600 transform transition-transform duration-200 faq-arrow"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -162,7 +114,7 @@ import SectionTitle from "./SectionTitle.astro";
             </div>
           </div>
         </button>
-        <div class="hidden px-8 pb-6 faq-content">
+        <div class="hidden px-6 pb-5 faq-content">
           <p class="text-neutral-600 leading-relaxed">
             Yes! All projects include a 30-day bug fix warranty after launch.
             For ongoing support, I offer monthly maintenance packages that
@@ -173,23 +125,17 @@ import SectionTitle from "./SectionTitle.astro";
       </div>
 
       <!-- FAQ 4 -->
-      <div
-        class="group bg-white rounded-2xl shadow-soft border border-neutral-200 overflow-hidden hover:shadow-md transition-all duration-300"
-      >
+      <div class="bg-white rounded-lg border border-neutral-200 overflow-hidden">
         <button
-          class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-2xl faq-button"
+          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-inset faq-button"
         >
           <div class="flex items-center justify-between gap-4">
-            <h3
-              class="text-lg font-semibold text-neutral-900 group-hover:text-primary-600 transition-colors"
-            >
+            <h3 class="text-lg font-semibold text-neutral-900">
               Can you integrate AI features into my website or app?
             </h3>
-            <div
-              class="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center group-hover:bg-primary-200 transition-colors"
-            >
+            <div class="flex-shrink-0">
               <svg
-                class="w-5 h-5 text-primary-600 transform transition-transform duration-300 faq-arrow"
+                class="w-5 h-5 text-neutral-600 transform transition-transform duration-200 faq-arrow"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -203,7 +149,7 @@ import SectionTitle from "./SectionTitle.astro";
             </div>
           </div>
         </button>
-        <div class="hidden px-8 pb-6 faq-content">
+        <div class="hidden px-6 pb-5 faq-content">
           <p class="text-neutral-600 leading-relaxed">
             Absolutely! I can add AI capabilities like chatbots, intelligent
             search, content generation, or custom automation to any project.
@@ -215,23 +161,17 @@ import SectionTitle from "./SectionTitle.astro";
       </div>
 
       <!-- FAQ 5 -->
-      <div
-        class="group bg-white rounded-2xl shadow-soft border border-neutral-200 overflow-hidden hover:shadow-md transition-all duration-300"
-      >
+      <div class="bg-white rounded-lg border border-neutral-200 overflow-hidden">
         <button
-          class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-2xl faq-button"
+          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-inset faq-button"
         >
           <div class="flex items-center justify-between gap-4">
-            <h3
-              class="text-lg font-semibold text-neutral-900 group-hover:text-primary-600 transition-colors"
-            >
+            <h3 class="text-lg font-semibold text-neutral-900">
               Do you work with clients remotely?
             </h3>
-            <div
-              class="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center group-hover:bg-primary-200 transition-colors"
-            >
+            <div class="flex-shrink-0">
               <svg
-                class="w-5 h-5 text-primary-600 transform transition-transform duration-300 faq-arrow"
+                class="w-5 h-5 text-neutral-600 transform transition-transform duration-200 faq-arrow"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -245,7 +185,7 @@ import SectionTitle from "./SectionTitle.astro";
             </div>
           </div>
         </button>
-        <div class="hidden px-8 pb-6 faq-content">
+        <div class="hidden px-6 pb-5 faq-content">
           <p class="text-neutral-600 leading-relaxed">
             Yes! While I'm based in St. Louis, Missouri, I work with clients
             anywhere. I've successfully completed projects for businesses across
@@ -257,23 +197,17 @@ import SectionTitle from "./SectionTitle.astro";
       </div>
 
       <!-- FAQ 6 -->
-      <div
-        class="group bg-white rounded-2xl shadow-soft border border-neutral-200 overflow-hidden hover:shadow-md transition-all duration-300"
-      >
+      <div class="bg-white rounded-lg border border-neutral-200 overflow-hidden">
         <button
-          class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-2xl faq-button"
+          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-inset faq-button"
         >
           <div class="flex items-center justify-between gap-4">
-            <h3
-              class="text-lg font-semibold text-neutral-900 group-hover:text-primary-600 transition-colors"
-            >
+            <h3 class="text-lg font-semibold text-neutral-900">
               What technologies and tools do you use?
             </h3>
-            <div
-              class="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center group-hover:bg-primary-200 transition-colors"
-            >
+            <div class="flex-shrink-0">
               <svg
-                class="w-5 h-5 text-primary-600 transform transition-transform duration-300 faq-arrow"
+                class="w-5 h-5 text-neutral-600 transform transition-transform duration-200 faq-arrow"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -287,90 +221,32 @@ import SectionTitle from "./SectionTitle.astro";
             </div>
           </div>
         </button>
-        <div class="hidden px-8 pb-6 faq-content">
-          <p class="text-neutral-600 leading-relaxed mb-4">
+        <div class="hidden px-6 pb-5 faq-content">
+          <p class="text-neutral-600 leading-relaxed mb-3">
             I use modern, reliable technologies that ensure your project is
             fast, secure, and maintainable:
           </p>
-          <ul class="text-neutral-600 leading-relaxed space-y-2 ml-6">
-            <li class="flex items-start gap-2">
-              <svg
-                class="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd"></path>
-              </svg>
-              <span
-                ><strong>Frontend:</strong> React, Next.js, Astro, Tailwind CSS</span
-              >
-            </li>
-            <li class="flex items-start gap-2">
-              <svg
-                class="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd"></path>
-              </svg>
-              <span
-                ><strong>Backend:</strong> Node.js, Python (FastAPI), Java</span
-              >
-            </li>
-            <li class="flex items-start gap-2">
-              <svg
-                class="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd"></path>
-              </svg>
-              <span><strong>Databases:</strong> PostgreSQL, MongoDB</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <svg
-                class="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd"></path>
-              </svg>
-              <span><strong>Deployment:</strong> Vercel, AWS, Netlify</span>
-            </li>
+          <ul class="text-neutral-600 leading-relaxed space-y-2">
+            <li><strong>Frontend:</strong> React, Next.js, Astro, Tailwind CSS</li>
+            <li><strong>Backend:</strong> Node.js, Python (FastAPI), Java</li>
+            <li><strong>Databases:</strong> PostgreSQL, MongoDB</li>
+            <li><strong>Deployment:</strong> Vercel, AWS, Netlify</li>
           </ul>
         </div>
       </div>
 
       <!-- FAQ 7 -->
-      <div
-        class="group bg-white rounded-2xl shadow-soft border border-neutral-200 overflow-hidden hover:shadow-md transition-all duration-300"
-      >
+      <div class="bg-white rounded-lg border border-neutral-200 overflow-hidden">
         <button
-          class="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-2xl faq-button"
+          class="w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-inset faq-button"
         >
           <div class="flex items-center justify-between gap-4">
-            <h3
-              class="text-lg font-semibold text-neutral-900 group-hover:text-primary-600 transition-colors"
-            >
+            <h3 class="text-lg font-semibold text-neutral-900">
               What's your process for starting a new project?
             </h3>
-            <div
-              class="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center group-hover:bg-primary-200 transition-colors"
-            >
+            <div class="flex-shrink-0">
               <svg
-                class="w-5 h-5 text-primary-600 transform transition-transform duration-300 faq-arrow"
+                class="w-5 h-5 text-neutral-600 transform transition-transform duration-200 faq-arrow"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -384,13 +260,11 @@ import SectionTitle from "./SectionTitle.astro";
             </div>
           </div>
         </button>
-        <div class="hidden px-8 pb-6 faq-content">
-          <p class="text-neutral-600 leading-relaxed mb-4">
+        <div class="hidden px-6 pb-5 faq-content">
+          <p class="text-neutral-600 leading-relaxed mb-3">
             My process is straightforward and collaborative:
           </p>
-          <ol
-            class="text-neutral-600 leading-relaxed space-y-3 ml-6 list-decimal"
-          >
+          <ol class="text-neutral-600 leading-relaxed space-y-2 list-decimal pl-5">
             <li>
               <strong>Discovery Call:</strong> We discuss your goals, requirements,
               and timeline
@@ -419,36 +293,20 @@ import SectionTitle from "./SectionTitle.astro";
     </div>
 
     <!-- Still have questions CTA -->
-    <div class="mt-16 text-center">
-      <div
-        class="bg-gradient-to-r from-primary-50 to-accent-50 rounded-2xl p-8 border border-primary-100"
+    <div class="mt-16 bg-white rounded-lg p-8 border border-neutral-200">
+      <h3 class="text-2xl font-bold text-neutral-900 mb-3">
+        Still have questions?
+      </h3>
+      <p class="text-neutral-600 mb-6">
+        Don't see your question answered here? I'm happy to discuss your
+        specific needs and provide personalized answers.
+      </p>
+      <a
+        href="#contact"
+        class="inline-flex items-center justify-center px-8 py-4 bg-neutral-900 text-white font-medium rounded-lg hover:bg-neutral-800 transition-colors duration-200"
       >
-        <h3 class="text-2xl font-bold text-neutral-900 mb-3">
-          Still have questions?
-        </h3>
-        <p class="text-neutral-600 mb-6 max-w-xl mx-auto">
-          Don't see your question answered here? I'm happy to discuss your
-          specific needs and provide personalized answers.
-        </p>
-        <a
-          href="#contact"
-          class="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 text-white font-medium rounded-xl hover:bg-primary-700 transition-colors duration-200 shadow-md hover:shadow-lg"
-        >
-          Get in Touch
-          <svg
-            class="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-          </svg>
-        </a>
-      </div>
+        Get in touch
+      </a>
     </div>
   </div>
 </section>
@@ -484,11 +342,6 @@ import SectionTitle from "./SectionTitle.astro";
         if (isHidden) {
           content.classList.remove("hidden");
           arrow.style.transform = "rotate(180deg)";
-
-          // Smooth scroll into view
-          setTimeout(() => {
-            button.scrollIntoView({ behavior: "smooth", block: "nearest" });
-          }, 100);
         } else {
           content.classList.add("hidden");
           arrow.style.transform = "rotate(0deg)";
