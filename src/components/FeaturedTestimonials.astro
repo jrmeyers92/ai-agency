@@ -1,10 +1,9 @@
 ---
-// Testimonials.astro - Redesigned to build trust and credibility
+// FeaturedTestimonials.astro - Condensed testimonials for home page
 ---
 
 <section
   class="relative py-24 lg:py-32 bg-gradient-to-b from-neutral-50 to-white overflow-hidden"
-  id="testimonials"
 >
   <!-- Decorative background -->
   <div
@@ -14,7 +13,7 @@
 
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Section header -->
-    <div class="max-w-3xl mb-16">
+    <div class="max-w-3xl mx-auto text-center mb-16">
       <p
         class="text-sm font-semibold text-amber-600 uppercase tracking-wider mb-3"
       >
@@ -23,21 +22,19 @@
       <h2
         class="text-4xl sm:text-5xl font-bold text-neutral-900 leading-tight mb-6"
       >
-        Trusted by teammates
+        What people say
       </h2>
       <p class="text-xl text-neutral-600 leading-relaxed">
-        What colleagues and collaborators say about working with me on real
-        projects.
+        Trusted by teammates and collaborators on real projects.
       </p>
     </div>
 
     <!-- Testimonials Grid -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+    <div class="grid md:grid-cols-3 gap-6 mb-12">
       <!-- Testimonial 1 -->
       <div
         class="group bg-white rounded-2xl p-8 border border-neutral-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
       >
-        <!-- Quote icon -->
         <div
           class="w-10 h-10 bg-gradient-to-br from-amber-500 to-orange-600 rounded-lg flex items-center justify-center mb-4"
         >
@@ -54,8 +51,7 @@
 
         <blockquote class="text-neutral-700 text-base leading-relaxed mb-6">
           "Jake consistently delivers high-quality code ahead of schedule. His
-          attention to detail and thorough testing make code reviews
-          straightforward. He's the kind of developer every team wants."
+          attention to detail makes code reviews straightforward."
         </blockquote>
 
         <div class="flex items-center gap-3 pt-4 border-t border-neutral-100">
@@ -75,7 +71,6 @@
       <div
         class="group bg-white rounded-2xl p-8 border border-neutral-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
       >
-        <!-- Quote icon -->
         <div
           class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg flex items-center justify-center mb-4"
         >
@@ -91,9 +86,8 @@
         </div>
 
         <blockquote class="text-neutral-700 text-base leading-relaxed mb-6">
-          "What sets Jake apart is his ability to translate ambiguous
-          requirements into solid technical solutions. He asks smart questions
-          and builds exactly what's needed—no wasted effort."
+          "Jake translates ambiguous requirements into solid solutions. He asks
+          smart questions and builds exactly what's needed."
         </blockquote>
 
         <div class="flex items-center gap-3 pt-4 border-t border-neutral-100">
@@ -111,9 +105,8 @@
 
       <!-- Testimonial 3 -->
       <div
-        class="group bg-white rounded-2xl p-8 border border-neutral-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 md:col-span-2 lg:col-span-1"
+        class="group bg-white rounded-2xl p-8 border border-neutral-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
       >
-        <!-- Quote icon -->
         <div
           class="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center mb-4"
         >
@@ -130,8 +123,7 @@
 
         <blockquote class="text-neutral-700 text-base leading-relaxed mb-6">
           "Jake thinks beyond just writing code—he considers the entire user
-          experience. His applications are polished, performant, and solve real
-          problems. A true professional."
+          experience. His applications are polished and performant."
         </blockquote>
 
         <div class="flex items-center gap-3 pt-4 border-t border-neutral-100">
@@ -148,9 +140,9 @@
       </div>
     </div>
 
-    <!-- Trust indicators -->
+    <!-- Stats bar -->
     <div
-      class="grid grid-cols-2 md:grid-cols-4 gap-8 py-12 border-y border-neutral-200 mb-16"
+      class="grid grid-cols-2 md:grid-cols-4 gap-8 py-12 px-8 bg-white border border-neutral-200 rounded-2xl"
     >
       <div class="text-center">
         <div class="text-4xl font-bold text-neutral-900 mb-2">5+</div>
@@ -166,107 +158,7 @@
       </div>
       <div class="text-center">
         <div class="text-4xl font-bold text-neutral-900 mb-2">24h</div>
-        <p class="text-neutral-600 text-sm">Avg. Response Time</p>
-      </div>
-    </div>
-
-    <!-- Process section -->
-    <div
-      class="bg-white rounded-2xl border border-neutral-200 p-8 md:p-10 mb-16"
-    >
-      <h3 class="text-2xl font-bold text-neutral-900 mb-8 text-center">
-        How we'll work together
-      </h3>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Step 1 -->
-        <div class="text-center">
-          <div
-            class="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg"
-          >
-            <span class="text-white font-bold text-xl">1</span>
-          </div>
-          <h4 class="font-bold text-lg text-neutral-900 mb-2">
-            Discovery Call
-          </h4>
-          <p class="text-neutral-600 text-sm leading-relaxed">
-            We discuss your needs, timeline, and budget. I'll ask questions to
-            understand your goals and propose the best approach.
-          </p>
-        </div>
-
-        <!-- Step 2 -->
-        <div class="text-center">
-          <div
-            class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg"
-          >
-            <span class="text-white font-bold text-xl">2</span>
-          </div>
-          <h4 class="font-bold text-lg text-neutral-900 mb-2">
-            Clear Proposal
-          </h4>
-          <p class="text-neutral-600 text-sm leading-relaxed">
-            You get a detailed scope, timeline, and fixed-price quote. No
-            surprises, no hidden fees—just transparent pricing.
-          </p>
-        </div>
-
-        <!-- Step 3 -->
-        <div class="text-center">
-          <div
-            class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg"
-          >
-            <span class="text-white font-bold text-xl">3</span>
-          </div>
-          <h4 class="font-bold text-lg text-neutral-900 mb-2">
-            Build & Deliver
-          </h4>
-          <p class="text-neutral-600 text-sm leading-relaxed">
-            I build your project with regular updates. You review milestones,
-            provide feedback, and get a polished final product.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bottom CTA -->
-    <div
-      class="bg-gradient-to-br from-neutral-900 to-neutral-800 rounded-2xl p-10 md:p-12 text-center"
-    >
-      <h3 class="text-3xl md:text-4xl font-bold text-white mb-4">
-        Let's start with a conversation
-      </h3>
-      <p
-        class="text-xl text-neutral-300 leading-relaxed mb-8 max-w-2xl mx-auto"
-      >
-        No pressure, no commitment. Just a friendly chat about your project and
-        how I might be able to help.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a
-          href="/contact"
-          class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-600 to-orange-600 text-white font-semibold rounded-xl hover:shadow-xl hover:shadow-orange-600/20 transition-all duration-300 hover:-translate-y-0.5"
-        >
-          Schedule a free call
-          <svg
-            class="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-          </svg>
-        </a>
-        <a
-          href="/work"
-          class="inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold rounded-xl hover:bg-white/20 transition-all duration-200"
-        >
-          See my work
-        </a>
+        <p class="text-neutral-600 text-sm">Response Time</p>
       </div>
     </div>
   </div>
