@@ -1,5 +1,5 @@
 ---
-// Services.astro - Redesigned to emphasize retainers and value
+// Services.astro - Updated pricing + value-focused copy
 ---
 
 <section
@@ -31,54 +31,316 @@
       </p>
     </div>
 
-    <!-- Retainer highlight banner -->
-    <div
-      class="bg-gradient-to-r from-amber-500 to-orange-600 rounded-2xl p-8 md:p-10 mb-16 shadow-xl"
-    >
-      <div
-        class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
-      >
-        <div class="flex-1">
-          <div class="flex items-center gap-2 mb-3">
-            <svg
-              class="w-6 h-6 text-white"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-            <h3 class="text-2xl font-bold text-white">Monthly Retainers</h3>
-          </div>
-          <p class="text-white/90 text-lg leading-relaxed max-w-2xl">
-            Get dedicated hours each month for maintenance, updates, new
-            features, and quick fixes. No long-term contracts—cancel anytime.
-            Perfect for businesses that need ongoing support.
-          </p>
-        </div>
-        <a
-          href="/contact"
-          class="flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 bg-white text-amber-600 font-semibold rounded-lg hover:bg-neutral-50 transition-colors shadow-lg"
+    <!-- Monthly Retainers Section -->
+    <div class="mb-20" id="retainers">
+      <div class="max-w-3xl mb-10">
+        <p
+          class="text-sm font-semibold text-amber-600 uppercase tracking-wider mb-3"
         >
-          Learn more
-          <svg
-            class="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-          </svg>
-        </a>
+          Monthly Retainers
+        </p>
+        <h3 class="text-3xl sm:text-4xl font-bold text-neutral-900 mb-4">
+          Keep your site running — and improving
+        </h3>
+        <p class="text-lg text-neutral-600 leading-relaxed">
+          Most businesses need more than a one-time build. Retainers give you a
+          dedicated developer on call every month — no hiring, no agencies, no
+          surprises. Cancel anytime.
+        </p>
       </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Tier 1: Essentials -->
+        <div
+          class="bg-white border border-neutral-200 rounded-xl p-8 flex flex-col hover:shadow-lg transition-all duration-300"
+        >
+          <div class="mb-6">
+            <p
+              class="text-sm font-semibold text-neutral-500 uppercase tracking-wider mb-2"
+            >
+              Essentials
+            </p>
+            <div class="flex items-end gap-1 mb-1">
+              <span class="text-4xl font-bold text-neutral-900">$150</span>
+              <span class="text-neutral-500 mb-1">/mo</span>
+            </div>
+            <p class="text-sm text-neutral-500">
+              Best for small sites that just need to stay healthy
+            </p>
+          </div>
+          <ul class="space-y-3 text-sm text-neutral-600 flex-1 mb-8">
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Hosting & domain management</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Security & dependency updates</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Uptime monitoring & alerts</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Monthly health report</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Email support</span>
+            </li>
+          </ul>
+          <a
+            href="/contact"
+            class="block text-center px-6 py-3 border-2 border-neutral-900 text-neutral-900 font-semibold rounded-lg hover:bg-neutral-900 hover:text-white transition-colors duration-200"
+          >
+            Get started
+          </a>
+        </div>
+
+        <!-- Tier 2: Growth — highlighted -->
+        <div
+          class="bg-gradient-to-br from-neutral-900 to-neutral-800 border border-neutral-700 rounded-xl p-8 flex flex-col relative shadow-2xl"
+        >
+          <div
+            class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-amber-500 text-white text-xs font-bold rounded-full shadow"
+          >
+            MOST POPULAR
+          </div>
+          <div class="mb-6">
+            <p
+              class="text-sm font-semibold text-amber-400 uppercase tracking-wider mb-2"
+            >
+              Growth
+            </p>
+            <div class="flex items-end gap-1 mb-1">
+              <span class="text-4xl font-bold text-white">$350</span>
+              <span class="text-neutral-400 mb-1">/mo</span>
+            </div>
+            <p class="text-sm text-neutral-400">
+              For businesses that want to keep evolving their site
+            </p>
+          </div>
+          <ul class="space-y-3 text-sm text-neutral-300 flex-1 mb-8">
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Everything in Essentials</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>3 hrs/mo dev time (content edits, fixes, new features)</span
+              >
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Performance & SEO tuning</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Priority email & chat support</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Unused hours roll over (up to 1 month)</span>
+            </li>
+          </ul>
+          <a
+            href="/contact"
+            class="block text-center px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-orange-600/20 transition-all duration-200"
+          >
+            Get started
+          </a>
+        </div>
+
+        <!-- Tier 3: Partner -->
+        <div
+          class="bg-white border border-neutral-200 rounded-xl p-8 flex flex-col hover:shadow-lg transition-all duration-300"
+        >
+          <div class="mb-6">
+            <p
+              class="text-sm font-semibold text-neutral-500 uppercase tracking-wider mb-2"
+            >
+              Partner
+            </p>
+            <div class="flex items-end gap-1 mb-1">
+              <span class="text-4xl font-bold text-neutral-900">$600</span>
+              <span class="text-neutral-500 mb-1">/mo</span>
+            </div>
+            <p class="text-sm text-neutral-500">
+              For teams that need a developer on speed dial
+            </p>
+          </div>
+          <ul class="space-y-3 text-sm text-neutral-600 flex-1 mb-8">
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Everything in Growth</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>8 hrs/mo dev time</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>AI monitoring & prompt tuning (if applicable)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Same-day response guarantee</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg
+                class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Quarterly strategy call</span>
+            </li>
+          </ul>
+          <a
+            href="/contact"
+            class="block text-center px-6 py-3 border-2 border-neutral-900 text-neutral-900 font-semibold rounded-lg hover:bg-neutral-900 hover:text-white transition-colors duration-200"
+          >
+            Get started
+          </a>
+        </div>
+      </div>
+
+      <!-- Reassurance line -->
+      <p class="text-center text-sm text-neutral-500 mt-6">
+        No long-term contracts. Cancel anytime. Clients on retainer get
+        discounted rates on new project work.
+      </p>
     </div>
 
     <!-- Project Services -->
@@ -114,14 +376,14 @@
               </svg>
             </div>
             <span class="text-sm font-semibold text-neutral-500"
-              >From $1,500</span
+              >From $2,000</span
             >
           </div>
           <h4 class="text-xl font-bold text-neutral-900 mb-2">
             Business Websites
           </h4>
           <p class="text-neutral-600 text-sm mb-4">
-            Professional sites that convert visitors into customers.
+            Professional sites that turn visitors into paying customers.
           </p>
           <ul class="space-y-2 text-sm text-neutral-600">
             <li class="flex items-start gap-2">
@@ -135,7 +397,7 @@
                   d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   clip-rule="evenodd"></path>
               </svg>
-              <span>Custom Tailwind design</span>
+              <span>Custom design — no templates</span>
             </li>
             <li class="flex items-start gap-2">
               <svg
@@ -192,13 +454,13 @@
           </ul>
         </div>
 
-        <!-- Full-Stack Apps -->
+        <!-- Custom Business Software (was Full-Stack Apps) -->
         <div
           class="group bg-gradient-to-br from-neutral-900 to-neutral-800 border border-neutral-700 rounded-xl p-6 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden"
         >
           <!-- Popular badge -->
           <div
-            class="absolute top-4 right-4 px-3 py-1 bg-amber-500 text-white text-xs font-bold rounded-full"
+            class="absolute bottom-4 right-4 px-3 py-1 bg-amber-500 text-white text-xs font-bold rounded-full shadow-lg"
           >
             POPULAR
           </div>
@@ -221,14 +483,14 @@
               </svg>
             </div>
             <span class="text-sm font-semibold text-neutral-400"
-              >From $4,000</span
+              >From $8,000</span
             >
           </div>
           <h4 class="text-xl font-bold text-white mb-2">
-            Full-Stack Applications
+            Custom Business Software
           </h4>
           <p class="text-neutral-300 text-sm mb-4">
-            Complete web apps with frontend, backend, and database.
+            Web apps built around how your business actually works.
           </p>
           <ul class="space-y-2 text-sm text-neutral-300">
             <li class="flex items-start gap-2">
@@ -242,7 +504,7 @@
                   d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   clip-rule="evenodd"></path>
               </svg>
-              <span>React/Next.js + Node.js</span>
+              <span>Full frontend & backend</span>
             </li>
             <li class="flex items-start gap-2">
               <svg
@@ -329,7 +591,7 @@
             E-Commerce Stores
           </h4>
           <p class="text-neutral-600 text-sm mb-4">
-            Shopify or custom-built stores that sell.
+            Shopify or custom-built stores built to sell.
           </p>
           <ul class="space-y-2 text-sm text-neutral-600">
             <li class="flex items-start gap-2">
@@ -400,7 +662,7 @@
           </ul>
         </div>
 
-        <!-- AI Chatbots -->
+        <!-- AI Assistants & Chatbots (renamed) -->
         <div
           class="group bg-white border border-neutral-200 rounded-xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
         >
@@ -426,9 +688,11 @@
               >From $3,000</span
             >
           </div>
-          <h4 class="text-xl font-bold text-neutral-900 mb-2">AI Chatbots</h4>
+          <h4 class="text-xl font-bold text-neutral-900 mb-2">
+            AI Assistants & Chatbots
+          </h4>
           <p class="text-neutral-600 text-sm mb-4">
-            Intelligent assistants trained on your data.
+            Automate support and sales with AI trained on your business.
           </p>
           <ul class="space-y-2 text-sm text-neutral-600">
             <li class="flex items-start gap-2">
@@ -455,7 +719,7 @@
                   d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   clip-rule="evenodd"></path>
               </svg>
-              <span>Custom training data</span>
+              <span>Trained on your data</span>
             </li>
             <li class="flex items-start gap-2">
               <svg
@@ -499,7 +763,7 @@
           </ul>
         </div>
 
-        <!-- RAG Systems -->
+        <!-- RAG Systems — repriced -->
         <div
           class="group bg-white border border-neutral-200 rounded-xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
         >
@@ -522,14 +786,14 @@
               </svg>
             </div>
             <span class="text-sm font-semibold text-neutral-500"
-              >From $5,000</span
+              >From $8,000</span
             >
           </div>
           <h4 class="text-xl font-bold text-neutral-900 mb-2">
             RAG & Document Search
           </h4>
           <p class="text-neutral-600 text-sm mb-4">
-            Query your documents with AI-powered search.
+            Ask questions, get answers — from your own documents and data.
           </p>
           <ul class="space-y-2 text-sm text-neutral-600">
             <li class="flex items-start gap-2">
@@ -630,7 +894,7 @@
             Custom Utilities & Tools
           </h4>
           <p class="text-neutral-600 text-sm mb-4">
-            Bespoke tools for your unique business needs.
+            Bespoke tools that eliminate repetitive work from your team's day.
           </p>
           <ul class="space-y-2 text-sm text-neutral-600">
             <li class="flex items-start gap-2">
