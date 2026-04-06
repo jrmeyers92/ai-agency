@@ -193,10 +193,26 @@ import { Icon } from "astro-icon/components";
             Send me a message
           </h3>
 
+          <!-- Success message (hidden by default) -->
+          <div
+            id="form-success"
+            class="hidden text-center py-12 space-y-4"
+          >
+            <div class="flex justify-center">
+              <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center">
+                <svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+            </div>
+            <h4 class="text-xl font-bold text-neutral-900">Message sent!</h4>
+            <p class="text-neutral-600">Thanks for reaching out. I'll get back to you within 24 hours.</p>
+          </div>
+
           <form
+            id="contact-form"
             name="contact"
             method="POST"
-            action="/"
             data-netlify="true"
             netlify-honeypot="bot-field"
             class="space-y-6"
@@ -330,3 +346,20 @@ import { Icon } from "astro-icon/components";
     </div>
   </div>
 </section>
+
+<script>
+  const form = document.getElementById("contact-form") as HTMLFormElement | null;
+  const success = document.getElementById("form-success");
+
+  form?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(data as unknown as Record<string, string>).toString(),
+    });
+    form.classList.add("hidden");
+    success?.classList.remove("hidden");
+  });
+</script>
